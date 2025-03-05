@@ -44,7 +44,7 @@ export interface SocialItem {
 export const socialItems: SocialItem[] = [
     { label: 'Twitter', href: 'https://twitter.com/doctavalley' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/company/doctavalley' },
-    { label: 'WhatsApp', href: 'https://chat.whatsapp.com/KfBZXVDwrzuIs1HbrvvmSb' },
+    { label: 'WhatsApp', href: 'https://chat.whatsapp.com/KfBZXVDwrzuIs1HbrvvmSb' }
 ]
 
 export const startupCategories: StartupCategory[] = [

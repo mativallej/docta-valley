@@ -16,7 +16,7 @@ export default function Proximamente() {
           initial={{ opacity: 0 }}    
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="inline-flex items-center rounded-full bg-muted px-4 py-1.5 text-sm font-medium"
+          className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium"
         >
           🚧 <Separator className="mx-2 h-4" orientation="vertical" /> Proximamente
         </motion.div>
@@ -45,7 +45,7 @@ export default function Proximamente() {
             <a href="/">Volver al inicio</a>
           </Button>
           <Button asChild>
-            <a href="mailto:matiasvallejosdev@outlook.com">Contactar</a>
+            <a href="mailto:doctavalley@gmail.com">Contactar</a>
           </Button>
         </motion.div>
       </motion.div>

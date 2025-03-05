@@ -15,6 +15,12 @@ const customFont = CustomFont({
   weight: ['400', '500', '700'],
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata = {
   title: SITE.title,
   description: SITE.description,
@@ -24,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning={true} className="scroll-smooth">
-      <body className={cn("min-h-screen bg-background font-sans antialiased", customFont.variable)}>
+      <body className={cn("min-h-screen w-full overflow-x-hidden bg-background font-sans antialiased", customFont.variable)}>
         <Providers>{children}</Providers>
         <Analytics /> 
         <Toaster richColors />
