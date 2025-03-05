@@ -14,9 +14,9 @@ import { Events } from '@/features/event';
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col">
+    <div className="relative flex min-h-screen flex-col overflow-x-hidden">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 w-full">
         <Hero />
         <Separator className="my-12" />
 

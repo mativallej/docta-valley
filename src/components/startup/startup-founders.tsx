@@ -15,7 +15,7 @@ export default function StartupFounders({ founders }: { founders: Founder[] }) {
   
   return (
     <div className="absolute bottom-3 right-3 flex -space-x-2">
-      {founders.map((founder) => (
+      {founders.slice(0, 6).map((founder) => (
         <div
           key={founder.id}
           className="relative"

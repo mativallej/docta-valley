@@ -7,7 +7,7 @@ const members: Member[] = [
     name: 'Matias Vallejos',
     communityRole: 'founder',
     bio: '💻 Crafting code, building ideas | 🚀 Cloud & Product Engineering | 🌎 Córdoba, Argentina',
-    image: '/placeholder.svg',
+    image: '/members/member_01.jpg',
     links: {
       twitter: 'https://twitter.com/mativallejosdev',
       linkedin: 'https://linkedin.com/in/matiasvallejos',
@@ -20,7 +20,7 @@ const members: Member[] = [
     name: 'Lucas Nasich',
     communityRole: 'founder',
     bio: '🇦🇷 Founder of @CurvalApp & @DoctaValley | Building in Córdoba, Argentina',
-    image: '/placeholder.svg',
+    image: '/members/member_02.jpg',
     links: {
       twitter: 'https://twitter.com/lucasnasich',
       website: 'https://curval.io'
@@ -31,7 +31,7 @@ const members: Member[] = [
     name: 'Carla Palmieri',
     communityRole: 'member',
     bio: '🇦🇷 Carla Palmieri is a software engineer with a passion for building products that help people live healthier lives.',
-    image: '/placeholder.svg',
+    image: '/members/member_03.jpg',
     links: {
       twitter: 'https://twitter.com/carlapalmieri',
       linkedin: 'https://linkedin.com/in/carlapalmieri',

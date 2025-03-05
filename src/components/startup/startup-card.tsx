@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { CommunityStartup } from '@/types/startup';
 import StartupFounders from './startup-founders';
-import StartupCategories from './startup-categories';
+import { StartupCardCategories } from './startup-card-categories';
 import StartupTags from './startup-tags';
 import { useState, useRef } from 'react';
 
@@ -114,7 +114,7 @@ export function StartupCard({ startup, index }: { startup: CommunityStartup; ind
             </div>
 
             {startup.category && (
-              <StartupCategories categories={[startup.category]} />
+              <StartupCardCategories categories={[startup.category]} />
             )}
 
             {startup.tags && startup.tags.length > 0 && (

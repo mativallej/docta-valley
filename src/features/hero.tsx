@@ -7,13 +7,13 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <section className="flex min-h-[80vh] flex-col items-center justify-center space-y-10 py-24 relative overflow-hidden">
+      <section className="flex min-h-[80vh] w-full flex-col items-center justify-center space-y-10 py-24 relative overflow-hidden">
         <FlyingRockets count={6} />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="container flex flex-col items-center justify-center gap-6 text-center"
+          className="container px-4 mx-auto flex flex-col items-center justify-center gap-6 text-center"
         >
           <motion.a
             initial={{ opacity: 0 }}    
@@ -47,14 +47,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="flex gap-4"
+            className="flex flex-col sm:flex-row gap-4 px-4 md:px-0 w-full sm:w-auto"
           >
-            <Button size="lg" className="h-12 px-8" asChild>
+            <Button size="lg" className="h-8 px-4 sm:h-12 sm:px-8 w-full sm:w-auto" asChild>
               <Link href="https://tally.so/r/3ENKPX" target="_blank">
                 Unirse a la Comunidad
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8" asChild>
+            <Button size="lg" variant="outline" className="h-8 px-4 sm:h-12 sm:px-8 w-full sm:w-auto" asChild>
               <Link href="/#startups">
                 Explorar Startups
               </Link>
