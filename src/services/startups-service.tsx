@@ -1,4 +1,4 @@
-import { NEXT_PUBLIC_API_URL } from 'src/env';
+import { NEXTAUTH_URL } from 'src/env';
 import { CommunityStartup } from '@/types/startup';
 
 export interface StartupServiceInterface {
@@ -7,7 +7,7 @@ export interface StartupServiceInterface {
 }
 
 export class StartupService implements StartupServiceInterface {
-  base_url: string = NEXT_PUBLIC_API_URL + '/api';
+  base_url: string = NEXTAUTH_URL + '/api';
 
   async getStartups(): Promise<CommunityStartup[]> {
     const url = `${this.base_url}/startups`;

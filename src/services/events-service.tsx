@@ -1,5 +1,5 @@
 import { Event } from '@/types/events';
-import { NEXT_PUBLIC_API_URL } from 'src/env';
+import { NEXTAUTH_URL } from 'src/env';
 
 export interface EventsServiceInterface {
   base_url: string;
@@ -7,7 +7,7 @@ export interface EventsServiceInterface {
 }
 
 export class EventsService implements EventsServiceInterface {
-  base_url: string = NEXT_PUBLIC_API_URL + '/api';
+  base_url: string = NEXTAUTH_URL + '/api';
 
   async getEvents(): Promise<Event[]> {
     const response = await fetch(`${this.base_url}/events`);
