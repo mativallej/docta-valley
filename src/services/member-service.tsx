@@ -1,5 +1,5 @@
 import { Member } from "@/types/member";
-import { NEXT_PUBLIC_API_URL } from "src/env";
+import { NEXTAUTH_URL } from "src/env";
 
 export interface MemberServiceInterface {
   base_url: string;
@@ -7,7 +7,7 @@ export interface MemberServiceInterface {
 }
 
 export class MemberService implements MemberServiceInterface {
-  base_url: string = NEXT_PUBLIC_API_URL + '/api';
+  base_url: string = NEXTAUTH_URL + '/api';
 
   async getMembers(): Promise<Member[]> {
     const response = await fetch(`${this.base_url}/members`);
