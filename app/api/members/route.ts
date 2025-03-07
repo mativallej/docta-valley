@@ -19,7 +19,7 @@ const members: Member[] = [
     id: '2',
     name: 'Lucas Nasich',
     communityRole: 'founder',
-    bio: '🇦🇷 Co-Founder at @DoctaValley | 🚀 CEO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
+    bio: '🚀 CEO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
     image: '/members/member_02.jpg',
     links: {
       twitter: 'https://twitter.com/lucasnasich',
