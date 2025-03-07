@@ -4,6 +4,35 @@ import { CommunityStartup } from '@/types/startup';
 const communityStartups: CommunityStartup[] = [
   {
     id: '1',
+    name: 'Curval',
+    image: '/placeholder.svg?height=80&width=80',
+    location: 'Córdoba, Argentina',
+    description: 'Plataforma de estudio all-in-one con IA que transforma notas y materiales en repasos espaciados, flashcards inteligentes y autoevaluaciones adaptativas.',
+    status: 'launched',
+    launchDate: '2025-02-05',
+    founders: [
+      {
+        id: '1',
+        name: 'Lucas Nasich',
+        image: '/placeholder.svg',
+      },
+      {
+        id: '2',
+        name: 'Carla Palmieri',
+        image: '/placeholder.svg',
+      },
+    ],
+    category: { id: 1, label: 'EdTech' },
+    tags: ['AI', 'Productivity', 'Education'],
+    links: {
+      website: 'https://curval.io/',
+      github: 'https://github.com/techcba',
+    },
+    teamSize: '1-10',
+    funding: 'Bootstrapped',
+  },
+  {
+    id: '2',
     name: 'TechCba',
     image: '/placeholder.svg?height=80&width=80',
     location: 'Córdoba, Argentina',
@@ -12,42 +41,41 @@ const communityStartups: CommunityStartup[] = [
     launchDate: '2020-01-01',
     founders: [
       {
-        id: '1',
+        id: '3',
         name: 'Laura Gómez',
         image: '/placeholder.svg',
       },
       {
-        id: '2',
+        id: '4',
         name: 'Martín Rodríguez',
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 1, label: 'HR Tech' },
+    category: { id: 2, label: 'HR Tech' },
     tags: ['Recruitment', 'Tech Talent', 'Remote Work'],
     links: {
       website: 'https://techcba.com',
       github: 'https://github.com/techcba',
     },
     teamSize: '11-50',
-    funding: 'Seed - $50  0K',
+    funding: 'Seed - $500K',
   },
   {
-    id: '2',
+    id: '3',
     name: 'DataSur',
     image: '/placeholder.svg?height=80&width=80',
     location: 'Córdoba, Argentina',
-    description:
-      'Soluciones de análisis de datos para empresas latinoamericanas, enfocadas en optimización de procesos y toma de decisiones.',
+    description: 'Soluciones de análisis de datos para empresas latinoamericanas, enfocadas en optimización de procesos y toma de decisiones.',
     status: 'development',
     launchDate: '2021-01-01',
     founders: [
       {
-        id: '3',
+        id: '5',
         name: 'Carolina Pérez',
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 2, label: 'Data Analytics' },
+    category: { id: 3, label: 'Data Analytics' },
     tags: ['Big Data', 'Business Intelligence', 'AI'],
     links: {
       website: 'https://datasur.io',
@@ -57,22 +85,21 @@ const communityStartups: CommunityStartup[] = [
     funding: 'Pre-seed - $150K',
   },
   {
-    id: '3',
+    id: '4',
     name: 'FinTechCba',
     image: '/placeholder.svg?height=80&width=80',
     location: 'Córdoba, Argentina',
-    description:
-      'Soluciones financieras innovadoras para pequeñas empresas y emprendedores, facilitando el acceso a créditos y gestión financiera.',
+    description: 'Soluciones financieras para pequeñas empresas y emprendedores, facilitando acceso a créditos y gestión financiera.',
     status: 'idea',
     launchDate: '2019-01-01',
     founders: [
       {
-        id: '4',
+        id: '6',
         name: 'Alejandro Suárez',
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 3, label: 'Fintech' },
+    category: { id: 4, label: 'Fintech' },
     tags: ['Payments', 'SME Lending', 'Financial Inclusion'],
     links: {
       website: 'https://fintechcba.com',
@@ -82,27 +109,26 @@ const communityStartups: CommunityStartup[] = [
     funding: 'Series A - $2M',
   },
   {
-    id: '4',
+    id: '5',
     name: 'HealthTech',
     image: '/placeholder.svg?height=80&width=80',
     location: 'Córdoba, Argentina',
-    description:
-      'Plataforma de telemedicina que conecta pacientes con profesionales de la salud, facilitando consultas remotas y seguimiento de tratamientos.',
+    description: 'Plataforma de telemedicina que conecta pacientes con profesionales de la salud para consultas remotas.',
     status: 'launched',
     launchDate: '2022-01-01',
     founders: [
       {
-        id: '5',
+        id: '7',
         name: 'Valeria Torres',
         image: '/placeholder.svg',
       },
       {
-        id: '6',
+        id: '8',
         name: 'Diego Fernández',
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 4, label: 'Health Tech' },
+    category: { id: 5, label: 'Health Tech' },
     tags: ['Telemedicine', 'Healthcare', 'Remote Care'],
     links: {
       website: 'https://healthtech.ar',
@@ -112,22 +138,21 @@ const communityStartups: CommunityStartup[] = [
     funding: 'Bootstrapped',
   },
   {
-    id: '5',
+    id: '6',
     name: 'EduCordoba',
     image: '/placeholder.svg?height=80&width=80',
     location: 'Buenos Aires, Argentina',
-    description:
-      'Plataforma educativa que democratiza el acceso a educación de calidad, con foco en habilidades digitales y tecnológicas.',
+    description: 'Plataforma educativa que democratiza el acceso a educación de calidad, con foco en habilidades digitales.',
     status: 'development',
     launchDate: '2021-01-01',
     founders: [
       {
-        id: '7',
+        id: '9',
         name: 'Carolina Pérez',
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 5, label: 'EdTech' },
+    category: { id: 6, label: 'EdTech' },
     tags: ['Online Learning', 'Tech Skills', 'Education'],
     links: {
       website: 'https://educordoba.com',
@@ -137,27 +162,26 @@ const communityStartups: CommunityStartup[] = [
     funding: 'Angel - $100K',
   },
   {
-    id: '6',
+    id: '7',
     name: 'AgriTechCba',
     image: '/placeholder.svg?height=80&width=80',
     location: 'Catamarca, Argentina',
-    description:
-      'Soluciones tecnológicas para el sector agrícola, optimizando procesos y aumentando la productividad mediante IoT y análisis de datos.',
+    description: 'Soluciones tecnológicas para el sector agrícola, optimizando procesos con IoT y análisis de datos.',
     status: 'launched',
     launchDate: '2018-01-01',
     founders: [
       {
-        id: '8',
+        id: '10',
         name: 'Diego Fernández',
         image: '/placeholder.svg',
       },
       {
-        id: '9',
+        id: '11',
         name: 'Alejandro Suárez',
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 6, label: 'AgTech' },
+    category: { id: 7, label: 'AgTech' },
     tags: ['IoT', 'Agriculture', 'Sustainability'],
     links: {
       website: 'https://agritechcba.com',
@@ -167,7 +191,7 @@ const communityStartups: CommunityStartup[] = [
     funding: 'Series A - $1.5M',
   },
   {
-    id: '7',
+    id: '8',
     name: 'EcoTech',
     image: '/placeholder.svg?height=80&width=80',
     location: 'Santa Fe, Argentina',
@@ -176,12 +200,12 @@ const communityStartups: CommunityStartup[] = [
     launchDate: '2023-01-01',
     founders: [
       {
-        id: '10',
+        id: '12',
         name: 'María González',
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 7, label: 'CleanTech' },
+    category: { id: 8, label: 'CleanTech' },
     tags: ['Sustainability', 'Renewable Energy', 'Waste Management'],
     links: {
       website: 'https://ecotech.com',
@@ -189,45 +213,6 @@ const communityStartups: CommunityStartup[] = [
     },
     teamSize: '1-10',
     funding: 'Pre-seed - $50K',
-  },
-  {
-    id: '8',
-    name: 'AI Solutions',
-    image: '/placeholder.svg?height=80&width=80',
-    location: 'Mendoza, Argentina',
-    description: 'Plataforma de inteligencia artificial para automatización de procesos empresariales.',
-    status: 'development',
-    launchDate: '2023-06-01',
-    founders: [
-      {
-        id: '11',
-        name: 'Carlos Ruiz',
-        image: '/placeholder.svg',
-      },
-      {
-        id: '12',
-        name: 'Ana Torres',
-        image: '/placeholder.svg',
-      },
-      {
-        id: '13',
-        name: 'Juan Pérez',
-        image: '/placeholder.svg',
-      },
-      {
-        id: '14',
-        name: 'Laura Gómez',
-        image: '/placeholder.svg',
-      },
-    ],
-    category: { id: 8, label: 'AI/ML' },
-    tags: ['Artificial Intelligence', 'Automation', 'Machine Learning'],
-    links: {
-      website: 'https://aisolutions.com',
-      github: 'https://github.com/aisolutions',
-    },
-    teamSize: '1-10',
-    funding: 'Seed - $300K',
   },
 ];
 
