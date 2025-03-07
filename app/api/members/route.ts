@@ -39,7 +39,43 @@ const members: Member[] = [
       website: 'https://curval.io'
     },
   },
+  {
+    id: '4',
+    name: 'Leandro Pisaroni',
+    communityRole: 'member',
+    bio: '💰 Investor & Partner at Kalei Ventures | 🌎 Córdoba, Argentina',
+    image: '/members/member_04.jpg',
+    links: {
+      twitter: 'https://twitter.com/nanopisaroni',
+      linkedin: 'https://www.linkedin.com/in/leandropisaroni/',
+      website: 'https://www.kaleiventures.com/'
+    },
+  },
+  {
+    id: '5',
+    name: 'Sebastián Rinaldi',
+    communityRole: 'member',
+    bio: '🤖 Founder at Laburen | AI & Data Science | 🌎 Córdoba, Argentina',
+    image: '/members/member_05.jpg',
+    links: {
+      twitter: 'https://twitter.com/ssebita_r',
+      linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
+      website: 'https://laburen.com'
+    },
+  },
+  {
+    id: '6',
+    name: 'Luciano Juarez',
+    communityRole: 'member',
+    bio: '🤖 Founder at Botix | 🌎 Córdoba, Argentina',
+    image: '/members/member_06.jpg',
+    links: {
+      twitter: 'https://twitter.com/juarezlucianoa',
+      linkedin: 'https://www.linkedin.com/in/juarez-luciano/'
+    },
+  },
 ];
+
 
 export async function GET() {
   return NextResponse.json({ members });
