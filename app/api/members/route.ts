@@ -19,10 +19,11 @@ const members: Member[] = [
     id: '2',
     name: 'Lucas Nasich',
     communityRole: 'founder',
-    bio: '🇦🇷 Founder of @CurvalApp & @DoctaValley | Building in Córdoba, Argentina',
+    bio: '🇦🇷 Co-Founder at @DoctaValley | 🚀 CEO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
     image: '/members/member_02.jpg',
     links: {
       twitter: 'https://twitter.com/lucasnasich',
+      linkedin: 'https://linkedin.com/in/lucasnasich',
       website: 'https://curval.io'
     },
   },
@@ -30,13 +31,12 @@ const members: Member[] = [
     id: '3',
     name: 'Carla Palmieri',
     communityRole: 'member',
-    bio: '🇦🇷 Carla Palmieri is a software engineer with a passion for building products that help people live healthier lives.',
+    bio: '🚀 CTO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
     image: '/members/member_03.jpg',
     links: {
-      twitter: 'https://twitter.com/carlapalmieri',
-      linkedin: 'https://linkedin.com/in/carlapalmieri',
-      github: 'https://github.com/carlapalmieri',
-      website: 'https://carlapalmieri.com',
+      twitter: 'https://twitter.com/Carly23p',
+      linkedin: 'https://linkedin.com/in/carla-palmieri',
+      website: 'https://curval.io'
     },
   },
 ];
