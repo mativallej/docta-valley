@@ -2,7 +2,7 @@ export interface CommunityStartup {
   id: string;
   name: string;
   description: string;
-  image: string;
+  image_url: string;
   status: 'idea' | 'development' | 'launched';
   links: {
     website?: string;
@@ -27,12 +27,8 @@ export interface CommunityStartup {
 export interface Founder {
   id: string;
   name: string;
-  image: string;
-  linkedin?: string;
-  twitter?: string;
-  github?: string;
-  instagram?: string;
-  role?: string;
+  image_url: string;
+  linkedin: string;
 }
 
 export interface StartupCategory {

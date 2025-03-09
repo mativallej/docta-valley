@@ -7,7 +7,7 @@ const members: Member[] = [
     name: 'Matias Vallejos',
     role: 'founder',
     bio: 'Founder @DoctaValley | Full Stack Dev @ megatone.net | 🚀 Cloud & Product',
-    image: '/members/member_01.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1886073142549848064/3u1mDvK3_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/mativallejosdev',
       linkedin: 'https://linkedin.com/in/matiasvallejos',
@@ -20,7 +20,7 @@ const members: Member[] = [
     name: 'Lucas Nasich',
     role: 'founder',
     bio: '🚀 CEO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
-    image: '/members/member_02.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/lucasnasich',
       linkedin: 'https://linkedin.com/in/lucasnasich',
@@ -32,7 +32,7 @@ const members: Member[] = [
     name: 'Carla Palmieri',
     role: 'member',
     bio: '🚀 CTO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
-    image: '/members/member_03.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1762579024558034944/pALCXx8V_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/Carly23p',
       linkedin: 'https://linkedin.com/in/carla-palmieri',
@@ -44,7 +44,7 @@ const members: Member[] = [
     name: 'Leandro Pisaroni',
     role: 'member',
     bio: '💰 Investor & Partner at Kalei Ventures | 🌎 Córdoba, Argentina',
-    image: '/members/member_04.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1620429154410717187/s5kBAYq0_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/nanopisaroni',
       linkedin: 'https://www.linkedin.com/in/leandropisaroni/',
@@ -56,7 +56,7 @@ const members: Member[] = [
     name: 'Sebastián Rinaldi',
     role: 'member',
     bio: '🤖 Founder at Laburen | AI & Data Science | 🌎 Córdoba, Argentina',
-    image: '/members/member_05.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/ssebita_r',
       linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
@@ -68,7 +68,7 @@ const members: Member[] = [
     name: 'Luciano Juarez',
     role: 'member',
     bio: '🤖 Founder at Botix | 🌎 Córdoba, Argentina',
-    image: '/members/member_06.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1617758779935694848/8QRvDkGH_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/juarezlucianoa',
       linkedin: 'https://www.linkedin.com/in/juarez-luciano/'

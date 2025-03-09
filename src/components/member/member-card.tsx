@@ -30,13 +30,29 @@ export default function MemberCard({ member, index }: MemberProps) {
       
       <div className="flex flex-col items-center justify-between rounded-md p-6 h-full space-y-4">
         <div className="relative h-32 w-32 overflow-hidden rounded-full">
-          <Image 
-            src={member.image || "/placeholder.svg"} 
-            alt={member.name} 
-            fill 
-            sizes="(max-width: 128px) 100vw, 128px"
-            className="object-cover" 
-          />
+          {member.image_url.startsWith('http') ? (
+            <div className="relative h-full w-full">
+              <Image 
+                src="/placeholder.svg" 
+                alt={member.name} 
+                fill 
+                sizes="(max-width: 128px) 100vw, 128px"
+                className="object-cover"
+              />
+              <div 
+                className="absolute inset-0 bg-cover bg-center" 
+                style={{ backgroundImage: `url(${member.image_url})` }}
+              />
+            </div>
+          ) : (
+            <Image 
+              src={member.image_url || "/placeholder.svg"} 
+              alt={member.name} 
+              fill 
+              sizes="(max-width: 128px) 100vw, 128px"
+              className="object-cover" 
+            />
+          )}
         </div>
         
         <div className="flex-1 flex flex-col items-center justify-center">

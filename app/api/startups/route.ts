@@ -5,7 +5,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '1',
     name: 'Curval',
-    image: '/placeholder.svg?height=80&width=80',
+    image_url: 'https://framerusercontent.com/assets/ytMvGLMkCKxXHA4T4cpl5IYi4.png',
     location: 'Córdoba, Argentina',
     description: 'Plataforma de estudio all-in-one con IA que transforma notas y materiales en repasos espaciados, flashcards inteligentes y autoevaluaciones adaptativas.',
     status: 'launched',
@@ -14,12 +14,14 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '1',
         name: 'Lucas Nasich',
-        image: '/placeholder.svg',
+        image_url: 'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
+        linkedin: 'https://www.linkedin.com/in/lucasnasich/',
       },
       {
         id: '2',
         name: 'Carla Palmieri',
-        image: '/placeholder.svg',
+        image_url: 'https://pbs.twimg.com/profile_images/1762579024558034944/pALCXx8V_400x400.jpg',
+        linkedin: 'https://www.linkedin.com/in/carla-palmieri/',
       },
     ],
     category: { id: 1, label: 'EdTech', emoji: '📚' },
@@ -34,7 +36,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '2',
     name: 'TechCba',
-    image: '/placeholder.svg?height=80&width=80',
+    image_url: '/placeholder.svg?height=80&width=80',
     location: 'Córdoba, Argentina',
     description: 'Plataforma para conectar talento tech en Córdoba con empresas locales e internacionales.',
     status: 'launched',
@@ -43,12 +45,14 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '3',
         name: 'Laura Gómez',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/laura-gomez-730b1b1b0/',
       },
       {
         id: '4',
         name: 'Martín Rodríguez',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/martin-rodriguez-730b1b1b0/',
       },
     ],
     category: { id: 2, label: 'HR Tech', emoji: '👥' },
@@ -63,7 +67,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '3',
     name: 'DataSur',
-    image: '/placeholder.svg?height=80&width=80',
+    image_url: '/placeholder.svg?height=80&width=80',
     location: 'Córdoba, Argentina',
     description: 'Soluciones de análisis de datos para empresas latinoamericanas, enfocadas en optimización de procesos y toma de decisiones.',
     status: 'development',
@@ -72,7 +76,8 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '5',
         name: 'Carolina Pérez',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/carolina-perez-730b1b1b0/',
       },
     ],
     category: { id: 3, label: 'Data Analytics', emoji: '📊' },
@@ -87,7 +92,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '4',
     name: 'FinTechCba',
-    image: '/placeholder.svg?height=80&width=80',
+    image_url: '/placeholder.svg?height=80&width=80',
     location: 'Córdoba, Argentina',
     description: 'Soluciones financieras para pequeñas empresas y emprendedores, facilitando acceso a créditos y gestión financiera.',
     status: 'idea',
@@ -96,7 +101,8 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '6',
         name: 'Alejandro Suárez',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/alejandro-suarez-730b1b1b0/',
       },
     ],
     category: { id: 4, label: 'Fintech', emoji: '💰' },
@@ -111,7 +117,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '5',
     name: 'HealthTech',
-    image: '/placeholder.svg?height=80&width=80',
+    image_url: '/placeholder.svg?height=80&width=80',
     location: 'Córdoba, Argentina',
     description: 'Plataforma de telemedicina que conecta pacientes con profesionales de la salud para consultas remotas.',
     status: 'launched',
@@ -120,12 +126,14 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '7',
         name: 'Valeria Torres',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/valeria-torres-730b1b1b0/',
       },
       {
         id: '8',
         name: 'Diego Fernández',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/diego-fernandez-730b1b1b0/',
       },
     ],
     category: { id: 5, label: 'Health Tech', emoji: '🏥' },
@@ -140,7 +148,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '6',
     name: 'EduCordoba',
-    image: '/placeholder.svg?height=80&width=80',
+    image_url: '/placeholder.svg?height=80&width=80',
     location: 'Buenos Aires, Argentina',
     description: 'Plataforma educativa que democratiza el acceso a educación de calidad, con foco en habilidades digitales.',
     status: 'development',
@@ -149,7 +157,8 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '9',
         name: 'Carolina Pérez',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/carolina-perez-730b1b1b0/',
       },
     ],
     category: { id: 6, label: 'EdTech', emoji: '📚' },
@@ -164,7 +173,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '7',
     name: 'AgriTechCba',
-    image: '/placeholder.svg?height=80&width=80',
+    image_url: '/placeholder.svg?height=80&width=80',
     location: 'Catamarca, Argentina',
     description: 'Soluciones tecnológicas para el sector agrícola, optimizando procesos con IoT y análisis de datos.',
     status: 'launched',
@@ -173,12 +182,14 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '10',
         name: 'Diego Fernández',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/diego-fernandez-730b1b1b0/',
       },
       {
         id: '11',
         name: 'Alejandro Suárez',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/alejandro-suarez-730b1b1b0/',
       },
     ],
     category: { id: 7, label: 'AgTech', emoji: '🌾' },
@@ -193,7 +204,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '8',
     name: 'EcoTech',
-    image: '/placeholder.svg?height=80&width=80',
+    image_url: '/placeholder.svg?height=80&width=80',
     location: 'Santa Fe, Argentina',
     description: 'Soluciones sostenibles para la gestión de residuos y energía renovable en empresas.',
     status: 'idea',
@@ -202,7 +213,8 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '12',
         name: 'María González',
-        image: '/placeholder.svg',
+        image_url: '/placeholder.svg',
+        linkedin: 'https://www.linkedin.com/in/maria-gonzalez-730b1b1b0/',
       },
     ],
     category: { id: 8, label: 'CleanTech', emoji: '♻️' },

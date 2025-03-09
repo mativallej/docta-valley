@@ -8,7 +8,7 @@ export interface Member {
   name: string;
   role: string;
   bio: string;
-  image: string;
+  image_url: string;
   links: {
     twitter?: string;
     linkedin?: string;

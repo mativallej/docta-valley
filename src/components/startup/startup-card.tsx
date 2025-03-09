@@ -58,20 +58,20 @@ export function StartupCard({ startup, index }: { startup: CommunityStartup; ind
   const StatusIcon = startup.status ? statusIcons[startup.status] : null;
 
   return (
-    <Link href={`${startup.links.website}`} className="block w-full h-full" target="_blank">
-      <motion.div
-        ref={divRef}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: index * 0.1 }}
-        onMouseMove={handleMouseMove}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        className="group relative rounded-lg border bg-background p-6 h-full w-full"
-      >
+    <motion.div
+      ref={divRef}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      onMouseMove={handleMouseMove}
+      onFocus={handleFocus}
+      onBlur={handleBlur}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="group relative rounded-lg border bg-background p-6 h-full w-full"
+    >
+      <Link href={`${startup.links.website}`} className="block w-full h-full" target="_blank">
         <input
           aria-hidden="true"
           className="pointer-events-none absolute left-0 top-0 z-10 h-full w-full cursor-default rounded-lg border border-black/50 dark:border-white/50 transition-opacity duration-500 placeholder:select-none"
@@ -101,10 +101,11 @@ export function StartupCard({ startup, index }: { startup: CommunityStartup; ind
             <div className="flex gap-4 mb-3 w-full">
               <div className="relative w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden">
                 <Image 
-                  src={startup.image || '/placeholder.svg'} 
+                  src={startup.image_url || '/placeholder.svg'} 
                   alt={startup.name} 
                   fill
-                  className="object-cover" 
+                  className="object-cover"
+                  unoptimized={startup.image_url.startsWith('http')}
                 />
               </div>
               <div className="flex-1">
@@ -148,13 +149,13 @@ export function StartupCard({ startup, index }: { startup: CommunityStartup; ind
               )}
             </div>
           </div>
-          
-          {/* Founders in absolute position at bottom right */}
-          {startup.founders && startup.founders.length > 0 && (
-            <StartupFounders founders={startup.founders} />
-          )}
         </div>
-      </motion.div>
-    </Link>
+      </Link>
+      
+      {/* Founders in absolute position at bottom right */}
+      {startup.founders && startup.founders.length > 0 && (
+        <StartupFounders founders={startup.founders} />
+      )}
+    </motion.div>
   );
 }

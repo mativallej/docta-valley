@@ -1,5 +1,4 @@
 "use client"
-
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
@@ -13,12 +12,20 @@ import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { SunIcon, MoonIcon } from "lucide-react"
 import { navItems } from "@/data/layout"
+import { useEffect, useState } from "react"
 
 
 export default function Header() {
   const pathname = usePathname()
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false)
   const isAuthPage = pathname === "/signin" || pathname === "/register"
+  
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const ThemeIcon = mounted ? (theme === "light" ? SunIcon : MoonIcon) : SunIcon
   
   return (
     <motion.header
@@ -58,13 +65,7 @@ export default function Header() {
               size="icon" 
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
-              {theme ? theme === "light" ? (
-                <SunIcon className="h-4 w-4 md:h-5 md:w-5" />
-              ) : (
-                <MoonIcon className="h-4 w-4 md:h-5 md:w-5" />
-              ) : (
-                <SunIcon className="h-4 w-4 md:h-5 md:w-5" />
-              )}
+              <ThemeIcon className="h-4 w-4 md:h-5 md:w-5" />
             </Button>
             <Button size="sm" className="px-3 md:px-4" asChild>
               <Link href="https://tally.so/r/3ENKPX" target="_blank" rel="noopener noreferrer">Unirse</Link>
