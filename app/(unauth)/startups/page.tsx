@@ -7,11 +7,13 @@ import { StartupList } from "@/components/startup/startup-list"
 import { FilterBar } from "@/components/startup/filter-bar"
 import { SearchFilterBar } from "@/components/startup/search-filter-bar"
 import { StartupsProvider, useStartups } from "@/context/startups-context"
+import { useStartupsActions } from "@/hooks/use-startups-actions"
 import { CommunityStartup } from "@/types/startup"
 
 // Wrapper component that uses the context
 function StartupsPageContent() {
-  const { state, dispatch } = useStartups()
+  const { state } = useStartups()
+  const { setSearchTerm, setCategory, setFilter, clearFilters } = useStartupsActions()
 
   // Extract unique locations and funding stages from startups
   const locations = Array.from(new Set(
@@ -27,22 +29,19 @@ function StartupsPageContent() {
   ));
 
   const handleSearchChange = (value: string) => {
-    dispatch({ type: "SET_SEARCH_TERM", payload: value })
+    setSearchTerm(value)
   }
 
   const handleCategoryChange = (category: string) => {
-    dispatch({ type: "SET_CATEGORY", payload: category })
+    setCategory(category)
   }
 
   const handleFilterChange = (filterType: string, value: string) => {
-    dispatch({
-      type: "SET_FILTER",
-      payload: { filterType, value },
-    })
+    setFilter(filterType, value)
   }
 
   const handleClearFilters = () => {
-    dispatch({ type: "CLEAR_FILTERS" })
+    clearFilters()
   }
 
   return (
@@ -125,7 +124,7 @@ function StartupsPageContent() {
             ))}
           </div>
         ) : (
-          <StartupList startups={state.filteredStartups} />
+          <StartupList />
         )}
       </div>
     </div>

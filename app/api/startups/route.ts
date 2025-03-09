@@ -22,7 +22,7 @@ const communityStartups: CommunityStartup[] = [
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 1, label: 'EdTech' },
+    category: { id: 1, label: 'EdTech', emoji: '📚' },
     tags: ['AI', 'Productivity', 'Education'],
     links: {
       website: 'https://curval.io/',
@@ -51,7 +51,7 @@ const communityStartups: CommunityStartup[] = [
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 2, label: 'HR Tech' },
+    category: { id: 2, label: 'HR Tech', emoji: '👥' },
     tags: ['Recruitment', 'Tech Talent', 'Remote Work'],
     links: {
       website: 'https://techcba.com',
@@ -75,7 +75,7 @@ const communityStartups: CommunityStartup[] = [
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 3, label: 'Data Analytics' },
+    category: { id: 3, label: 'Data Analytics', emoji: '📊' },
     tags: ['Big Data', 'Business Intelligence', 'AI'],
     links: {
       website: 'https://datasur.io',
@@ -99,7 +99,7 @@ const communityStartups: CommunityStartup[] = [
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 4, label: 'Fintech' },
+    category: { id: 4, label: 'Fintech', emoji: '💰' },
     tags: ['Payments', 'SME Lending', 'Financial Inclusion'],
     links: {
       website: 'https://fintechcba.com',
@@ -128,7 +128,7 @@ const communityStartups: CommunityStartup[] = [
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 5, label: 'Health Tech' },
+    category: { id: 5, label: 'Health Tech', emoji: '🏥' },
     tags: ['Telemedicine', 'Healthcare', 'Remote Care'],
     links: {
       website: 'https://healthtech.ar',
@@ -152,7 +152,7 @@ const communityStartups: CommunityStartup[] = [
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 6, label: 'EdTech' },
+    category: { id: 6, label: 'EdTech', emoji: '📚' },
     tags: ['Online Learning', 'Tech Skills', 'Education'],
     links: {
       website: 'https://educordoba.com',
@@ -181,8 +181,8 @@ const communityStartups: CommunityStartup[] = [
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 7, label: 'AgTech' },
-    tags: ['IoT', 'Agriculture', 'Sustainability'],
+    category: { id: 7, label: 'AgTech', emoji: '🌾' },
+      tags: ['IoT', 'Agriculture', 'Sustainability'],
     links: {
       website: 'https://agritechcba.com',
       github: 'https://github.com/agritechcba',
@@ -205,7 +205,7 @@ const communityStartups: CommunityStartup[] = [
         image: '/placeholder.svg',
       },
     ],
-    category: { id: 8, label: 'CleanTech' },
+    category: { id: 8, label: 'CleanTech', emoji: '♻️' },
     tags: ['Sustainability', 'Renewable Energy', 'Waste Management'],
     links: {
       website: 'https://ecotech.com',

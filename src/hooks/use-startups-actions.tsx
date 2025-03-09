@@ -1,6 +1,5 @@
 "use client"
-
-import { useStartups } from "@/contexts/startups-context"
+import { useStartups } from "@/context/startups-context"
 import type { CommunityStartup } from "@/types/startup"
 
 // Custom hook to provide actions for the startups context
@@ -9,6 +8,10 @@ export function useStartupsActions() {
 
   const setSearchTerm = (searchTerm: string) => {
     dispatch({ type: "SET_SEARCH_TERM", payload: searchTerm })
+  }
+
+  const setCategory = (category: string) => {
+    dispatch({ type: "SET_CATEGORY", payload: category })
   }
 
   const setFilter = (filterType: string, value: string) => {
@@ -28,6 +31,7 @@ export function useStartupsActions() {
 
   return {
     setSearchTerm,
+    setCategory,
     setFilter,
     clearFilters,
     selectStartup,
