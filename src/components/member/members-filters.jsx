@@ -93,7 +93,7 @@ export default function MembersFilters() {
 
               {/* Role filter */}
               <div className="space-y-2 sm:space-y-3">
-                <h5 className="font-medium text-sm sm:text-base">Rol</h5>
+                <h5 className="font-medium text-sm sm:text-base">Rol en Docta Valley</h5>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {roleOptions.map((role) => (
                     <Badge

@@ -48,14 +48,15 @@ export const socialItems: SocialItem[] = [
 ]
 
 export const startupCategories: StartupCategory[] = [
-    { id: 1, label: 'HR Tech', emoji: '👥' },
-    { id: 2, label: 'Data Analytics', emoji: '📊' },
-    { id: 3, label: 'Fintech', emoji: '💰' },
-    { id: 4, label: 'Health Tech', emoji: '🏥' },
-    { id: 5, label: 'EdTech', emoji: '📚' },
+    { id: 1, label: 'EdTech', emoji: '📚' },
+    { id: 2, label: 'HR Tech', emoji: '👥' },
+    { id: 3, label: 'Data Analytics', emoji: '📊' },
+    { id: 4, label: 'Fintech', emoji: '💰' },
+    { id: 5, label: 'Health Tech', emoji: '🏥' },
     { id: 6, label: 'AgTech', emoji: '🌾' },
     { id: 7, label: 'CleanTech', emoji: '🌱' },
     { id: 8, label: 'AI/ML', emoji: '🤖' },
+    { id: 9, label: 'Other', emoji: '🌟' },
 ]
 
 export interface FilterOption {
