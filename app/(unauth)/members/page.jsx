@@ -1,10 +1,69 @@
-import Proximamente from "@/features/proximamente";
+import { MembersProvider } from "@/context/members-context";
+import MembersContent from "@/components/member/members-content";
+import Link from "next/link";
+import { ArrowLeft, Plus } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "Startups | Docta Valley",
-  description: "Descubre las startups más innovadoras de Córdoba en Docta Valley.",
+  title: "Miembros | Docta Valley",
+  description: "Conoce a los miembros de la comunidad Docta Valley.",
 };
 
-export default function StartupsPage() {
-  return <Proximamente />;
+export default function MembersPage() {
+  return (
+    <MembersProvider>
+      <div className="min-h-screen bg-background">
+        <div className="max-w-7xl mx-auto px-4 py-8 md:px-6">
+          {/* Title section with navigation */}
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8 md:mb-10">
+            {/* Mobile navigation buttons */}
+            <div className="w-full flex justify-between sm:hidden mb-4">
+              <Link href="/">
+                <Button variant="ghost" size="lg" className="flex items-center gap-2">
+                  <ArrowLeft className="h-4 w-4" />
+                  Inicio
+                </Button>
+              </Link>
+              <Link href="https://tally.so/r/3ENKPX" target="_blank">
+                <Button size="lg" variant="outline">
+                  <Plus className="mr-2 h-4 w-4" /> Forma parte
+                </Button>
+              </Link>
+            </div>
+
+            {/* Desktop home button */}
+            <div className="hidden sm:block sm:w-auto order-none">
+              <Link href="/">
+                <Button variant="ghost" size="lg" className="flex items-center gap-2">
+                  <ArrowLeft className="h-4 w-4" />
+                  Inicio
+                </Button>
+              </Link>
+            </div>
+
+            {/* Title */}
+            <div className="w-full text-center order-0 sm:order-none">
+              <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Miembros de Docta 🇦🇷
+              </h1>
+            </div>
+
+            {/* Desktop join button */}
+            <div className="hidden sm:block sm:w-auto">
+              <Link href="https://tally.so/r/3ENKPX" target="_blank">
+                <Button size="lg">
+                  <Plus className="mr-2 h-4 w-4" /> Unirse a Docta
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="max-w-7xl mx-auto px-4 py-2 md:px-0">
+            <MembersContent className="grid grid-auto-rows-[1fr]" />
+          </div>
+        </div>
+      </div>
+    </MembersProvider>
+  );
 }

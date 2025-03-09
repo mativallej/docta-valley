@@ -74,3 +74,9 @@ export const teamSizeOptions: FilterOption[] = [
     { id: "medium", label: "11-50" },
     { id: "large", label: "50+" },
 ]
+
+export const roleOptions: FilterOption[] = [
+  { id: 'all', label: 'Todos' },
+  { id: 'member', label: 'Miembro' },
+  { id: 'founder', label: 'Fundador' }
+];

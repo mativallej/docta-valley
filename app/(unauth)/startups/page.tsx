@@ -63,7 +63,7 @@ function StartupsPageContent() {
               </Button>
             </Link>
             <Link href="mailto:doctavalley@gmail.com">
-              <Button size="lg" variant="outline">
+              <Button size="lg">
                 <Plus className="mr-2 h-4 w-4" /> Publica tu Startup
               </Button>
             </Link>
@@ -85,15 +85,14 @@ function StartupsPageContent() {
           
           <div className="w-full text-center order-0 sm:order-none">
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-              Descubre las mejores
-              <span className="whitespace-nowrap"> Startups de Docta 🇦🇷</span>
+              Startups de Docta 🇦🇷
             </h1>
           </div>
           
           {/* Desktop add startup button */}
           <div className="hidden sm:block sm:w-auto">
             <Link href="mailto:doctavalley@gmail.com">
-              <Button size="lg" variant="outline">
+              <Button size="lg">
                 <Plus className="mr-2 h-4 w-4" /> Publica tu Startup
               </Button>
             </Link>

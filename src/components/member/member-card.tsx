@@ -15,7 +15,7 @@ const cardAnimationVariants = {
   })
 }
 
-export function MemberCard({ member, index }: MemberProps) {
+export default function MemberCard({ member, index }: MemberProps) {
   return (
     <motion.div
       initial="hidden"
@@ -26,7 +26,7 @@ export function MemberCard({ member, index }: MemberProps) {
       className="group relative overflow-hidden rounded-lg border bg-background p-2"
     >
       {/* Role badge positioned in the corner */}
-      <CornerBadge role={member.communityRole} />
+      <CornerBadge role={member.role} />
       
       <div className="flex flex-col items-center justify-between rounded-md p-6">
         <div className="relative h-32 w-32 overflow-hidden rounded-full mb-4">

@@ -5,7 +5,7 @@ const members: Member[] = [
   {
     id: '1',
     name: 'Matias Vallejos',
-    communityRole: 'founder',
+    role: 'founder',
     bio: '💻 Crafting code, building ideas | 🚀 Cloud & Product Engineering | 🌎 Córdoba, Argentina',
     image: '/members/member_01.jpg',
     links: {
@@ -18,7 +18,7 @@ const members: Member[] = [
   {
     id: '2',
     name: 'Lucas Nasich',
-    communityRole: 'founder',
+    role: 'founder',
     bio: '🚀 CEO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
     image: '/members/member_02.jpg',
     links: {
@@ -30,7 +30,7 @@ const members: Member[] = [
   {
     id: '3',
     name: 'Carla Palmieri',
-    communityRole: 'member',
+    role: 'member',
     bio: '🚀 CTO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
     image: '/members/member_03.jpg',
     links: {
@@ -42,7 +42,7 @@ const members: Member[] = [
   {
     id: '4',
     name: 'Leandro Pisaroni',
-    communityRole: 'member',
+    role: 'member',
     bio: '💰 Investor & Partner at Kalei Ventures | 🌎 Córdoba, Argentina',
     image: '/members/member_04.jpg',
     links: {
@@ -54,7 +54,7 @@ const members: Member[] = [
   {
     id: '5',
     name: 'Sebastián Rinaldi',
-    communityRole: 'member',
+    role: 'member',
     bio: '🤖 Founder at Laburen | AI & Data Science | 🌎 Córdoba, Argentina',
     image: '/members/member_05.jpg',
     links: {
@@ -66,7 +66,7 @@ const members: Member[] = [
   {
     id: '6',
     name: 'Luciano Juarez',
-    communityRole: 'member',
+    role: 'member',
     bio: '🤖 Founder at Botix | 🌎 Córdoba, Argentina',
     image: '/members/member_06.jpg',
     links: {

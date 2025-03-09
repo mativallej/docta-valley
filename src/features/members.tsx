@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { MemberCard } from '@/components/member/member-card';
+import MemberCard from '@/components/member/member-card';
 import { MemberService } from '@/services/member-service';
 import type { Member } from '@/types/member';
 import Link from 'next/link';

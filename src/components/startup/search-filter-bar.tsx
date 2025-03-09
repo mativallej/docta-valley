@@ -76,13 +76,13 @@ export function SearchFilterBar({
     <div className="w-full space-y-3">
       <div className="relative w-full flex flex-col sm:flex-row gap-3">
         <div className="relative flex-1">
-          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <Search className="h-5 w-5 text-muted-foreground" />
+          <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+            <Search className="h-4 w-4 text-muted-foreground" />
           </div>
           <Input
             type="search"
             placeholder={placeholder}
-            className="pl-10 h-[48px] text-base border-2 focus-visible:ring-2 focus-visible:ring-offset-2 w-full"
+            className="pl-10 h-11 text-base w-full"
             value={inputValue}
             onChange={handleChange}
           />
@@ -91,11 +91,10 @@ export function SearchFilterBar({
         <Popover>
           <PopoverTrigger asChild>
             <Button 
-              variant={getActiveFilterCount() > 0 ? "default" : "outline"} 
-              size="lg" 
-              className="gap-2 h-[48px] w-full sm:w-[140px] border-2 justify-center"
+              variant={getActiveFilterCount() > 0 ? "default" : "outline"}
+              className="h-11 px-4 w-full sm:w-[180px] justify-center"
             >
-              <Filter className="h-5 w-5" />
+              <Filter className="h-4 w-4 mr-2" />
               <span>Filtros</span>
               {getActiveFilterCount() > 0 && (
                 <Badge variant="secondary" className="ml-1">

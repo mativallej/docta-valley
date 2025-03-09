@@ -6,7 +6,7 @@ export interface MemberProps {
 export interface Member {
   id: string;
   name: string;
-  communityRole: string;
+  role: string;
   bio: string;
   image: string;
   links: {
