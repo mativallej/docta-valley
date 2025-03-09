@@ -6,21 +6,11 @@ export default function Footer() {
   return (
     <footer className="border-t bg-background">
       <div className="container flex flex-col gap-10 py-16">
-        <div className="grid grid-cols-2 gap-12 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-12 md:grid-cols-3">
           <div className="flex flex-col gap-4">
             <h3 className="text-lg font-semibold">Docta Valley</h3>
             {
                 navItems.filter(item => item.showOnFooter).map((item) => (
-                    <Link key={item.href} href={item.href} className="text-sm text-muted-foreground hover:text-foreground">
-                    {item.label}
-                  </Link>
-                ))
-            }
-          </div>
-          <div className="flex flex-col gap-4">
-            <h3 className="text-lg font-semibold">Recursos</h3>
-            {
-                resourceItems.map((item) => (
                     <Link key={item.href} href={item.href} className="text-sm text-muted-foreground hover:text-foreground">
                     {item.label}
                   </Link>

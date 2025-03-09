@@ -38,7 +38,7 @@ export function MemberDetails({
       
       {showRoleBadge && (
         <div className="flex justify-center">
-          <RoleBadge role={member.communityRole} />
+          <RoleBadge role={member.role} />
         </div>
       )}
       

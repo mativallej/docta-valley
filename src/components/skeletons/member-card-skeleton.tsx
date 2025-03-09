@@ -29,20 +29,20 @@ export function MemberCardSkeleton({ index = 0 }: MemberCardSkeletonProps) {
       custom={index}
       variants={cardAnimationVariants}
       whileHover="hover"
-      className="group relative overflow-hidden rounded-lg border bg-background p-2"
+      className="group relative overflow-hidden rounded-lg border bg-background p-2 h-full"
     >
-      <div className="flex flex-col items-center justify-between rounded-md p-6">
+      <div className="flex flex-col items-center justify-between rounded-md p-6 h-full space-y-4">
         {/* Avatar skeleton */}
-        <div className="relative h-32 w-32 overflow-hidden rounded-full mb-4">
+        <div className="relative h-32 w-32 overflow-hidden rounded-full">
           <div className="absolute inset-0 bg-muted/80 animate-pulse" />
         </div>
         
         {/* Content skeleton */}
-        <div className="w-full space-y-3 text-center">
+        <div className="flex-1 flex flex-col items-center justify-center w-full space-y-3">
           {/* Name skeleton */}
-          <div className="h-6 w-3/4 mx-auto bg-muted/80 animate-pulse rounded" />
+          <div className="h-6 w-3/4 bg-muted/80 animate-pulse rounded" />
           {/* Role/description skeleton */}
-          <div className="h-4 w-1/2 mx-auto bg-muted/80 animate-pulse rounded" />
+          <div className="h-4 w-1/2 bg-muted/80 animate-pulse rounded" />
           {/* Social links skeleton */}
           <div className="flex justify-center space-x-2">
             {[...Array(4)].map((_, i) => (

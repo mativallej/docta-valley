@@ -33,7 +33,7 @@ export default function Home() {
           <Features />
           <div className="flex justify-center mt-6">
             <Button variant="ghost" size="lg" asChild>
-              <Link href="/about">Conocenos más...</Link>
+              <Link href="https://matiasvallejos.notion.site/Docta-Manifesto-1b1350b03b7f8067a946d5e991ad7aa5?pvs=4" target="_blank" rel="noopener noreferrer">Leer nuestro Manifesto 📜</Link>
             </Button>
           </div>
         </Section>
