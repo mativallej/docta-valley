@@ -50,8 +50,9 @@ export default function Header() {
             {navItems.filter((item) => item.showOnHeader).map((item) => (
               <NavigationMenuItem key={item.href}>
                 <Link href={item.href} legacyBehavior passHref>
-                  <NavigationMenuLink className="h-10 px-4 py-2">
-                    {item.label}
+                  <NavigationMenuLink className="flex items-center h-10 px-4 py-2 space-x-2">
+                    {item.icon && <span>{item.icon}</span>}
+                    <span>{item.label}</span>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>

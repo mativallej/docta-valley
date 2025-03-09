@@ -1,17 +1,19 @@
 import { StartupCategory } from "@/types/startup";
+import { Calendar, Info, User, Building2 } from "lucide-react";
 
 export interface NavItem {
   label: string;
   href: string;
   showOnHeader?: boolean;
   showOnFooter?: boolean;
+  icon?: React.ReactNode;
 }
 
 export const navItems: NavItem[] = [
-  { label: 'Miembros', href: '/#members', showOnHeader: true, showOnFooter: true },
-  { label: 'Startups', href: '/#startups', showOnHeader: true, showOnFooter: true },
-  { label: 'Eventos', href: '/#events', showOnHeader: true, showOnFooter: true },
-  { label: 'Sobre Nosotros', href: '/#about', showOnHeader: true, showOnFooter: true },
+  { label: 'Conócenos', href: '/#about', showOnHeader: true, showOnFooter: true, icon: <Info className="w-4 h-4" /> },
+  { label: 'Miembros', href: '/#members', showOnHeader: true, showOnFooter: true, icon: <User className="w-4 h-4" /> },
+  { label: 'Startups', href: '/#startups', showOnHeader: true, showOnFooter: true, icon: <Building2 className="w-4 h-4" /> },
+  { label: 'Eventos', href: '/#events', showOnHeader: true, showOnFooter: true, icon: <Calendar className="w-4 h-4" /> },
 ];
 
 export interface ResourceItem {
