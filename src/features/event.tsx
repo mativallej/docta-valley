@@ -1,7 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { EventsService } from "@/services/events-service"
 import { useState, useEffect } from "react"
 import type { Event } from "@/types/events"
@@ -11,6 +10,7 @@ import { EventCardSkeleton } from "@/components/skeletons/event-card-skeleton"
 export function Events() {
   const [communityEvents, setCommunityEvents] = useState<Event[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [showAllEvents, setShowAllEvents] = useState(false);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -18,15 +18,8 @@ export function Events() {
         const eventsService = new EventsService();
         const events = await eventsService.getEvents();
         
-        // Sort events: non-completed first, then by date
-        const sortedEvents = [...events].sort((a, b) => {
-          // First sort by completion status
-          if (a.completed !== b.completed) {
-            return a.completed ? 1 : -1;
-          }
-          // Then sort by date
-          return new Date(a.date).getTime() - new Date(b.date).getTime();
-        });
+        // Sort events by ID in descending order
+        const sortedEvents = [...events].sort((a, b) => b.id - a.id);
 
         setCommunityEvents(sortedEvents);
       } catch (error) {
@@ -58,16 +51,19 @@ export function Events() {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {communityEvents.slice(0, 3).map((event, index) => (
+      {(showAllEvents ? communityEvents : communityEvents.slice(0, 3)).map((event, index) => (
         <EventCard key={event.id} event={event} index={index} />
       ))}
       <div className="col-span-full flex justify-center mt-6">
-        <Button variant="ghost" asChild className="group">
-          <Link href="/events" className="flex items-center gap-2">
-            Ver todos los eventos
-            
+        <Button 
+          variant="ghost" 
+          onClick={() => setShowAllEvents(!showAllEvents)} 
+          className="group"
+        >
+          <span className="flex items-center gap-2">
+            {showAllEvents ? 'Ver menos eventos' : 'Ver todos los eventos'}
             <span className="transition-transform group-hover:translate-x-1">🎯</span>
-          </Link>
+          </span>
         </Button>
       </div>
     </div>

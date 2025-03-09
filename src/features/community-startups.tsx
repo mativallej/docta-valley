@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { TabsContent } from '@/components/ui/tabs';
 import { CommunityStartup } from '@/types/startup';
 import { StartupCardSkeleton } from '@/components/skeletons/startup-card-skeleton';
 import { StartupService } from '@/services/startups-service';
@@ -9,18 +8,18 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { StartupCategories } from '@/components/startup/startup-categories';
 
-function ShowMoreButton() {
+function ShowMoreButton({ showAll, setShowAll }: { showAll: boolean; setShowAll: (showAll: boolean) => void }) {
   return (
     <Link href="/startups">
       <Button variant="ghost">
-        Ver todas 🚀
+        {showAll ? 'Ver menos 🔍' : 'Ver todas las startups 🚀'}
       </Button>
     </Link>
   );
 }
 
 export function CommunityStartups() {
-  const [filter, setFilter] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('all');
   const [startups, setStartups] = useState<CommunityStartup[]>([]);
   const [loading, setLoading] = useState(true);
   const [showAll, setShowAll] = useState(false);
@@ -40,20 +39,27 @@ export function CommunityStartups() {
     fetchStartups();
   }, []);
 
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+  };
+
   const filteredStartups =
-    filter === 'all'
+    selectedCategory === 'all'
       ? startups.slice(0, showAll ? undefined : 6)
       : startups
           .filter(
             (startup) =>
-              startup.category?.id.toString() === filter ||
-              startup.tags?.some((tag) => tag.toLowerCase().includes(filter.toLowerCase())),
+              startup.category?.id.toString() === selectedCategory ||
+              startup.tags?.some((tag) => tag.toLowerCase().includes(selectedCategory.toLowerCase())),
           )
           .slice(0, showAll ? undefined : 6);
 
   return (
     <div className="space-y-8 w-full">
-      <StartupCategories onFilterChange={setFilter}>
+      <StartupCategories 
+        onFilterChange={handleCategoryChange}
+        selectedCategory={selectedCategory}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {loading
             ? [...Array(6)].map((_, index) => <StartupCardSkeleton key={index} />)
@@ -63,7 +69,7 @@ export function CommunityStartups() {
         </div>
         {!loading && startups.length > 6 && (
           <div className="flex justify-center mt-8">
-            <ShowMoreButton />
+            <ShowMoreButton showAll={showAll} setShowAll={setShowAll} />
           </div>
         )}
       </StartupCategories>

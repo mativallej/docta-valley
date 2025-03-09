@@ -3,21 +3,20 @@ import { startupCategories } from "@/data/layout"
 import { Badge } from "@/components/ui/badge"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
-interface StartupCategoriesProps {
-  onFilterChange: (value: string) => void;
-  selectedCategory: string;
-  children: React.ReactNode;
+interface FilterBarProps {
+  selectedCategory: string
+  onCategoryChange: (category: string) => void
 }
 
-export function StartupCategories({ onFilterChange, selectedCategory, children }: StartupCategoriesProps) {
+export function FilterBar({ selectedCategory, onCategoryChange }: FilterBarProps) {
   return (
-    <div className="w-full space-y-8">
-      <ScrollArea className="w-full pb-4">
-        <div className="flex flex-wrap gap-2">
+    <div className="w-full pt-4">
+      <ScrollArea className="pb-6">
+        <div className="flex flex-wrap gap-2 pb-2">
           <Badge
             variant={selectedCategory === "all" ? "default" : "outline"}
             className="cursor-pointer hover:opacity-75 transition-opacity text-sm"
-            onClick={() => onFilterChange("all")}
+            onClick={() => onCategoryChange("all")}
           >
             Todas
           </Badge>
@@ -26,15 +25,15 @@ export function StartupCategories({ onFilterChange, selectedCategory, children }
               key={category.id}
               variant={selectedCategory === category.id.toString() ? "default" : "outline"}
               className="cursor-pointer hover:opacity-75 transition-opacity flex items-center gap-2"
-              onClick={() => onFilterChange(category.id.toString())}
+              onClick={() => onCategoryChange(category.id.toString())}
             >
-              <span className="text-lg">{category.emoji}</span>
-              <span className="text-sm">{category.label}</span>
+              <span className="text-lg"> {category.emoji}</span>
+              <span className="text-sm"> {category.label}</span>
             </Badge>
           ))}
         </div>
       </ScrollArea>
-      {children}
     </div>
   )
 }
+

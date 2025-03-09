@@ -48,12 +48,29 @@ export const socialItems: SocialItem[] = [
 ]
 
 export const startupCategories: StartupCategory[] = [
-    { id: 1, label: 'HR Tech' },
-    { id: 2, label: 'Data Analytics' },
-    { id: 3, label: 'Fintech' },
-    { id: 4, label: 'Health Tech' },
-    { id: 5, label: 'EdTech' },
-    { id: 6, label: 'AgTech' },
-    { id: 7, label: 'CleanTech' },
-    { id: 8, label: 'AI/ML' },
+    { id: 1, label: 'HR Tech', emoji: '👥' },
+    { id: 2, label: 'Data Analytics', emoji: '📊' },
+    { id: 3, label: 'Fintech', emoji: '💰' },
+    { id: 4, label: 'Health Tech', emoji: '🏥' },
+    { id: 5, label: 'EdTech', emoji: '📚' },
+    { id: 6, label: 'AgTech', emoji: '🌾' },
+    { id: 7, label: 'CleanTech', emoji: '🌱' },
+    { id: 8, label: 'AI/ML', emoji: '🤖' },
+]
+
+export interface FilterOption {
+    id: string;
+    label: string;
+}
+
+export const statusOptions: FilterOption[] = [
+    { id: "idea", label: "Idea" },
+    { id: "development", label: "En Desarrollo" },
+    { id: "launched", label: "Lanzado" },
+]
+
+export const teamSizeOptions: FilterOption[] = [
+    { id: "small", label: "1-10" },
+    { id: "medium", label: "11-50" },
+    { id: "large", label: "50+" },
 ]

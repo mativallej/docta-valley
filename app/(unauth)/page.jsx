@@ -56,7 +56,7 @@ export default function Home() {
           id="startups"
           section={{
             icon: <Users className="h-6 w-6 text-primary" />,
-            title: 'Startups',
+            title: 'Docta Startups',
             subtitle: 'Descubre las startups que forman parte de Docta Valley.',
           }}
         >
