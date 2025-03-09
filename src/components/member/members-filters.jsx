@@ -27,7 +27,9 @@ export default function MembersFilters() {
   };
 
   const getActiveFilterCount = () => {
-    return Object.values(state.filters).filter(value => value !== 'all' && value !== '').length;
+    return Object.values(state.filters).filter(value => 
+      value !== 'all' && value !== '' && value !== state.filters.search
+    ).length;
   };
 
   const getActiveFilters = () => {
@@ -113,29 +115,33 @@ export default function MembersFilters() {
         </Popover>
       </div>
 
-      {/* Active filters */}
-      {getActiveFilterCount() > 0 && (
-        <div className="flex flex-wrap gap-1.5 sm:gap-2 items-center">
-          <span className="text-xs sm:text-sm text-muted-foreground">Filtros activos:</span>
-          {getActiveFilters().map((filter, index) => (
-            <Badge
-              key={index}
-              variant="secondary"
-              className="cursor-pointer hover:opacity-80 transition-opacity flex items-center gap-1 text-xs sm:text-sm py-1"
-              onClick={() => dispatch({
-                type: 'SET_FILTER',
-                payload: { key: filter.type, value: 'all' },
-              })}
-            >
-              {filter.value}
-              <X className="h-3 w-3 ml-1" />
-            </Badge>
-          ))}
+      {/* Active filters - Only show when role filters are active */}
+      {state.filters.role !== 'all' && (
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2 rounded-lg py-2 px-3">
+            <span className="text-sm text-muted-foreground">Filtros activos:</span>
+            <div className="flex flex-wrap gap-1.5 items-center">
+              {getActiveFilters().map((filter, index) => (
+                <Badge
+                  key={index}
+                  variant="secondary"
+                  className="cursor-pointer hover:opacity-80 transition-opacity flex items-center gap-1 text-xs py-1"
+                  onClick={() => dispatch({
+                    type: 'SET_FILTER',
+                    payload: { key: filter.type, value: 'all' },
+                  })}
+                >
+                  {filter.value}
+                  <X className="h-3 w-3 ml-1" />
+                </Badge>
+              ))}
+            </div>
+          </div>
           <Button
-            variant="ghost"
+            variant="default"
             size="sm"
             onClick={handleClearFilters}
-            className="h-7 px-2 text-xs sm:text-sm"
+            className="ml-2"
           >
             Limpiar todo
           </Button>

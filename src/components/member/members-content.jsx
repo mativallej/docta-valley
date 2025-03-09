@@ -48,13 +48,16 @@ export default function MembersContent() {
   return (
     <div className="space-y-8">
       <MembersFilters />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
         {filteredMembers.map((member, index) => (
           <MemberCard key={member.id} member={member} index={index} />
         ))}
       </div>
       {filteredMembers.length === 0 && (
-        <p className="text-center text-gray-500">No se encontraron miembros con los filtros seleccionados.</p>
+        <div className="text-center py-12">
+          <h3 className="text-xl font-medium mb-2">No se encontraron miembros</h3>
+          <p className="text-muted-foreground">Intenta ajustar los filtros para ver más resultados.</p>
+        </div>
       )}
     </div>
   );

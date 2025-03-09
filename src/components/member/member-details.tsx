@@ -55,9 +55,9 @@ export function MemberDetails({
       
       {showProfileButton && (
         <Button variant="outline" size="sm" className="mt-4 w-full" asChild>
-          <Link href={`/members/${member.id}`}>Ver Perfil</Link>
+          <Link href={member.links.linkedin || ''} target="_blank" rel="noopener noreferrer">Ver Perfil</Link>
         </Button>
       )}
     </div>
   )
-} 
+}

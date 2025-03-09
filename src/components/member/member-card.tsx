@@ -23,13 +23,13 @@ export default function MemberCard({ member, index }: MemberProps) {
       viewport={{ once: true }}
       custom={index}
       variants={cardAnimationVariants}
-      className="group relative overflow-hidden rounded-lg border bg-background p-2"
+      className="group relative overflow-hidden rounded-lg border bg-background p-2 h-full"
     >
       {/* Role badge positioned in the corner */}
       <CornerBadge role={member.role} />
       
-      <div className="flex flex-col items-center justify-between rounded-md p-6">
-        <div className="relative h-32 w-32 overflow-hidden rounded-full mb-4">
+      <div className="flex flex-col items-center justify-between rounded-md p-6 h-full space-y-4">
+        <div className="relative h-32 w-32 overflow-hidden rounded-full">
           <Image 
             src={member.image || "/placeholder.svg"} 
             alt={member.name} 
@@ -39,10 +39,12 @@ export default function MemberCard({ member, index }: MemberProps) {
           />
         </div>
         
-        <MemberDetails 
-          member={member} 
-          showRoleBadge={false} // Hide the role badge in the details since we're showing it in the corner
-        />
+        <div className="flex-1 flex flex-col items-center justify-center">
+          <MemberDetails 
+            member={member} 
+            showRoleBadge={false}
+          />
+        </div>
       </div>
     </motion.div>
   )

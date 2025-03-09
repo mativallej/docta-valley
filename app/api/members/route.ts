@@ -6,7 +6,7 @@ const members: Member[] = [
     id: '1',
     name: 'Matias Vallejos',
     role: 'founder',
-    bio: '💻 Crafting code, building ideas | 🚀 Cloud & Product Engineering | 🌎 Córdoba, Argentina',
+    bio: 'Founder @DoctaValley | Full Stack Dev @ megatone.net | 🚀 Cloud & Product',
     image: '/members/member_01.jpg',
     links: {
       twitter: 'https://twitter.com/mativallejosdev',
