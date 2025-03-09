@@ -4,12 +4,10 @@ import { StartupCard } from "@/components/startup/startup-card"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { useStartups } from "@/context/startups-context"
-import { useStartupsActions } from "@/hooks/use-startups-actions"
 
 export function StartupList() {
   const [visibleCount, setVisibleCount] = useState(9)
   const { state } = useStartups()
-  const { selectStartup } = useStartupsActions()
 
   const handleLoadMore = () => {
     setVisibleCount((prev) => prev + 9)
