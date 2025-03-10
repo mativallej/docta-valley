@@ -6,10 +6,11 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '1',
     name: 'Curval',
-    image_url: 'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
+    image_url:
+      'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
     location: 'Córdoba, Argentina',
     description:
-      'Plataforma de estudio all-in-one con IA que transforma notas y materiales en repasos espaciados, flashcards inteligentes y autoevaluaciones adaptativas.',
+      'Plataforma de estudio con IA que transforma notas en repasos inteligentes.',
     status: 'launched',
     launchDate: '2025-02-05',
     founders: [
@@ -45,8 +46,8 @@ const communityStartups: CommunityStartup[] = [
       'https://media.licdn.com/dms/image/v2/D4D0BAQEcMsDtwofE1g/company-logo_200_200/company-logo_200_200/0/1734071686497/chatsappai_com_logo?e=1749686400&v=beta&t=e7_JtRLp-DjrBdB_mK7OHxVJiBv4aGqIWBc2CTqw73w',
     location: 'Córdoba, Argentina',
     description:
-      'Laburen es un ecosistema SaaS de creación de Empleados de IA, donde cientos de empresas optimizan la atención al cliente, soporte, operaciones, RR.HH., ventas y marketing con un rendimiento de nivel humano.',
-    status: 'development',
+      'SaaS que crea empleados de IA para optimizar procesos empresariales.',
+    status: 'launched',
     launchDate: '2024-01-01',
     founders: [
       {
@@ -58,21 +59,22 @@ const communityStartups: CommunityStartup[] = [
       },
     ],
     category: { id: 8, label: 'AI/ML', emoji: '🤖' },
-    tags: ['AI', 'CustomerService', 'Automation'],
+    tags: ['AI', 'Automation', 'SaaS'],
     links: {
       website: 'https://laburen.com/',
     },
     teamSize: '2-10',
-    funding: 'Bootstrapped',
+    funding: 'Pre-seed',
   },
   // 3. Retrip
   {
     id: '2',
     name: 'Retrip',
-    image_url: 'https://pbs.twimg.com/profile_images/1892011204291289088/nUAfNjBN_400x400.jpg',
+    image_url:
+      'https://pbs.twimg.com/profile_images/1892011204291289088/nUAfNjBN_400x400.jpg',
     location: 'Córdoba, Argentina',
     description:
-      'En Retrip, transformamos la industria turística con soluciones impulsadas por IA. Nuestro agente conversacional optimiza y automatiza procesos clave (cotizaciones, reservas, seguimiento de servicios) para agencias y empresas del sector. Próximamente: Retrip.app (B2C) y Retrip.io (B2B). Nuestro objetivo es ayudar a las empresas turísticas a ser más rápidas y competitivas, brindando experiencias únicas y memorables.',
+      'Agente conversacional con IA para el sector turístico.',
     status: 'development',
     launchDate: '2024-01-01',
     founders: [
@@ -87,7 +89,7 @@ const communityStartups: CommunityStartup[] = [
     category: { id: 8, label: 'AI/ML', emoji: '🤖' },
     tags: ['Travel', 'Automation', 'AI'],
     links: {
-      website: 'https://retrip.app',
+      website: 'https://retrip.io/',
     },
     teamSize: '2-10',
     funding: 'Pre-seed',
@@ -100,8 +102,8 @@ const communityStartups: CommunityStartup[] = [
       'https://media.licdn.com/dms/image/v2/D4D0BAQHuaVdpKSCIIQ/company-logo_200_200/company-logo_200_200/0/1738106323272/syncedbit_logo?e=1749686400&v=beta&t=m9qUn19HIUJJIiBMqMHIUgsA-LpJr51QGYOzfcT0dIY',
     location: 'Córdoba, Argentina',
     description:
-      'En SyncedBits, transformamos cómo las startups y PyMEs gestionan su infraestructura IT. Nuestro marketplace modular ofrece soluciones listas para instalar, agilizando desde la gestión segura de dominios hasta despliegues en la nube sin necesidad de DevOps especializados. Automatizamos tareas complejas para que los equipos se enfoquen en la innovación, manteniendo altos estándares de seguridad y cumplimiento.',
-    status: 'development',
+      'Marketplace modular para gestionar infraestructura IT.',
+    status: 'launched',
     launchDate: '2024-01-01',
     founders: [
       {
@@ -109,7 +111,7 @@ const communityStartups: CommunityStartup[] = [
         name: 'Juan Ignacio Rios',
         image_url:
           'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
-        linkedin: 'https://www.linkedin.com/in/jir125/overlay/photo/',
+        linkedin: 'https://www.linkedin.com/in/jir125/',
       },
     ],
     category: { id: 9, label: 'Other', emoji: '🧩' },
@@ -118,16 +120,17 @@ const communityStartups: CommunityStartup[] = [
       website: 'https://syncedbits.com/',
     },
     teamSize: '2-10',
-    funding: 'Pre-seed (private investment)',
+    funding: 'Pre-seed',
   },
   // 5. Rocbird
   {
     id: '7',
     name: 'Rocbird',
-    image_url: 'https://rocbird.io/new-logo.png',
+    image_url:
+      'https://media.licdn.com/dms/image/v2/D4D0BAQGZ97zQaSu16w/company-logo_200_200/company-logo_200_200/0/1685981452529/rocbird_logo?e=1749686400&v=beta&t=Q4eXGMeWmWCBbZpzNUhX8txjgQr2dDz_i0xWqnLsOwQ',
     location: 'Córdoba, Argentina',
     description:
-      'En Rocbird, brindamos soluciones de tecnología, innovación y desarrollo de software para la transformación digital de los procesos de tu empresa, proporcionando herramientas y recursos calificados para obtener una ventaja competitiva.',
+      'Software para la transformación digital de empresas.',
     status: 'launched',
     launchDate: '2021-01-01',
     founders: [
@@ -154,8 +157,8 @@ const communityStartups: CommunityStartup[] = [
     image_url: 'https://casaclick.ar/casaclickfoto.jpg',
     location: 'Córdoba, Argentina',
     description:
-      'En Casa Click, conectamos a personas con problemas en el hogar con profesionales calificados. Además, estamos expandiendo nuestras funcionalidades para la venta de materiales y soluciones para inmobiliarias.',
-    status: 'development',
+      'Plataforma que conecta usuarios con profesionales para soluciones del hogar.',
+    status: 'launched',
     launchDate: '2024-01-01',
     founders: [
       {
@@ -172,7 +175,7 @@ const communityStartups: CommunityStartup[] = [
       website: 'https://casaclick.ar/',
     },
     teamSize: '2-10',
-    funding: 'Bootstrapped',
+    funding: 'Pre-seed',
   },
   // 7. Phorus Group
   {
@@ -182,7 +185,7 @@ const communityStartups: CommunityStartup[] = [
       'https://media.licdn.com/dms/image/v2/D4D0BAQGmaQgSxItD4A/company-logo_200_200/B4DZU9QomkHAAI-/0/1740489526751/phorus_group_logo?e=1749686400&v=beta&t=kCLHJ5mZkoXWfTum_TPWtdZneTLHBg68CnSFRwnSVTc',
     location: 'Helsinki, Finlandia',
     description:
-      'En Phorus Group, creamos soluciones de software a medida para acelerar procesos con automatización y escalabilidad, eliminar riesgos con seguridad avanzada y arquitectura moderna, y preparar a tu negocio para crecer sin limitaciones tecnológicas. Ofrecemos alta disponibilidad, actualizaciones automatizadas y flujos de trabajo ágiles para mantenerte competitivo.',
+      'Software a medida para acelerar procesos empresariales.',
     status: 'launched',
     launchDate: '2022-01-01',
     founders: [
@@ -191,7 +194,7 @@ const communityStartups: CommunityStartup[] = [
         name: 'Juan Ignacio Rios',
         image_url:
           'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
-        linkedin: 'https://www.linkedin.com/in/jir125/overlay/photo/',
+        linkedin: 'https://www.linkedin.com/in/jir125/',
       },
     ],
     category: { id: 9, label: 'Other', emoji: '🧩' },
