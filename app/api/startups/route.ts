@@ -2,10 +2,11 @@ import { NextResponse } from 'next/server';
 import { CommunityStartup } from '@/types/startup';
 
 const communityStartups: CommunityStartup[] = [
+  // 1. Curval
   {
     id: '1',
     name: 'Curval',
-    image_url: 'https://framerusercontent.com/assets/ytMvGLMkCKxXHA4T4cpl5IYi4.png',
+    image_url: 'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
     location: 'Córdoba, Argentina',
     description:
       'Plataforma de estudio all-in-one con IA que transforma notas y materiales en repasos espaciados, flashcards inteligentes y autoevaluaciones adaptativas.',
@@ -36,6 +37,35 @@ const communityStartups: CommunityStartup[] = [
     teamSize: '1-10',
     funding: 'Bootstrapped',
   },
+  // 2. Laburen
+  {
+    id: '6',
+    name: 'Laburen',
+    image_url:
+      'https://media.licdn.com/dms/image/v2/D4D0BAQEcMsDtwofE1g/company-logo_200_200/company-logo_200_200/0/1734071686497/chatsappai_com_logo?e=1749686400&v=beta&t=e7_JtRLp-DjrBdB_mK7OHxVJiBv4aGqIWBc2CTqw73w',
+    location: 'Córdoba, Argentina',
+    description:
+      'Laburen es un ecosistema SaaS de creación de Empleados de IA, donde cientos de empresas optimizan la atención al cliente, soporte, operaciones, RR.HH., ventas y marketing con un rendimiento de nivel humano.',
+    status: 'development',
+    launchDate: '2024-01-01',
+    founders: [
+      {
+        id: '7',
+        name: 'Sebastian Rinaldi',
+        image_url:
+          'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
+        linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
+      },
+    ],
+    category: { id: 8, label: 'AI/ML', emoji: '🤖' },
+    tags: ['AI', 'CustomerService', 'Automation'],
+    links: {
+      website: 'https://laburen.com/',
+    },
+    teamSize: '2-10',
+    funding: 'Bootstrapped',
+  },
+  // 3. Retrip
   {
     id: '2',
     name: 'Retrip',
@@ -62,6 +92,7 @@ const communityStartups: CommunityStartup[] = [
     teamSize: '2-10',
     funding: 'Pre-seed',
   },
+  // 4. SyncedBits
   {
     id: '3',
     name: 'SyncedBits',
@@ -89,33 +120,34 @@ const communityStartups: CommunityStartup[] = [
     teamSize: '2-10',
     funding: 'Pre-seed (private investment)',
   },
+  // 5. Rocbird
   {
-    id: '4',
-    name: 'Phoris Group',
-    image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQGmaQgSxItD4A/company-logo_200_200/B4DZU9QomkHAAI-/0/1740489526751/phorus_group_logo?e=1749686400&v=beta&t=kCLHJ5mZkoXWfTum_TPWtdZneTLHBg68CnSFRwnSVTc',
-    location: 'Helsinki, Finlandia',
+    id: '7',
+    name: 'Rocbird',
+    image_url: 'https://rocbird.io/new-logo.png',
+    location: 'Córdoba, Argentina',
     description:
-      'En Phoris Group, creamos soluciones de software a medida para acelerar procesos con automatización y escalabilidad, eliminar riesgos con seguridad avanzada y arquitectura moderna, y preparar a tu negocio para crecer sin limitaciones tecnológicas. Ofrecemos alta disponibilidad, actualizaciones automatizadas y flujos de trabajo ágiles para mantenerte competitivo.',
+      'En Rocbird, brindamos soluciones de tecnología, innovación y desarrollo de software para la transformación digital de los procesos de tu empresa, proporcionando herramientas y recursos calificados para obtener una ventaja competitiva.',
     status: 'launched',
-    launchDate: '2022-01-01',
+    launchDate: '2021-01-01',
     founders: [
       {
-        id: '5',
-        name: 'Juan Ignacio Rios',
+        id: '8',
+        name: 'Gaston Di Giuseppe',
         image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
-        linkedin: 'https://www.linkedin.com/in/jir125/overlay/photo/',
+          'https://media.licdn.com/dms/image/v2/D4D03AQFrv_Ha3-vzyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722351269941?e=1747267200&v=beta&t=mMi9wCsXJgbk3zmiHboTOrk24_kP-p53_IiT7ChGizs',
+        linkedin: 'https://www.linkedin.com/in/gaston-dg/',
       },
     ],
     category: { id: 9, label: 'Other', emoji: '🧩' },
-    tags: ['Software', 'Automation', 'Security'],
+    tags: ['Software', 'Innovation', 'DigitalTransformation'],
     links: {
-      website: 'https://phorus.group',
+      website: 'https://www.rocbird.io/',
     },
     teamSize: '11-50',
-    funding: 'Angel',
+    funding: 'Bootstrapped',
   },
+  // 6. Casa Click
   {
     id: '5',
     name: 'Casa Click',
@@ -142,58 +174,33 @@ const communityStartups: CommunityStartup[] = [
     teamSize: '2-10',
     funding: 'Bootstrapped',
   },
+  // 7. Phorus Group
   {
-    id: '6',
-    name: 'Laburen',
+    id: '4',
+    name: 'Phorus Group',
     image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQEcMsDtwofE1g/company-logo_200_200/company-logo_200_200/0/1734071686497/chatsappai_com_logo?e=1749686400&v=beta&t=e7_JtRLp-DjrBdB_mK7OHxVJiBv4aGqIWBc2CTqw73w',
-    location: 'Córdoba, Argentina',
+      'https://media.licdn.com/dms/image/v2/D4D0BAQGmaQgSxItD4A/company-logo_200_200/B4DZU9QomkHAAI-/0/1740489526751/phorus_group_logo?e=1749686400&v=beta&t=kCLHJ5mZkoXWfTum_TPWtdZneTLHBg68CnSFRwnSVTc',
+    location: 'Helsinki, Finlandia',
     description:
-      'Laburen es un ecosistema SaaS de creación de Empleados de IA, donde cientos de empresas optimizan la atención al cliente, soporte, operaciones, RR.HH., ventas y marketing con un rendimiento de nivel humano.',
-    status: 'development',
-    launchDate: '2024-01-01',
-    founders: [
-      {
-        id: '7',
-        name: 'Sebastian Rinaldi',
-        image_url: 'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
-        linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
-      },
-    ],
-    category: { id: 8, label: 'AI/ML', emoji: '🤖' },
-    tags: ['AI', 'CustomerService', 'Automation'],
-    links: {
-      website: 'https://laburen.com/',
-    },
-    teamSize: '2-10',
-    funding: 'Bootstrapped',
-  },
-  {
-    id: '7',
-    name: 'Rocbird',
-    image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQGZ97zQaSu16w/company-logo_200_200/company-logo_200_200/0/1685981452529/rocbird_logo?e=1749686400&v=beta&t=Q4eXGMeWmWCBbZpzNUhX8txjgQr2dDz_i0xWqnLsOwQ',
-    location: 'Córdoba, Argentina',
-    description:
-      'En Rocbird, brindamos soluciones de tecnología, innovación y desarrollo de software para la transformación digital de los procesos de tu empresa, proporcionando herramientas y recursos calificados para obtener una ventaja competitiva.',
+      'En Phorus Group, creamos soluciones de software a medida para acelerar procesos con automatización y escalabilidad, eliminar riesgos con seguridad avanzada y arquitectura moderna, y preparar a tu negocio para crecer sin limitaciones tecnológicas. Ofrecemos alta disponibilidad, actualizaciones automatizadas y flujos de trabajo ágiles para mantenerte competitivo.',
     status: 'launched',
-    launchDate: '2021-01-01',
+    launchDate: '2022-01-01',
     founders: [
       {
-        id: '8',
-        name: 'Gaston Di Giuseppe',
+        id: '5',
+        name: 'Juan Ignacio Rios',
         image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFrv_Ha3-vzyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722351269941?e=1747267200&v=beta&t=mMi9wCsXJgbk3zmiHboTOrk24_kP-p53_IiT7ChGizs',
-        linkedin: 'https://www.linkedin.com/in/gaston-dg/',
+          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
+        linkedin: 'https://www.linkedin.com/in/jir125/overlay/photo/',
       },
     ],
     category: { id: 9, label: 'Other', emoji: '🧩' },
-    tags: ['Software', 'Innovation', 'DigitalTransformation'],
+    tags: ['Software', 'Automation', 'Security'],
     links: {
-      website: 'https://www.rocbird.io/',
+      website: 'https://phorus.group',
     },
     teamSize: '11-50',
-    funding: 'Bootstrapped',
+    funding: 'Angel',
   },
 ];
 
