@@ -7,20 +7,23 @@ const communityStartups: CommunityStartup[] = [
     name: 'Curval',
     image_url: 'https://framerusercontent.com/assets/ytMvGLMkCKxXHA4T4cpl5IYi4.png',
     location: 'Córdoba, Argentina',
-    description: 'Plataforma de estudio all-in-one con IA que transforma notas y materiales en repasos espaciados, flashcards inteligentes y autoevaluaciones adaptativas.',
+    description:
+      'Plataforma de estudio all-in-one con IA que transforma notas y materiales en repasos espaciados, flashcards inteligentes y autoevaluaciones adaptativas.',
     status: 'launched',
     launchDate: '2025-02-05',
     founders: [
       {
         id: '1',
         name: 'Lucas Nasich',
-        image_url: 'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
+        image_url:
+          'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
         linkedin: 'https://www.linkedin.com/in/lucasnasich/',
       },
       {
         id: '2',
         name: 'Carla Palmieri',
-        image_url: 'https://pbs.twimg.com/profile_images/1762579024558034944/pALCXx8V_400x400.jpg',
+        image_url:
+          'https://pbs.twimg.com/profile_images/1762579024558034944/pALCXx8V_400x400.jpg',
         linkedin: 'https://www.linkedin.com/in/carla-palmieri/',
       },
     ],
@@ -35,244 +38,163 @@ const communityStartups: CommunityStartup[] = [
   },
   {
     id: '2',
-    name: 'HealthTrack',
-    image_url: 'https://placehold.co/400x400',
+    name: 'Retrip',
+    image_url: 'https://pbs.twimg.com/profile_images/1892011204291289088/nUAfNjBN_400x400.jpg',
     location: 'Córdoba, Argentina',
-    description: 'Sistema de gestión integral para clínicas y consultorios médicos que optimiza la agenda, historias clínicas y facturación.',
-    status: 'launched',
-    launchDate: '2023-08-15',
+    description:
+      'En Retrip, transformamos la industria turística con soluciones impulsadas por IA. Nuestro agente conversacional optimiza y automatiza procesos clave (cotizaciones, reservas, seguimiento de servicios) para agencias y empresas del sector. Próximamente: Retrip.app (B2C) y Retrip.io (B2B). Nuestro objetivo es ayudar a las empresas turísticas a ser más rápidas y competitivas, brindando experiencias únicas y memorables.',
+    status: 'development',
+    launchDate: '2024-01-01',
     founders: [
       {
         id: '3',
-        name: 'María González',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
+        name: 'Ata Sanchez',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4D03AQHuJ0BVkkcGrQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718214067849?e=1747267200&v=beta&t=Oo3uqp4CXqrMQSj8CkOcmhrgQ5OmvXvO32zmaKyS0F4',
+        linkedin: 'https://www.linkedin.com/in/ataschz/',
+      },
     ],
-    category: { id: 2, label: 'HealthTech', emoji: '⚕️' },
-    tags: ['Healthcare', 'SaaS', 'Management'],
+    category: { id: 8, label: 'AI/ML', emoji: '🤖' },
+    tags: ['Travel', 'Automation', 'AI'],
     links: {
-      website: 'https://healthtrack.ar',
+      website: 'https://retrip.app',
     },
-    teamSize: '11-50',
-    funding: 'Seed',
-  },
-  {
-    id: '3',
-    name: 'EcoMove',
-    image_url: 'https://placehold.co/400x400',
-    location: 'Córdoba, Argentina',
-    description: 'Plataforma de movilidad sustentable que conecta usuarios con vehículos eléctricos compartidos.',
-    status: 'launched',
-    launchDate: '2024-01-10',
-    founders: [
-      {
-        id: '4',
-        name: 'Juan Pérez',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
-    ],
-    category: { id: 3, label: 'Mobility', emoji: '🚲' },
-    tags: ['Sustainability', 'Transportation', 'Sharing Economy'],
-    links: {
-      website: 'https://ecomove.com.ar',
-    },
-    teamSize: '1-10',
+    teamSize: '2-10',
     funding: 'Pre-seed',
   },
   {
-    id: '4',
-    name: 'DataSense',
-    image_url: 'https://placehold.co/400x400',
+    id: '3',
+    name: 'SyncedBits',
+    image_url:
+      'https://media.licdn.com/dms/image/v2/D4D0BAQHuaVdpKSCIIQ/company-logo_200_200/company-logo_200_200/0/1738106323272/syncedbit_logo?e=1749686400&v=beta&t=m9qUn19HIUJJIiBMqMHIUgsA-LpJr51QGYOzfcT0dIY',
     location: 'Córdoba, Argentina',
-    description: 'Solución de analytics e inteligencia artificial para PyMEs que automatiza el análisis de datos y genera insights accionables.',
+    description:
+      'En SyncedBits, transformamos cómo las startups y PyMEs gestionan su infraestructura IT. Nuestro marketplace modular ofrece soluciones listas para instalar, agilizando desde la gestión segura de dominios hasta despliegues en la nube sin necesidad de DevOps especializados. Automatizamos tareas complejas para que los equipos se enfoquen en la innovación, manteniendo altos estándares de seguridad y cumplimiento.',
+    status: 'development',
+    launchDate: '2024-01-01',
+    founders: [
+      {
+        id: '4',
+        name: 'Juan Ignacio Rios',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
+        linkedin: 'https://www.linkedin.com/in/jir125/overlay/photo/',
+      },
+    ],
+    category: { id: 9, label: 'Other', emoji: '🧩' },
+    tags: ['Cloud', 'Automation', 'DevOps'],
+    links: {
+      website: 'https://syncedbits.com/',
+    },
+    teamSize: '2-10',
+    funding: 'Pre-seed (private investment)',
+  },
+  {
+    id: '4',
+    name: 'Phoris Group',
+    image_url:
+      'https://media.licdn.com/dms/image/v2/D4D0BAQGmaQgSxItD4A/company-logo_200_200/B4DZU9QomkHAAI-/0/1740489526751/phorus_group_logo?e=1749686400&v=beta&t=kCLHJ5mZkoXWfTum_TPWtdZneTLHBg68CnSFRwnSVTc',
+    location: 'Helsinki, Finlandia',
+    description:
+      'En Phoris Group, creamos soluciones de software a medida para acelerar procesos con automatización y escalabilidad, eliminar riesgos con seguridad avanzada y arquitectura moderna, y preparar a tu negocio para crecer sin limitaciones tecnológicas. Ofrecemos alta disponibilidad, actualizaciones automatizadas y flujos de trabajo ágiles para mantenerte competitivo.',
     status: 'launched',
-    launchDate: '2023-05-20',
+    launchDate: '2022-01-01',
     founders: [
       {
         id: '5',
-        name: 'Ana Silva',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
+        name: 'Juan Ignacio Rios',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
+        linkedin: 'https://www.linkedin.com/in/jir125/overlay/photo/',
+      },
     ],
-    category: { id: 4, label: 'Analytics', emoji: '📊' },
-    tags: ['AI', 'Business Intelligence', 'SaaS'],
+    category: { id: 9, label: 'Other', emoji: '🧩' },
+    tags: ['Software', 'Automation', 'Security'],
     links: {
-      website: 'https://datasense.ai',
+      website: 'https://phorus.group',
     },
     teamSize: '11-50',
-    funding: 'Series A',
+    funding: 'Angel',
   },
   {
     id: '5',
-    name: 'LocalFood',
-    image_url: 'https://placehold.co/400x400',
+    name: 'Casa Click',
+    image_url: 'https://casaclick.ar/casaclickfoto.jpg',
     location: 'Córdoba, Argentina',
-    description: 'Marketplace que conecta productores locales con restaurantes y consumidores finales, promoviendo el consumo local y sustentable.',
-    status: 'launched',
-    launchDate: '2024-03-01',
+    description:
+      'En Casa Click, conectamos a personas con problemas en el hogar con profesionales calificados. Además, estamos expandiendo nuestras funcionalidades para la venta de materiales y soluciones para inmobiliarias.',
+    status: 'development',
+    launchDate: '2024-01-01',
     founders: [
       {
         id: '6',
-        name: 'Pedro Martínez',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
+        name: 'Tomas Dacola',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4D03AQHy5CFwxHxKxw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730748643735?e=1747267200&v=beta&t=_SWjP8-WSlXMjRmzXZvIJEJo6GMawtkcEVY_tqO3Nlo',
+        linkedin: 'https://www.linkedin.com/in/tomas-dascola-622008187/',
+      },
     ],
-    category: { id: 5, label: 'FoodTech', emoji: '🥗' },
-    tags: ['Marketplace', 'Sustainability', 'Local Commerce'],
+    category: { id: 9, label: 'Other', emoji: '🧩' },
+    tags: ['Marketplace', 'HomeServices', 'RealEstate'],
     links: {
-      website: 'https://localfood.com.ar',
+      website: 'https://casaclick.ar/',
     },
-    teamSize: '1-10',
+    teamSize: '2-10',
     funding: 'Bootstrapped',
   },
   {
     id: '6',
-    name: 'SkillHub',
-    image_url: 'https://placehold.co/400x400',
+    name: 'Laburen',
+    image_url:
+      'https://media.licdn.com/dms/image/v2/D4D0BAQEcMsDtwofE1g/company-logo_200_200/company-logo_200_200/0/1734071686497/chatsappai_com_logo?e=1749686400&v=beta&t=e7_JtRLp-DjrBdB_mK7OHxVJiBv4aGqIWBc2CTqw73w',
     location: 'Córdoba, Argentina',
-    description: 'Plataforma de microlearning para empresas que facilita la capacitación continua de empleados mediante contenido personalizado.',
-    status: 'launched',
-    launchDate: '2023-11-15',
+    description:
+      'Laburen es un ecosistema SaaS de creación de Empleados de IA, donde cientos de empresas optimizan la atención al cliente, soporte, operaciones, RR.HH., ventas y marketing con un rendimiento de nivel humano.',
+    status: 'development',
+    launchDate: '2024-01-01',
     founders: [
       {
         id: '7',
-        name: 'Laura Rodríguez',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
+        name: 'Sebastian Rinaldi',
+        image_url: 'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
+        linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
+      },
     ],
-    category: { id: 1, label: 'EdTech', emoji: '📚' },
-    tags: ['Corporate Training', 'E-learning', 'HR Tech'],
+    category: { id: 8, label: 'AI/ML', emoji: '🤖' },
+    tags: ['AI', 'CustomerService', 'Automation'],
     links: {
-      website: 'https://skillhub.edu.ar',
+      website: 'https://laburen.com/',
     },
-    teamSize: '11-50',
-    funding: 'Seed',
-  },
-  {
-    id: '7',
-    name: 'SecureChain',
-    image_url: 'https://placehold.co/400x400',
-    location: 'Córdoba, Argentina',
-    description: 'Solución blockchain para trazabilidad y autenticación de documentos legales y académicos.',
-    status: 'launched',
-    launchDate: '2024-02-20',
-    founders: [
-      {
-        id: '8',
-        name: 'Carlos Sánchez',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
-    ],
-    category: { id: 6, label: 'Blockchain', emoji: '🔗' },
-    tags: ['Security', 'Legal Tech', 'Document Management'],
-    links: {
-      website: 'https://securechain.tech',
-    },
-    teamSize: '1-10',
-    funding: 'Pre-seed',
-  },
-  {
-    id: '8',
-    name: 'PetCare',
-    image_url: 'https://placehold.co/400x400',
-    location: 'Córdoba, Argentina',
-    description: 'App que conecta dueños de mascotas con veterinarios y cuidadores, incluyendo seguimiento de salud y recordatorios.',
-    status: 'idea',
-    launchDate: '2023-09-10',
-    founders: [
-      {
-        id: '9',
-        name: 'Valentina López',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
-    ],
-    category: { id: 7, label: 'PetTech', emoji: '🐾' },
-    tags: ['Marketplace', 'Healthcare', 'Mobile App'],
-    links: {
-      website: 'https://petcare.app',
-    },
-    teamSize: '1-10',
+    teamSize: '2-10',
     funding: 'Bootstrapped',
   },
   {
-    id: '9',
-    name: 'SmartAgro',
-    image_url: 'https://placehold.co/400x400',
+    id: '7',
+    name: 'Rocbird',
+    image_url:
+      'https://media.licdn.com/dms/image/v2/D4D0BAQGZ97zQaSu16w/company-logo_200_200/company-logo_200_200/0/1685981452529/rocbird_logo?e=1749686400&v=beta&t=Q4eXGMeWmWCBbZpzNUhX8txjgQr2dDz_i0xWqnLsOwQ',
     location: 'Córdoba, Argentina',
-    description: 'Sistema IoT para monitoreo y optimización de cultivos mediante sensores y análisis predictivo.',
-    status: 'idea',
-    launchDate: '2023-07-01',
+    description:
+      'En Rocbird, brindamos soluciones de tecnología, innovación y desarrollo de software para la transformación digital de los procesos de tu empresa, proporcionando herramientas y recursos calificados para obtener una ventaja competitiva.',
+    status: 'launched',
+    launchDate: '2021-01-01',
     founders: [
       {
-        id: '10',
-        name: 'Diego Fernández',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
+        id: '8',
+        name: 'Gaston Di Giuseppe',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4D03AQFrv_Ha3-vzyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722351269941?e=1747267200&v=beta&t=mMi9wCsXJgbk3zmiHboTOrk24_kP-p53_IiT7ChGizs',
+        linkedin: 'https://www.linkedin.com/in/gaston-dg/',
+      },
     ],
-    category: { id: 8, label: 'AgTech', emoji: '🌾' },
-    tags: ['IoT', 'Agriculture', 'AI'],
+    category: { id: 9, label: 'Other', emoji: '🧩' },
+    tags: ['Software', 'Innovation', 'DigitalTransformation'],
     links: {
-      website: 'https://smartagro.tech',
+      website: 'https://www.rocbird.io/',
     },
     teamSize: '11-50',
-    funding: 'Series A',
+    funding: 'Bootstrapped',
   },
-  {
-    id: '10',
-    name: 'FinFlow',
-    image_url: 'https://placehold.co/400x400',
-    location: 'Córdoba, Argentina',
-    description: 'Plataforma de gestión financiera para autónomos y freelancers que automatiza facturación, impuestos y contabilidad.',
-    status: 'development',
-    launchDate: '2024-01-15',
-    founders: [
-      {
-        id: '11',
-        name: 'Martín Torres',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
-    ],
-    category: { id: 9, label: 'FinTech', emoji: '💰' },
-    tags: ['Finance', 'Automation', 'SaaS'],
-    links: {
-      website: 'https://finflow.app',
-    },
-    teamSize: '1-10',
-    funding: 'Seed',
-  },
-  {
-    id: '11',
-    name: 'EcoStore',
-    image_url: 'https://placehold.co/400x400',
-    location: 'Córdoba, Argentina',
-    description: 'Marketplace de productos sustentables y zero waste con sistema de logística inversa para envases reutilizables.',
-    status: 'development',
-    launchDate: '2024-03-15',
-    founders: [
-      {
-        id: '12',
-        name: 'Sofia Ramírez',
-        image_url: 'https://placehold.co/400x400',
-        linkedin: 'https://www.linkedin.com/',
-      }
-    ],
-    category: { id: 10, label: 'GreenTech', emoji: '🌱' },
-    tags: ['E-commerce', 'Sustainability', 'Circular Economy'],
-    links: {
-      website: 'https://ecostore.com.ar',
-    },
-    teamSize: '1-10',
-    funding: 'Pre-seed',
-  }
 ];
 
 export async function GET() {
