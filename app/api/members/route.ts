@@ -6,7 +6,7 @@ const members: Member[] = [
     id: '1',
     name: 'Matias Vallejos',
     role: 'founder',
-    bio: 'Founder @DoctaValley | Full Stack Dev @ megatone.net | 🚀 Cloud & Product',
+    bio: 'Full Stack Dev @ megatone.net | 🚀 Cloud & Product',
     image_url: 'https://pbs.twimg.com/profile_images/1886073142549848064/3u1mDvK3_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/mativallejosdev',
@@ -44,7 +44,7 @@ const members: Member[] = [
     name: 'Leandro Pisaroni',
     role: 'member',
     bio: '💰 Investor & Partner at Kalei Ventures | 🌎 Córdoba, Argentina',
-    image_url: 'https://pbs.twimg.com/profile_images/1620429154410717187/s5kBAYq0_400x400.jpg',
+    image_url: 'https://media.licdn.com/dms/image/v2/C5603AQFwQrDHqxhU-g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1580151660843?e=1747267200&v=beta&t=vPsD8RhxabeK0nFVTkWrt2VIz0HRO5lIHqZVbf3bTUY',
     links: {
       twitter: 'https://twitter.com/nanopisaroni',
       linkedin: 'https://www.linkedin.com/in/leandropisaroni/',
