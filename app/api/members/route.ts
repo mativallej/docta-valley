@@ -6,7 +6,7 @@ const members: Member[] = [
     id: '1',
     name: 'Matias Vallejos',
     role: 'founder',
-    bio: 'Full Stack Dev @ megatone.net | 🚀 Cloud & Product',
+    bio: '🚀 Full Stack Dev at Megatone | 🌎 Córdoba, Argentina',
     image_url: 'https://pbs.twimg.com/profile_images/1886073142549848064/3u1mDvK3_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/mativallejosdev',
@@ -29,18 +29,6 @@ const members: Member[] = [
   },
   {
     id: '3',
-    name: 'Carla Palmieri',
-    role: 'member',
-    bio: '🚀 CTO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
-    image_url: 'https://pbs.twimg.com/profile_images/1762579024558034944/pALCXx8V_400x400.jpg',
-    links: {
-      twitter: 'https://twitter.com/Carly23p',
-      linkedin: 'https://linkedin.com/in/carla-palmieri',
-      website: 'https://curval.io'
-    },
-  },
-  {
-    id: '4',
     name: 'Leandro Pisaroni',
     role: 'member',
     bio: '💰 Investor & Partner at Kalei Ventures | 🌎 Córdoba, Argentina',
@@ -52,7 +40,7 @@ const members: Member[] = [
     },
   },
   {
-    id: '5',
+    id: '4',
     name: 'Sebastián Rinaldi',
     role: 'member',
     bio: '🤖 Founder at Laburen | AI & Data Science | 🌎 Córdoba, Argentina',
@@ -61,6 +49,18 @@ const members: Member[] = [
       twitter: 'https://twitter.com/ssebita_r',
       linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
       website: 'https://laburen.com'
+    },
+  },
+  {
+    id: '5',
+    name: 'Carla Palmieri',
+    role: 'member',
+    bio: '🚀 CTO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
+    image_url: 'https://pbs.twimg.com/profile_images/1762579024558034944/pALCXx8V_400x400.jpg',
+    links: {
+      twitter: 'https://twitter.com/Carly23p',
+      linkedin: 'https://linkedin.com/in/carla-palmieri',
+      website: 'https://curval.io'
     },
   },
   {
