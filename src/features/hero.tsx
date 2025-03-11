@@ -22,7 +22,7 @@ export default function Hero() {
             href="#"
             className="inline-flex items-center rounded-full bg-muted px-4 py-1.5 text-sm font-medium"
           >
-            🚀 <Separator className="mx-2 h-4" orientation="vertical" /> Bienvenidos a Docta Valley
+            🚀 <Separator className="mx-2 h-4" orientation="vertical" /> Web Oficial de Docta Valley
           </motion.a>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
