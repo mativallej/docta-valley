@@ -10,7 +10,7 @@ const communityStartups: CommunityStartup[] = [
       'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
     location: 'Córdoba, Argentina',
     description:
-      'Plataforma de estudio con IA que transforma notas en repasos inteligentes.',
+      'Plataforma que transforma tus notas en repasos inteligentes con IA.',
     status: 'launched',
     launchDate: '2025-02-05',
     founders: [
@@ -64,7 +64,7 @@ const communityStartups: CommunityStartup[] = [
       website: 'https://laburen.com/',
     },
     teamSize: '2-10',
-    funding: 'Pre-seed',
+    funding: 'Bootstrapped',
   },
   // 3. Retrip
   {
@@ -103,7 +103,7 @@ const communityStartups: CommunityStartup[] = [
     location: 'Córdoba, Argentina',
     description:
       'Marketplace modular para gestionar infraestructura IT.',
-    status: 'launched',
+    status: 'development',
     launchDate: '2024-01-01',
     founders: [
       {
@@ -175,36 +175,8 @@ const communityStartups: CommunityStartup[] = [
       website: 'https://casaclick.ar/',
     },
     teamSize: '2-10',
-    funding: 'Pre-seed',
-  },
-  // 7. Phorus Group
-  {
-    id: '4',
-    name: 'Phorus Group',
-    image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQGmaQgSxItD4A/company-logo_200_200/B4DZU9QomkHAAI-/0/1740489526751/phorus_group_logo?e=1749686400&v=beta&t=kCLHJ5mZkoXWfTum_TPWtdZneTLHBg68CnSFRwnSVTc',
-    location: 'Helsinki, Finlandia',
-    description:
-      'Software a medida para acelerar procesos empresariales.',
-    status: 'launched',
-    launchDate: '2022-01-01',
-    founders: [
-      {
-        id: '5',
-        name: 'Juan Ignacio Rios',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
-        linkedin: 'https://www.linkedin.com/in/jir125/',
-      },
-    ],
-    category: { id: 9, label: 'Other', emoji: '🧩' },
-    tags: ['Software', 'Automation', 'Security'],
-    links: {
-      website: 'https://phorus.group',
-    },
-    teamSize: '11-50',
-    funding: 'Angel',
-  },
+    funding: 'Bootstrapped',
+  }
 ];
 
 export async function GET() {
