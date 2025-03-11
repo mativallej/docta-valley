@@ -35,7 +35,7 @@ const communityStartups: CommunityStartup[] = [
       website: 'https://curval.io/',
       github: 'https://github.com/techcba',
     },
-    teamSize: '1-10',
+    teamSize: '2-10',
     funding: 'Bootstrapped',
   },
   // 2. Laburen
