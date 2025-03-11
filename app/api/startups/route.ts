@@ -132,7 +132,7 @@ const communityStartups: CommunityStartup[] = [
     description:
       'Software para la transformación digital de empresas.',
     status: 'launched',
-    launchDate: '2021-01-01',
+    launchDate: '2019-08-08',
     founders: [
       {
         id: '8',
@@ -163,7 +163,7 @@ const communityStartups: CommunityStartup[] = [
     founders: [
       {
         id: '6',
-        name: 'Tomas Dacola',
+        name: 'Tomas Dascola',
         image_url:
           'https://media.licdn.com/dms/image/v2/D4D03AQHy5CFwxHxKxw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730748643735?e=1747267200&v=beta&t=_SWjP8-WSlXMjRmzXZvIJEJo6GMawtkcEVY_tqO3Nlo',
         linkedin: 'https://www.linkedin.com/in/tomas-dascola-622008187/',
