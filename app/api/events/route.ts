@@ -34,7 +34,7 @@ const communityEvents: Event[] = [
     time: '18:30',
     location: 'Docto House, Córdoba',
     modalidad: 'Presencial',
-    lumaLink: '',
+    lumaLink: 'https://lu.ma/xwiu347o',
     completed: false,
     capacity: 30,
   },
