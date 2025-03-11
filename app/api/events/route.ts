@@ -30,7 +30,7 @@ const communityEvents: Event[] = [
     id: 3,
     title: 'Founders Roast',
     description: 'Asado casual entre fundadores.',
-    date: '2025-03-14', // este viernes
+    date: '2025-03-15', // este viernes
     time: '18:30',
     location: 'Docto House, Córdoba',
     modalidad: 'Presencial',
