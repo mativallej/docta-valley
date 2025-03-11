@@ -44,7 +44,7 @@ export default function Home() {
           section={{
             icon: <Users className="h-6 w-6 text-primary" />,
             title: 'Nuestra Comunidad',
-            subtitle: 'Conoce a los talentosos founders y builders que forman parte de Docta Valley.',
+            subtitle: 'Conoce a los emprendedores, profesionales e inversionistas que dan vida a Docta Valley.',
           }}
         >
           
