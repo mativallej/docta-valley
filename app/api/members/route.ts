@@ -54,7 +54,7 @@ const members: Member[] = [
   {
     id: "5",
     name: "Luciano Joaquín Alfonso",
-    role: "founder",
+    role: "member",
     bio: "CEO & Founder at Jobly | Córdoba, Argentina",
     image_url:
       "https://media.licdn.com/dms/image/v2/D4D03AQEbYXpYftHB2Q/profile-displayphoto-shrink_400_400/B4DZU9V2QpHYAk-/0/1740490893049?e=1747267200&v=beta&t=qA0Avf2XxbquO3gMN84lWr6i0_dKvF7vvpg1CTstSgs",
@@ -66,7 +66,7 @@ const members: Member[] = [
   {
     id: "6",
     name: "Matias Sidler",
-    role: "founder",
+    role: "member",
     bio: "CTO & Co-Founder at Chatsell | AI Enthusiast",
     image_url:
       "https://media.licdn.com/dms/image/v2/D4D03AQHkVCofmjhxbg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699973735258?e=1747267200&v=beta&t=J9kYXDREpWmq2nlu76suH05NWGejEv2ELikr_pcH3M0",
@@ -91,7 +91,7 @@ const members: Member[] = [
   {
     id: "9",
     name: "Ivan Hadrowa",
-    role: "founder",
+    role: "member",
     bio: "CEO & Co-Founder at Chatsell | Córdoba, Argentina",
     image_url:
       "https://media.licdn.com/dms/image/v2/D4E03AQHVZOGStFlQtA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709224757468?e=1747267200&v=beta&t=RsY2gV9w9I5AgfosgWaaZ1wnoiny0nhMWyn5IoWp8Ho",
