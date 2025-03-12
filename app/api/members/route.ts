@@ -69,7 +69,7 @@ const members: Member[] = [
     role: "member",
     bio: "CTO & Co-Founder at Chatsell | AI Enthusiast",
     image_url:
-      "https://media.licdn.com/dms/image/v2/D4D03AQHkVCofmjhxbg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699973735258?e=1747267200&v=beta&t=J9kYXDREpWmq2nlu76suH05NWGejEv2ELikr_pcH3M0",
+      "https://media.licdn.com/dms/image/v2/D4D03AQGt1K9EOvm9dA/profile-displayphoto-shrink_400_400/B4DZWK6VTXHAAk-/0/1741792304150?e=1747267200&v=beta&t=xXbEPZsioUQD_YH-BR25wQ3GY1sx7PI69FFHw2n8yp0",
     links: {
       linkedin: "https://linkedin.com/in/matias-sidler",
       github: "https://github.com/matisidler",
