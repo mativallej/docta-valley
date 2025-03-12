@@ -177,6 +177,91 @@ const communityStartups: CommunityStartup[] = [
     teamSize: '2-10',
     funding: 'Bootstrapped',
   }
+  {
+  id: "8",
+  name: "Jobly",
+  image_url: "https://media.licdn.com/dms/image/v2/D4D0BAQGFevsKAl7Nbw/company-logo_200_200/company-logo_200_200/0/1683173476396/joblyapp_logo?e=1749686400&v=beta&t=alWvFRuhLOADRAWtijvBKYYJAC4n_tMM7JG_U_MieP4",
+  location: "Córdoba, Argentina",
+  description: "Conectamos talento tech on demand validado con startups y Pymes",
+  status: "launched",
+  launchDate: "2024-01-01",
+  founders: [
+    {
+      id: "1",
+      name: "Luciano Joaquín Alfonso",
+      image_url: "https://media.licdn.com/dms/image/v2/D4D03AQEbYXpYftHB2Q/profile-displayphoto-shrink_400_400/B4DZU9V2QpHYAk-/0/1740490893049?e=1747267200&v=beta&t=qA0Avf2XxbquO3gMN84lWr6i0_dKvF7vvpg1CTstSgs",
+      linkedin:
+        "https://www.linkedin.com/in/ljalfonso?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+  ],
+  category: { id: 10, label: "HR Tech", emoji: "" },
+  tags: ["Jobs", "AI", "HR", "SAAS"],
+  links: {
+    website: "https://www.wearejobly.com",
+  },
+  teamSize: "1-10",
+  funding: "Bootstrapped",
+},
+{
+  id: "9",
+  name: "Chatsell",
+  image_url:
+    "https://media.licdn.com/dms/image/v2/D4D0BAQF7TvocBbPdTw/company-logo_200_200/company-logo_200_200/0/1719949490822/chatsell_logo?e=1749686400&v=beta&t=QPY8KcdH1R76n0oJg1HPA28YiKl7ZKjAxj631UG-XKo",
+  location: "Cordoba, Argentina",
+  description:
+    "Automatización de ventas y atención al cliente a través de Inteligencia Artificial.",
+  status: "launched",
+  launchDate: "2024-01-01",
+  founders: [
+    {
+      id: "1",
+      name: "Matias Sidler",
+      image_url:
+        "https://media.licdn.com/dms/image/v2/D4D03AQHkVCofmjhxbg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699973735258?e=1747267200&v=beta&t=J9kYXDREpWmq2nlu76suH05NWGejEv2ELikr_pcH3M0",
+      linkedin: "https://linkedin.com/in/matias-sidler",
+    },
+    {
+      id: "2",
+      name: "Ivan Hadrowa",
+      image_url:
+        "https://media.licdn.com/dms/image/v2/D4E03AQHVZOGStFlQtA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709224757468?e=1747267200&v=beta&t=RsY2gV9w9I5AgfosgWaaZ1wnoiny0nhMWyn5IoWp8Ho",
+      linkedin: "https://www.linkedin.com/in/ivanhadrowa/",
+    },
+  ],
+  category: { id: 11, label: "AI/SaaS", emoji: "" },
+  tags: ["AI", "SaaS", "sales"],
+  links: {
+    website: "https://chatsell.net",
+  },
+  teamSize: "1-10",
+  funding: "bootstrapped",
+},
+{
+  id: "10",
+  name: "Phorus Group",
+  image_url: "https://storage.googleapis.com/phorus-group-utils/logo-10.png",
+  location: "Estonia",
+  description:
+    "Phorus Group ofrece desarrollo de software a medida, consultoría y auditorías tecnológicas para empresas. Optimizamos procesos, implementamos soluciones seguras y escalables, y evaluamos sus sistemas actuales para identificar mejoras. Nuestro enfoque práctico garantiza resultados concretos: mayor eficiencia operativa, reducción de riesgos técnicos y preparación para el crecimiento con infraestructura robusta.",
+  status: "launched",
+  launchDate: "2022-10-11",
+  founders: [
+    {
+      id: "1",
+      name: "Juan Ignacio Rios",
+      image_url:
+        "https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI",
+      linkedin: "https://www.linkedin.com/in/jir125/",
+    }
+  ],
+  category: { id: 12, label: "Software Consulting", emoji: "" },
+  tags: [],
+  links: {
+    website: "https://phorus.group",
+  },
+  teamSize: "11-50",
+  funding: "bootstrapped",
+}
 ];
 
 export async function GET() {
