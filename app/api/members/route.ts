@@ -89,7 +89,7 @@ const members: Member[] = [
     },
   },
   {
-    id: "8",
+    id: "9",
     name: "Ivan Hadrowa",
     role: "founder",
     bio: "CEO & Co-Founder at Chatsell | Córdoba, Argentina",
@@ -98,7 +98,6 @@ const members: Member[] = [
     links: {
       linkedin: "https://www.linkedin.com/in/ivanhadrowa/",
       website: "https://chatsell.net",
-      instagram: "https://www.instagram.com/ivanhadrowa",
     },
   },
   {
