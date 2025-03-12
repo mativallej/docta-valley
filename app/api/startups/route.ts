@@ -176,7 +176,7 @@ const communityStartups: CommunityStartup[] = [
     },
     teamSize: '2-10',
     funding: 'Bootstrapped',
-  }
+  },
   {
   id: "8",
   name: "Jobly",
