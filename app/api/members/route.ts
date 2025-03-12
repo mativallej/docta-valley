@@ -69,7 +69,7 @@ const members: Member[] = [
     role: "founder",
     bio: "CTO & Co-Founder at Chatsell | AI Enthusiast",
     image_url:
-      "https://drive.google.com/file/d/19wuSegXMYxgKgM2sNyD3dg7CD6817UUg/view?usp=sharing",
+      "https://media.licdn.com/dms/image/v2/D4D03AQHkVCofmjhxbg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699973735258?e=1747267200&v=beta&t=J9kYXDREpWmq2nlu76suH05NWGejEv2ELikr_pcH3M0",
     links: {
       linkedin: "https://linkedin.com/in/matias-sidler",
       github: "https://github.com/matisidler",
@@ -94,7 +94,7 @@ const members: Member[] = [
     role: "founder",
     bio: "CEO & Co-Founder at Chatsell | Córdoba, Argentina",
     image_url:
-      "https://drive.google.com/file/d/1lixy_EwBBkFxuy6lSbeaN0ib1cu1bPw8/view?usp=sharing",
+      "https://media.licdn.com/dms/image/v2/D4E03AQHVZOGStFlQtA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709224757468?e=1747267200&v=beta&t=RsY2gV9w9I5AgfosgWaaZ1wnoiny0nhMWyn5IoWp8Ho",
     links: {
       linkedin: "https://www.linkedin.com/in/ivanhadrowa/",
       website: "https://chatsell.net",
