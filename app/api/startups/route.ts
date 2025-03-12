@@ -25,7 +25,7 @@ const communityStartups: CommunityStartup[] = [
         id: '2',
         name: 'Carla Palmieri',
         image_url:
-          'https://pbs.twimg.com/profile_images/1762579024558034944/pALCXx8V_400x400.jpg',
+          'https://media.licdn.com/dms/image/v2/D4D03AQG5Yr50NOunEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690337728846?e=1747267200&v=beta&t=COrLhm1CfbN3ifp7OzhE7-6OuU-MU4NoaEN7NMkPAmY',
         linkedin: 'https://www.linkedin.com/in/carla-palmieri/',
       },
     ],
