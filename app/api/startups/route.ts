@@ -10,7 +10,7 @@ const communityStartups: CommunityStartup[] = [
       'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
     location: 'Córdoba, Argentina',
     description:
-      'Plataforma que transforma tus notas en repasos inteligentes con IA.',
+      'Copiloto de estudio universitario con IA.',
     status: 'launched',
     launchDate: '2025-02-05',
     founders: [
