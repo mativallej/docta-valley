@@ -6,19 +6,16 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '1',
     name: 'Curval',
-    image_url:
-      'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
     location: 'Córdoba, Argentina',
-    description:
-      'Copiloto de estudio universitario con IA.',
+    description: 'Copiloto de estudio universitario con IA.',
     status: 'launched',
     launchDate: '2025-02-05',
     founders: [
       {
         id: '1',
         name: 'Lucas Nasich',
-        image_url:
-          'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
+        image_url: 'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
         linkedin: 'https://www.linkedin.com/in/lucasnasich/',
       },
       {
@@ -45,16 +42,14 @@ const communityStartups: CommunityStartup[] = [
     image_url:
       'https://media.licdn.com/dms/image/v2/D4D0BAQEcMsDtwofE1g/company-logo_200_200/company-logo_200_200/0/1734071686497/chatsappai_com_logo?e=1749686400&v=beta&t=e7_JtRLp-DjrBdB_mK7OHxVJiBv4aGqIWBc2CTqw73w',
     location: 'Córdoba, Argentina',
-    description:
-      'SaaS que crea empleados de IA para optimizar procesos empresariales.',
+    description: 'SaaS que crea empleados de IA para optimizar procesos empresariales.',
     status: 'launched',
     launchDate: '2024-01-01',
     founders: [
       {
         id: '7',
         name: 'Sebastian Rinaldi',
-        image_url:
-          'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
+        image_url: 'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
         linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
       },
     ],
@@ -70,11 +65,9 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '2',
     name: 'Retrip',
-    image_url:
-      'https://pbs.twimg.com/profile_images/1892011204291289088/nUAfNjBN_400x400.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1892011204291289088/nUAfNjBN_400x400.jpg',
     location: 'Córdoba, Argentina',
-    description:
-      'Agente conversacional con IA para el sector turístico.',
+    description: 'Agente conversacional con IA para el sector turístico.',
     status: 'development',
     launchDate: '2024-01-01',
     founders: [
@@ -101,8 +94,7 @@ const communityStartups: CommunityStartup[] = [
     image_url:
       'https://media.licdn.com/dms/image/v2/D4D0BAQHuaVdpKSCIIQ/company-logo_200_200/company-logo_200_200/0/1738106323272/syncedbit_logo?e=1749686400&v=beta&t=m9qUn19HIUJJIiBMqMHIUgsA-LpJr51QGYOzfcT0dIY',
     location: 'Córdoba, Argentina',
-    description:
-      'Marketplace modular para gestionar infraestructura IT.',
+    description: 'Marketplace modular para gestionar infraestructura IT.',
     status: 'development',
     launchDate: '2024-01-01',
     founders: [
@@ -129,8 +121,7 @@ const communityStartups: CommunityStartup[] = [
     image_url:
       'https://media.licdn.com/dms/image/v2/D4D0BAQGZ97zQaSu16w/company-logo_200_200/company-logo_200_200/0/1685981452529/rocbird_logo?e=1749686400&v=beta&t=Q4eXGMeWmWCBbZpzNUhX8txjgQr2dDz_i0xWqnLsOwQ',
     location: 'Córdoba, Argentina',
-    description:
-      'Software para la transformación digital de empresas.',
+    description: 'Software para la transformación digital de empresas.',
     status: 'launched',
     launchDate: '2019-08-08',
     founders: [
@@ -156,8 +147,7 @@ const communityStartups: CommunityStartup[] = [
     name: 'Casa Click',
     image_url: 'https://casaclick.ar/casaclickfoto.jpg',
     location: 'Córdoba, Argentina',
-    description:
-      'Plataforma que conecta usuarios con profesionales para soluciones del hogar.',
+    description: 'Plataforma que conecta usuarios con profesionales para soluciones del hogar.',
     status: 'launched',
     launchDate: '2024-01-01',
     founders: [
@@ -178,90 +168,128 @@ const communityStartups: CommunityStartup[] = [
     funding: 'Bootstrapped',
   },
   {
-  id: "8",
-  name: "Jobly",
-  image_url: "https://media.licdn.com/dms/image/v2/D4D0BAQGFevsKAl7Nbw/company-logo_200_200/company-logo_200_200/0/1683173476396/joblyapp_logo?e=1749686400&v=beta&t=alWvFRuhLOADRAWtijvBKYYJAC4n_tMM7JG_U_MieP4",
-  location: "Córdoba, Argentina",
-  description: "Conectamos talento tech on demand validado con startups y Pymes",
-  status: "launched",
-  launchDate: "2024-01-01",
-  founders: [
-    {
-      id: "1",
-      name: "Luciano Joaquín Alfonso",
-      image_url: "https://media.licdn.com/dms/image/v2/D4D03AQEbYXpYftHB2Q/profile-displayphoto-shrink_400_400/B4DZU9V2QpHYAk-/0/1740490893049?e=1747267200&v=beta&t=qA0Avf2XxbquO3gMN84lWr6i0_dKvF7vvpg1CTstSgs",
-      linkedin:
-        "https://www.linkedin.com/in/ljalfonso?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    id: '8',
+    name: 'Jobly',
+    image_url:
+      'https://media.licdn.com/dms/image/v2/D4D0BAQGFevsKAl7Nbw/company-logo_200_200/company-logo_200_200/0/1683173476396/joblyapp_logo?e=1749686400&v=beta&t=alWvFRuhLOADRAWtijvBKYYJAC4n_tMM7JG_U_MieP4',
+    location: 'Córdoba, Argentina',
+    description: 'Conectamos talento tech on demand validado con startups y Pymes',
+    status: 'launched',
+    launchDate: '2024-01-01',
+    founders: [
+      {
+        id: '1',
+        name: 'Luciano Joaquín Alfonso',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4D03AQEbYXpYftHB2Q/profile-displayphoto-shrink_400_400/B4DZU9V2QpHYAk-/0/1740490893049?e=1747267200&v=beta&t=qA0Avf2XxbquO3gMN84lWr6i0_dKvF7vvpg1CTstSgs',
+        linkedin:
+          'https://www.linkedin.com/in/ljalfonso?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      },
+    ],
+    category: { id: 10, label: 'HR Tech', emoji: '' },
+    tags: ['Jobs', 'AI', 'HR', 'SAAS'],
+    links: {
+      website: 'https://www.wearejobly.com',
     },
-  ],
-  category: { id: 10, label: "HR Tech", emoji: "" },
-  tags: ["Jobs", "AI", "HR", "SAAS"],
-  links: {
-    website: "https://www.wearejobly.com",
+    teamSize: '1-10',
+    funding: 'Bootstrapped',
   },
-  teamSize: "1-10",
-  funding: "Bootstrapped",
-},
-{
-  id: "9",
-  name: "Chatsell",
-  image_url:
-    "https://media.licdn.com/dms/image/v2/D4D0BAQF7TvocBbPdTw/company-logo_200_200/company-logo_200_200/0/1719949490822/chatsell_logo?e=1749686400&v=beta&t=QPY8KcdH1R76n0oJg1HPA28YiKl7ZKjAxj631UG-XKo",
-  location: "Cordoba, Argentina",
-  description:
-    "Automatización de ventas y atención al cliente a través de Inteligencia Artificial.",
-  status: "launched",
-  launchDate: "2024-01-01",
-  founders: [
-    {
-      id: "1",
-      name: "Matias Sidler",
-      image_url:
-        "https://media.licdn.com/dms/image/v2/D4D03AQGt1K9EOvm9dA/profile-displayphoto-shrink_400_400/B4DZWK6VTXHAAk-/0/1741792304150?e=1747267200&v=beta&t=xXbEPZsioUQD_YH-BR25wQ3GY1sx7PI69FFHw2n8yp0",
-      linkedin: "https://linkedin.com/in/matias-sidler",
+  {
+    id: '9',
+    name: 'Chatsell',
+    image_url:
+      'https://media.licdn.com/dms/image/v2/D4D0BAQF7TvocBbPdTw/company-logo_200_200/company-logo_200_200/0/1719949490822/chatsell_logo?e=1749686400&v=beta&t=QPY8KcdH1R76n0oJg1HPA28YiKl7ZKjAxj631UG-XKo',
+    location: 'Cordoba, Argentina',
+    description: 'Automatización de ventas y atención al cliente a través de Inteligencia Artificial.',
+    status: 'launched',
+    launchDate: '2024-01-01',
+    founders: [
+      {
+        id: '1',
+        name: 'Matias Sidler',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4D03AQGt1K9EOvm9dA/profile-displayphoto-shrink_400_400/B4DZWK6VTXHAAk-/0/1741792304150?e=1747267200&v=beta&t=xXbEPZsioUQD_YH-BR25wQ3GY1sx7PI69FFHw2n8yp0',
+        linkedin: 'https://linkedin.com/in/matias-sidler',
+      },
+      {
+        id: '2',
+        name: 'Ivan Hadrowa',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4E03AQHVZOGStFlQtA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709224757468?e=1747267200&v=beta&t=RsY2gV9w9I5AgfosgWaaZ1wnoiny0nhMWyn5IoWp8Ho',
+        linkedin: 'https://www.linkedin.com/in/ivanhadrowa/',
+      },
+    ],
+    category: { id: 11, label: 'AI/SaaS', emoji: '' },
+    tags: ['AI', 'SaaS', 'sales'],
+    links: {
+      website: 'https://chatsell.net',
     },
-    {
-      id: "2",
-      name: "Ivan Hadrowa",
-      image_url:
-        "https://media.licdn.com/dms/image/v2/D4E03AQHVZOGStFlQtA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709224757468?e=1747267200&v=beta&t=RsY2gV9w9I5AgfosgWaaZ1wnoiny0nhMWyn5IoWp8Ho",
-      linkedin: "https://www.linkedin.com/in/ivanhadrowa/",
+    teamSize: '1-10',
+    funding: 'bootstrapped',
+  },
+  {
+    id: '10',
+    name: 'Phorus Group',
+    image_url: 'https://storage.googleapis.com/phorus-group-utils/logo-10.png',
+    location: 'Estonia',
+    description:
+      'Phorus Group ofrece desarrollo de software a medida, consultoría y auditorías tecnológicas para empresas. Optimizamos procesos, implementamos soluciones seguras y escalables, y evaluamos sus sistemas actuales para identificar mejoras. Nuestro enfoque práctico garantiza resultados concretos: mayor eficiencia operativa, reducción de riesgos técnicos y preparación para el crecimiento con infraestructura robusta.',
+    status: 'launched',
+    launchDate: '2022-10-11',
+    founders: [
+      {
+        id: '1',
+        name: 'Juan Ignacio Rios',
+        image_url:
+          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
+        linkedin: 'https://www.linkedin.com/in/jir125/',
+      },
+    ],
+    category: { id: 12, label: 'Software Consulting', emoji: '' },
+    tags: [],
+    links: {
+      website: 'https://phorus.group',
     },
-  ],
-  category: { id: 11, label: "AI/SaaS", emoji: "" },
-  tags: ["AI", "SaaS", "sales"],
-  links: {
-    website: "https://chatsell.net",
+    teamSize: '11-50',
+    funding: 'bootstrapped',
   },
-  teamSize: "1-10",
-  funding: "bootstrapped",
-},
-{
-  id: "10",
-  name: "Phorus Group",
-  image_url: "https://storage.googleapis.com/phorus-group-utils/logo-10.png",
-  location: "Estonia",
-  description:
-    "Phorus Group ofrece desarrollo de software a medida, consultoría y auditorías tecnológicas para empresas. Optimizamos procesos, implementamos soluciones seguras y escalables, y evaluamos sus sistemas actuales para identificar mejoras. Nuestro enfoque práctico garantiza resultados concretos: mayor eficiencia operativa, reducción de riesgos técnicos y preparación para el crecimiento con infraestructura robusta.",
-  status: "launched",
-  launchDate: "2022-10-11",
-  founders: [
-    {
-      id: "1",
-      name: "Juan Ignacio Rios",
-      image_url:
-        "https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI",
-      linkedin: "https://www.linkedin.com/in/jir125/",
-    }
-  ],
-  category: { id: 12, label: "Software Consulting", emoji: "" },
-  tags: [],
-  links: {
-    website: "https://phorus.group",
+  {
+    id: '11',
+    name: 'INNO Prospect',
+    image_url:
+      'https://instagram.fros2-2.fna.fbcdn.net/v/t51.2885-19/445930359_3865856690303697_5981738202110894586_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fros2-2.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2AFSKBSVAT0W2p-pb6eZFTHTe53TcF6rueqOnIbgey99ooeNN9iBm8N7P2aX13kRcLc&_nc_ohc=v5z6vrBFXmUQ7kNvgF-1VwA&_nc_gid=iUw10t6h2LSd9JJmf6vlLg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYE9nA1AVuovvCv0_UqD8qvQiwZ0l-EUO-MEuwykmZ4UNw&oe=67DE3DF9&_nc_sid=7a9f4b',
+    location: 'Villa María, Córdoba, Argentina',
+    description:
+      'Ayudamos a empresas B2B a conectarse con su cliente ideal, comunicando eficientemente su propuesta de valor a través de campañas de cold email, generando conexiones y oportunidades de venta.',
+    status: 'launched',
+    launchDate: '2024-03-01',
+    founders: [],
+    category: { id: 13, label: 'B2B Marketing', emoji: '📧' },
+    tags: ['B2B', 'Marketing', 'Sales', 'Email'],
+    links: {
+      website: '',
+    },
+    teamSize: '1-10',
+    funding: 'Bootstrapped',
   },
-  teamSize: "11-50",
-  funding: "bootstrapped",
-}
+  {
+    id: '12',
+    name: 'Botix',
+    image_url: 'https://pbs.twimg.com/profile_images/1888327126383726592/35v3fd9W_400x400.jpg',
+    location: 'Córdoba, Argentina',
+    description:
+      'Plataforma en desarrollo que utiliza RPA e Inteligencia Artificial para automatizar tareas y procesos repetitivos, optimizando recursos y mejorando la eficiencia operativa de las empresas.',
+    status: 'development',
+    launchDate: '2024-11-01',
+    founders: [],
+    category: { id: 8, label: 'AI/ML', emoji: '🤖' },
+    tags: ['RPA', 'AI', 'SaaS', 'Automation'],
+    links: {
+      website: '',
+    },
+    teamSize: '1-10',
+    funding: 'Bootstrapped',
+  },
 ];
 
 export async function GET() {
