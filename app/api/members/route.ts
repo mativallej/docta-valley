@@ -7,7 +7,7 @@ const members: Member[] = [
     name: 'Matias Vallejos',
     role: 'founder',
     bio: '🚀 Full Stack Dev at Megatone | 🌎 Córdoba, Argentina',
-    image_url: 'https://pbs.twimg.com/profile_images/1886073142549848064/3u1mDvK3_400x400.jpg',
+    image_url: 'https://pbs.twimg.com/profile_images/1903198685108047872/yD3dWg7d_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/mativallejosdev',
       linkedin: 'https://linkedin.com/in/matiasvallejos',
@@ -89,7 +89,7 @@ const members: Member[] = [
     },
   },
   {
-    id: "9",
+    id: "8",
     name: "Ivan Hadrowa",
     role: "member",
     bio: "CEO & Co-Founder at Chatsell | Córdoba, Argentina",

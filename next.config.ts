@@ -1,17 +1,14 @@
-const { SITE } = require('./src/config');
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
+import type { NextConfig } from 'next';
 
-/** @type {import('next').NextConfig} */
-const config = {
+const { SITE } = require('./src/config');
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   trailingSlash: SITE.trailingSlash,
-  basePath: SITE.basePathname !== "/" ? SITE.basePathname : "",
+  basePath: SITE.basePathname !== '/' ? SITE.basePathname : '',
 
   // Performance optimizations
-  swcMinify: true,
   poweredByHeader: false,
   compress: true,
 
@@ -48,7 +45,7 @@ const config = {
       {
         protocol: 'https',
         hostname: 'doctavalley.vercel.app',
-      }
+      },
     ],
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
@@ -85,6 +82,11 @@ const config = {
       },
     ];
   },
+  experimental: {
+    turbo: {
+      // ...
+    },
+  },
 };
 
-module.exports = withBundleAnalyzer(config); 
+export default nextConfig;
