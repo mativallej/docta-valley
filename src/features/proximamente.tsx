@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import { Link } from "lucide-react";
 
 export default function Proximamente() {
   return (
@@ -42,10 +43,10 @@ export default function Proximamente() {
           transition={{ delay: 0.9 }}
         >
           <Button asChild variant="outline" className="mr-4">
-            <a href="/">Volver al inicio</a>
+            <Link href="/">Volver al inicio</Link>
           </Button>
           <Button asChild>
-            <a href="mailto:doctavalley@gmail.com">Contactar</a>
+            <Link href="mailto:doctavalley@gmail.com">Contactar</Link>
           </Button>
         </motion.div>
       </motion.div>
