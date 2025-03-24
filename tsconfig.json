@@ -65,7 +65,8 @@
       "@/types/*": [
         "./src/types/*"
       ]
-    }
+    },
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
@@ -74,8 +75,12 @@
     "**/*.js",
     "**/*.jsx",
     ".next/types/**/*.ts",
-    ".contentlayer/generated"
-, ".tmp/contact-slice.ts", ".tmp/email-campaign-slice.ts", ".tmp/search-bar.tsx", ".tmp/startup-detail-view.tsx"  ],
+    ".contentlayer/generated",
+    ".tmp/contact-slice.ts",
+    ".tmp/email-campaign-slice.ts",
+    ".tmp/search-bar.tsx",
+    ".tmp/startup-detail-view.tsx"
+  ],
   "exclude": [
     "node_modules",
     ".tmp"
