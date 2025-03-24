@@ -9,7 +9,7 @@ interface ProviderProps {
 }
 
 export default function StoreProvider({ children }: ProviderProps) {
-  const storeRef = useRef<Store>()
+  const storeRef = useRef<Store>(null)
   if (!storeRef.current) {
     // Create the store instance the first time this renders
     storeRef.current = makeStore()
