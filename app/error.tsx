@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function GlobalError(props: { error: Error & { digest?: string }; params: { } }) {
   return (
@@ -44,7 +45,7 @@ export default function GlobalError(props: { error: Error & { digest?: string };
               transition={{ delay: 0.9 }}
             >
               <Button asChild>
-                <a href="/">Volver al inicio</a>
+                <Link href="/">Volver al inicio</Link>
               </Button>
             </motion.div>
           </motion.div>
