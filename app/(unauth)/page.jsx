@@ -9,6 +9,7 @@ import { Separator } from '@/components/ui/separator';
 import { Section } from '@/layouts/section';
 import { Users, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { WhatsAppIcon } from '@/components/icons/whatsapp';
 import { CommunityStartups } from '@/features/community-startups';
 import { Events } from '@/features/event';
 
@@ -31,11 +32,6 @@ export default function Home() {
           }}
         >
           <Features />
-          <div className="flex justify-center mt-6">
-            <Button variant="ghost" size="lg" asChild>
-              <Link href="https://matiasvallejos.notion.site/Docta-Manifesto-1b1350b03b7f8067a946d5e991ad7aa5?pvs=4" target="_blank" rel="noopener noreferrer">Leer nuestro Manifesto</Link>
-            </Button>
-          </div>
         </Section>
         {/* Nuestra Comunidad Section */}
         <Separator className="my-12" />
@@ -88,7 +84,8 @@ export default function Home() {
           }}
         >
           <Button size="lg" className="mt-4" asChild>
-            <Link href="https://tally.so/r/3ENKPX" target="_blank">
+            <Link href="https://chat.whatsapp.com/KfBZXVDwrzuIs1HbrvvmSb?mode=gi_t" target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon className="h-4 w-4 mr-2" />
               Unirse Ahora
             </Link>
           </Button>

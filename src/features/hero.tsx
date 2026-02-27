@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { FlyingRockets } from "@/components/flying-rockets";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import Link from "next/link";
 
 export default function Hero() {
@@ -60,7 +61,8 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 px-4 md:px-0 w-full sm:w-auto"
           >
             <Button size="lg" className="h-10 px-6 sm:h-12 sm:px-8 w-full sm:w-auto" asChild>
-              <Link href="https://tally.so/r/3ENKPX" target="_blank">
+              <Link href="https://chat.whatsapp.com/KfBZXVDwrzuIs1HbrvvmSb?mode=gi_t" target="_blank" rel="noopener noreferrer">
+                <WhatsAppIcon className="h-4 w-4 mr-2" />
                 Unirse a la Comunidad
               </Link>
             </Button>

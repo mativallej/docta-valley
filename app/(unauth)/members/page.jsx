@@ -1,8 +1,9 @@
 import { MembersProvider } from "@/context/members-context";
 import MembersContent from "@/components/member/members-content";
 import Link from "next/link";
-import { ArrowLeft, Plus } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 
 export const metadata = {
   title: "Miembros | Docta Valley",
@@ -24,9 +25,9 @@ export default function MembersPage() {
                   Inicio
                 </Button>
               </Link>
-              <Link href="https://tally.so/r/3ENKPX" target="_blank">
+              <Link href="https://chat.whatsapp.com/KfBZXVDwrzuIs1HbrvvmSb?mode=gi_t" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline">
-                  <Plus className="mr-2 h-4 w-4" /> Forma parte
+                  <WhatsAppIcon className="mr-2 h-4 w-4" /> Forma parte
                 </Button>
               </Link>
             </div>
@@ -50,9 +51,9 @@ export default function MembersPage() {
 
             {/* Desktop join button */}
             <div className="hidden sm:block sm:w-auto">
-              <Link href="https://tally.so/r/3ENKPX" target="_blank">
+              <Link href="https://chat.whatsapp.com/KfBZXVDwrzuIs1HbrvvmSb?mode=gi_t" target="_blank" rel="noopener noreferrer">
                 <Button size="lg">
-                  <Plus className="mr-2 h-4 w-4" /> Unirse a Docta
+                  <WhatsAppIcon className="mr-2 h-4 w-4" /> Unirse a Docta
                 </Button>
               </Link>
             </div>

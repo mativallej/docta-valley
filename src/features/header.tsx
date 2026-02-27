@@ -9,6 +9,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
+import { WhatsAppIcon } from "@/components/icons/whatsapp"
 import { navItems } from "@/data/layout"
 
 export default function Header() {
@@ -57,7 +58,10 @@ export default function Header() {
         {!isAuthPage && (
           <div className="flex items-center space-x-3">
             <Button size="sm" asChild>
-              <Link href="https://tally.so/r/3ENKPX" target="_blank" rel="noopener noreferrer">Unirse</Link>
+              <Link href="https://chat.whatsapp.com/KfBZXVDwrzuIs1HbrvvmSb?mode=gi_t" target="_blank" rel="noopener noreferrer">
+                <WhatsAppIcon className="h-3.5 w-3.5 mr-1.5" />
+                Unirse
+              </Link>
             </Button>
           </div>
         )}
