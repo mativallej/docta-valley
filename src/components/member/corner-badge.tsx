@@ -12,18 +12,19 @@ export function CornerBadge({ role, className, showIcon = true }: CornerBadgePro
   const Icon = config.icon
 
   return (
-    <div 
+    <div
       className={cn(
         "absolute top-0 right-0",
         className
       )}
     >
-      <div 
+      <div
         className={cn(
-          "flex items-center justify-center py-1 px-2 text-xs font-medium",
-          config.bgColor, 
+          "flex items-center justify-center py-1 px-2 font-mono text-[10px] font-semibold uppercase tracking-[0.10em] border-l border-b",
+          config.bgColor,
           config.textColor,
-          "shadow-sm rounded-bl-md"
+          config.borderColor,
+          "shadow-sm rounded-bl-[var(--radius)]"
         )}
       >
         {showIcon && <Icon className="h-3 w-3 mr-1" />}
@@ -31,4 +32,4 @@ export function CornerBadge({ role, className, showIcon = true }: CornerBadgePro
       </div>
     </div>
   )
-} 
+}

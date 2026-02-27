@@ -13,17 +13,18 @@ export default function Features() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
           whileHover={{
-            rotateX: index % 2 === 0 ? 5 : -5,
-            rotateY: index % 3 === 0 ? 5 : -5,
-            transition: { duration: 0.3 },
+            translateY: -1,
+            transition: { duration: 0.2 },
           }}
-          className="relative overflow-hidden rounded-lg border bg-background p-2"
+          className="relative overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] p-2 transition-all duration-200 hover:border-[var(--primary)]/20"
         >
-          <div className="flex h-[180px] flex-col justify-between rounded-md p-6 items-center gap-3">
-            {feature.icon}
-            <div className="space-y-2">
-              <h3 className="font-bold">{feature.name}</h3>
-              <p className="text-sm text-muted-foreground">{feature.description}</p>
+          <div className="flex h-[180px] flex-col justify-between rounded-[var(--radius)] p-6 items-center gap-3">
+            <div className="text-[var(--accent-bright)]">
+              {feature.icon}
+            </div>
+            <div className="space-y-2 text-center">
+              <h3 className="font-mono text-[12px] font-semibold uppercase tracking-[0.08em] text-[var(--fg)]">{feature.name}</h3>
+              <p className="font-sans text-[13px] text-[var(--fg-muted)]">{feature.description}</p>
             </div>
           </div>
         </motion.div>

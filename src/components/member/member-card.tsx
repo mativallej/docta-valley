@@ -5,7 +5,6 @@ import { MemberProps } from "@/types/member"
 import { MemberDetails } from "./member-details"
 import { CornerBadge } from "./corner-badge"
 
-// Animation variants for reusability
 const cardAnimationVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: (index: number) => ({
@@ -23,41 +22,40 @@ export default function MemberCard({ member, index }: MemberProps) {
       viewport={{ once: true }}
       custom={index}
       variants={cardAnimationVariants}
-      className="group relative overflow-hidden rounded-lg border bg-background p-2 h-full"
+      className="group relative overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] p-2 h-full transition-all duration-200 hover:border-[var(--primary)]/20 hover:-translate-y-px"
     >
-      {/* Role badge positioned in the corner */}
       <CornerBadge role={member.role} />
-      
-      <div className="flex flex-col items-center justify-between rounded-md p-6 h-full space-y-4">
-        <div className="relative h-32 w-32 overflow-hidden rounded-full">
+
+      <div className="flex flex-col items-center justify-between rounded-[var(--radius)] p-6 h-full space-y-4">
+        <div className="relative h-32 w-32 overflow-hidden rounded-full border-2 border-[var(--border)]">
           {member.image_url.startsWith('http') ? (
             <div className="relative h-full w-full">
-              <Image 
-                src="/placeholder.svg" 
-                alt={member.name} 
-                fill 
+              <Image
+                src="/placeholder.svg"
+                alt={member.name}
+                fill
                 sizes="(max-width: 128px) 100vw, 128px"
                 className="object-cover"
               />
-              <div 
-                className="absolute inset-0 bg-cover bg-center" 
+              <div
+                className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${member.image_url})` }}
               />
             </div>
           ) : (
-            <Image 
-              src={member.image_url || "/placeholder.svg"} 
-              alt={member.name} 
-              fill 
+            <Image
+              src={member.image_url || "/placeholder.svg"}
+              alt={member.name}
+              fill
               sizes="(max-width: 128px) 100vw, 128px"
-              className="object-cover" 
+              className="object-cover"
             />
           )}
         </div>
-        
+
         <div className="flex-1 flex flex-col items-center justify-center">
-          <MemberDetails 
-            member={member} 
+          <MemberDetails
+            member={member}
             showRoleBadge={false}
           />
         </div>
@@ -65,4 +63,3 @@ export default function MemberCard({ member, index }: MemberProps) {
     </motion.div>
   )
 }
-  

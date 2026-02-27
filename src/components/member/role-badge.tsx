@@ -14,18 +14,19 @@ export function RoleBadge({ role, className, showIcon = true, isCorner = false }
   const Icon = config.icon
 
   return (
-    <Badge 
+    <Badge
       className={cn(
-        "flex items-center gap-1", 
-        isCorner ? "px-2 py-1 border-0" : "px-2 py-1",
-        config.bgColor, 
+        "flex items-center gap-1 font-mono text-[10px] uppercase tracking-[0.12em]",
+        isCorner ? "px-2 py-1 border" : "px-2 py-1 border",
+        config.bgColor,
         config.textColor,
+        config.borderColor,
         isCorner && "shadow-md",
         className
       )}
     >
       {showIcon && <Icon className={cn("h-3 w-3", isCorner && "mr-1")} />}
-      <span className={cn(isCorner && "text-xs font-bold")}>{role}</span>
+      <span className={cn(isCorner && "text-[10px] font-bold")}>{role}</span>
     </Badge>
   )
-} 
+}

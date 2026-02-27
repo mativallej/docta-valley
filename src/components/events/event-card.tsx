@@ -15,17 +15,16 @@ export function EventCard({ event, index }: { event: Event, index: number }) {
       return `${day} de ${month}`;
     };
 
-    // Helper function to determine event category based on title/description
     const getEventCategory = () => {
       const title = event.title.toLowerCase();
       const description = event.description?.toLowerCase() || "";
-      
+
       if (title.includes("workshop") || title.includes("taller")) return "Workshop";
       if (title.includes("meetup") || description.includes("networking")) return "Meetup";
       if (title.includes("conference") || title.includes("conferencia")) return "Conferencia";
       return "Evento";
     };
-  
+
     return (
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -41,30 +40,26 @@ export function EventCard({ event, index }: { event: Event, index: number }) {
             className="block group/link"
           >
             <Card className={cn(
-              "group overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-lg border text-left shadow-none hover:scale-[1.02] rounded-lg bg-background p-1 relative",
-              "border-muted hover:border-primary/20"
+              "group overflow-hidden h-full flex flex-col transition-all duration-200 border text-left shadow-none hover:-translate-y-px rounded-[var(--radius-md)] bg-[var(--surface)] p-1 relative",
+              "border-[var(--border)] hover:border-[var(--primary)]/20"
             )}>
-              <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover/link:opacity-100 transition-opacity duration-300" />
               <CardHeader className="pb-3 space-y-2 relative">
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-2">
-                    <Badge 
-                      variant="outline" 
+                    <Badge
+                      variant="outline"
                       className={cn(
-                        "text-[10px] px-2 py-0 font-normal",
+                        "py-0",
                         event.completed ? "opacity-50" : "opacity-70"
                       )}
                     >
                       <Tag className="h-3 w-3 mr-1" />
                       {getEventCategory()}
                     </Badge>
-                    <Badge 
-                      variant={event.modalidad === "Presencial" ? "default" : "secondary"} 
+                    <Badge
+                      variant={event.modalidad === "Presencial" ? "default" : "secondary"}
                       className={cn(
-                        "text-[10px] px-2 py-0 font-normal",
-                        event.modalidad === "Presencial" 
-                          ? "bg-primary/10 text-primary hover:bg-primary/20" 
-                          : "bg-secondary/80 text-secondary-foreground",
+                        "py-0",
                         event.completed && "opacity-70"
                       )}
                     >
@@ -72,38 +67,38 @@ export function EventCard({ event, index }: { event: Event, index: number }) {
                     </Badge>
                   </div>
                   <div className="flex justify-between items-start gap-2">
-                    <CardTitle className="text-base font-semibold leading-tight">
+                    <CardTitle className="text-[14px]">
                       {event.title}
                     </CardTitle>
                   </div>
                 </div>
-                <CardDescription className="text-sm line-clamp-2 text-left text-muted-foreground">
-                  {event.description || "Únete a este evento de la comunidad Docta Valley"}
+                <CardDescription className="line-clamp-2 text-left">
+                  {event.description || "Unete a este evento de la comunidad Docta Valley"}
                 </CardDescription>
               </CardHeader>
               <CardContent className="pb-4 flex-grow space-y-4 relative">
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <div className="flex items-center gap-2 font-sans text-[12px] text-[var(--muted-fg)]">
                     <Calendar className="h-3.5 w-3.5" />
                     <span className="capitalize">
-                      {formatDate(event.date)} • {event.time}
+                      {formatDate(event.date)} &bull; {event.time}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <div className="flex items-center gap-2 font-sans text-[12px] text-[var(--muted-fg)]">
                     <MapPin className="h-3.5 w-3.5" />
                     <span className="line-clamp-1">{event.location}</span>
                   </div>
                   {event.capacity && (
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <div className="flex items-center gap-2 font-sans text-[12px] text-[var(--muted-fg)]">
                       <Users className="h-3.5 w-3.5" />
                       <span>Capacidad: {event.capacity} personas</span>
                     </div>
                   )}
                 </div>
-                <Button 
-                  asChild 
-                  size="sm" 
-                  className="w-full mt-auto transition-all duration-300 hover:shadow-md group-hover/link:bg-primary/90 relative z-20"
+                <Button
+                  asChild
+                  size="sm"
+                  className="w-full mt-auto relative z-20"
                 >
                   <span className="flex items-center justify-center gap-2">
                     <span>Registrarse</span>
@@ -115,66 +110,59 @@ export function EventCard({ event, index }: { event: Event, index: number }) {
           </Link>
         ) : (
           <Card className={cn(
-            "group overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-lg border text-left shadow-none hover:scale-[1.02] rounded-lg bg-background p-1",
-            "border-border/40"
+            "group overflow-hidden h-full flex flex-col transition-all duration-200 border text-left shadow-none rounded-[var(--radius-md)] bg-[var(--surface)] p-1",
+            "border-[var(--border)]/40"
           )}>
             <CardHeader className="pb-3 space-y-2">
               <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <Badge 
-                    variant="outline" 
-                    className={cn(
-                      "text-[10px] px-2 py-0 font-normal opacity-50"
-                    )}
+                  <Badge
+                    variant="outline"
+                    className="py-0 opacity-50"
                   >
                     <Tag className="h-3 w-3 mr-1" />
                     {getEventCategory()}
                   </Badge>
-                  <Badge 
-                    variant={event.modalidad === "Presencial" ? "default" : "secondary"} 
-                    className={cn(
-                      "text-[10px] px-2 py-0 font-normal opacity-70",
-                      event.modalidad === "Presencial" 
-                        ? "bg-primary/10 text-primary hover:bg-primary/20" 
-                        : "bg-secondary/80 text-secondary-foreground"
-                    )}
+                  <Badge
+                    variant={event.modalidad === "Presencial" ? "default" : "secondary"}
+                    className="py-0 opacity-70"
                   >
                     {event.modalidad}
                   </Badge>
                 </div>
                 <div className="flex justify-between items-start gap-2">
-                  <CardTitle className="text-base font-semibold leading-tight text-muted-foreground">
+                  <CardTitle className="text-[14px] text-[var(--muted-fg)]">
                     {event.title}
                   </CardTitle>
                 </div>
               </div>
-              <CardDescription className="text-sm line-clamp-2 text-left text-muted-foreground/70">
-                {event.description || "Únete a este evento de la comunidad Docta Valley"}
+              <CardDescription className="line-clamp-2 text-left opacity-70">
+                {event.description || "Unete a este evento de la comunidad Docta Valley"}
               </CardDescription>
             </CardHeader>
             <CardContent className="pb-4 flex-grow space-y-4">
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-xs text-muted-foreground/70">
+                <div className="flex items-center gap-2 font-sans text-[12px] text-[var(--muted-fg)]/70">
                   <Calendar className="h-3.5 w-3.5" />
                   <span className="capitalize">
-                    {formatDate(event.date)} • {event.time}
+                    {formatDate(event.date)} &bull; {event.time}
                   </span>
                 </div>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground/70">
+                <div className="flex items-center gap-2 font-sans text-[12px] text-[var(--muted-fg)]/70">
                   <MapPin className="h-3.5 w-3.5" />
                   <span className="line-clamp-1">{event.location}</span>
                 </div>
                 {event.capacity && (
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground/70">
+                  <div className="flex items-center gap-2 font-sans text-[12px] text-[var(--muted-fg)]/70">
                     <Users className="h-3.5 w-3.5" />
                     <span>Capacidad: {event.capacity} personas</span>
                   </div>
                 )}
               </div>
-              <Button 
+              <Button
                 disabled
-                size="sm" 
-                variant="secondary"
+                size="sm"
+                variant="ghost"
                 className="w-full mt-auto opacity-50 cursor-not-allowed"
               >
                 <XCircle className="h-4 w-4 mr-2" />
@@ -186,4 +174,3 @@ export function EventCard({ event, index }: { event: Event, index: number }) {
       </motion.div>
     )
   }
-  

@@ -77,12 +77,12 @@ export function SearchFilterBar({
       <div className="relative w-full flex flex-col sm:flex-row gap-3">
         <div className="relative flex-1">
           <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
-            <Search className="h-4 w-4 text-muted-foreground" />
+            <Search className="h-4 w-4 text-[var(--muted)]" />
           </div>
           <Input
             type="search"
             placeholder={placeholder}
-            className="pl-10 h-11 text-base w-full"
+            className="pl-10 h-11 text-[13px] w-full"
             value={inputValue}
             onChange={handleChange}
           />
@@ -90,7 +90,7 @@ export function SearchFilterBar({
 
         <Popover>
           <PopoverTrigger asChild>
-            <Button 
+            <Button
               variant={getActiveFilterCount() > 0 ? "default" : "outline"}
               className="h-11 px-4 w-full sm:w-[180px] justify-center"
             >
@@ -103,25 +103,25 @@ export function SearchFilterBar({
               )}
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="w-[calc(100vw-2rem)] sm:w-[340px] p-4 sm:p-5" align="end">
+          <PopoverContent className="w-[calc(100vw-2rem)] sm:w-[340px] p-4 sm:p-5 bg-[var(--surface-elevated)] border-[var(--border)]" align="end">
             <div className="space-y-5">
               <div className="flex items-center justify-between">
-                <h4 className="font-semibold text-base sm:text-lg">Filtros</h4>
+                <h4 className="font-mono text-[13px] font-semibold uppercase tracking-[0.06em] text-[var(--fg)]">Filtros</h4>
                 {getActiveFilterCount() > 0 && (
-                  <Button variant="ghost" size="sm" onClick={onClearFilters} className="h-8 px-2 text-xs">
+                  <Button variant="ghost" size="sm" onClick={onClearFilters} className="h-8 px-2">
                     <X className="h-4 w-4 mr-1" />
                     Limpiar filtros
                   </Button>
                 )}
               </div>
-              
+
               {/* Status */}
               <div className="space-y-2 sm:space-y-3">
-                <h5 className="font-medium text-sm sm:text-base">Estado</h5>
+                <h5 className="font-mono text-[11px] font-semibold uppercase tracking-[0.10em] text-[var(--fg-muted)]">Estado</h5>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   <Badge
                     variant={filters.status === "all" ? "default" : "outline"}
-                    className="cursor-pointer hover:opacity-80 transition-opacity text-xs sm:text-sm py-1"
+                    className="cursor-pointer hover:opacity-80 transition-opacity py-1"
                     onClick={() => onFilterChange("status", "all")}
                   >
                     Todos
@@ -130,7 +130,7 @@ export function SearchFilterBar({
                     <Badge
                       key={status.id}
                       variant={filters.status === status.id ? "default" : "outline"}
-                      className="cursor-pointer hover:opacity-80 transition-opacity text-xs sm:text-sm py-1"
+                      className="cursor-pointer hover:opacity-80 transition-opacity py-1"
                       onClick={() => onFilterChange("status", status.id)}
                     >
                       {status.label}
@@ -141,12 +141,12 @@ export function SearchFilterBar({
 
               {/* Location */}
               <div className="space-y-2 sm:space-y-3">
-                <h5 className="font-medium text-sm sm:text-base">Ubicación</h5>
+                <h5 className="font-mono text-[11px] font-semibold uppercase tracking-[0.10em] text-[var(--fg-muted)]">Ubicacion</h5>
                 <ScrollArea className="h-[100px] sm:h-[120px]">
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 pr-4">
                     <Badge
                       variant={filters.location === "all" ? "default" : "outline"}
-                      className="cursor-pointer hover:opacity-80 transition-opacity text-xs sm:text-sm py-1"
+                      className="cursor-pointer hover:opacity-80 transition-opacity py-1"
                       onClick={() => onFilterChange("location", "all")}
                     >
                       Todas
@@ -155,7 +155,7 @@ export function SearchFilterBar({
                       <Badge
                         key={location}
                         variant={filters.location === location ? "default" : "outline"}
-                        className="cursor-pointer hover:opacity-80 transition-opacity text-xs sm:text-sm py-1"
+                        className="cursor-pointer hover:opacity-80 transition-opacity py-1"
                         onClick={() => onFilterChange("location", location)}
                       >
                         {location}
@@ -167,12 +167,12 @@ export function SearchFilterBar({
 
               {/* Funding Stage */}
               <div className="space-y-2 sm:space-y-3">
-                <h5 className="font-medium text-sm sm:text-base">Etapa de financiación</h5>
+                <h5 className="font-mono text-[11px] font-semibold uppercase tracking-[0.10em] text-[var(--fg-muted)]">Etapa de financiacion</h5>
                 <ScrollArea className="h-[100px] sm:h-[120px]">
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 pr-4">
                     <Badge
                       variant={filters.fundingStage === "all" ? "default" : "outline"}
-                      className="cursor-pointer hover:opacity-80 transition-opacity text-xs sm:text-sm py-1"
+                      className="cursor-pointer hover:opacity-80 transition-opacity py-1"
                       onClick={() => onFilterChange("fundingStage", "all")}
                     >
                       Todas
@@ -181,7 +181,7 @@ export function SearchFilterBar({
                       <Badge
                         key={stage}
                         variant={filters.fundingStage === stage ? "default" : "outline"}
-                        className="cursor-pointer hover:opacity-80 transition-opacity text-xs sm:text-sm py-1"
+                        className="cursor-pointer hover:opacity-80 transition-opacity py-1"
                         onClick={() => onFilterChange("fundingStage", stage)}
                       >
                         {stage}
@@ -193,11 +193,11 @@ export function SearchFilterBar({
 
               {/* Team Size */}
               <div className="space-y-2 sm:space-y-3">
-                <h5 className="font-medium text-sm sm:text-base">Tamaño del equipo</h5>
+                <h5 className="font-mono text-[11px] font-semibold uppercase tracking-[0.10em] text-[var(--fg-muted)]">Tamano del equipo</h5>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   <Badge
                     variant={filters.teamSize === "all" ? "default" : "outline"}
-                    className="cursor-pointer hover:opacity-80 transition-opacity text-xs sm:text-sm py-1"
+                    className="cursor-pointer hover:opacity-80 transition-opacity py-1"
                     onClick={() => onFilterChange("teamSize", "all")}
                   >
                     Todos
@@ -206,7 +206,7 @@ export function SearchFilterBar({
                     <Badge
                       key={size.id}
                       variant={filters.teamSize === size.id ? "default" : "outline"}
-                      className="cursor-pointer hover:opacity-80 transition-opacity text-xs sm:text-sm py-1"
+                      className="cursor-pointer hover:opacity-80 transition-opacity py-1"
                       onClick={() => onFilterChange("teamSize", size.id)}
                     >
                       {size.label}
@@ -222,12 +222,12 @@ export function SearchFilterBar({
       {/* Active filters */}
       {getActiveFilterCount() > 0 && (
         <div className="flex flex-wrap gap-1.5 sm:gap-2 items-center">
-          <span className="text-xs sm:text-sm text-muted-foreground">Filtros activos:</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.10em] text-[var(--muted-fg)]">Filtros activos:</span>
           {getActiveFilters().map((filter, index) => (
             <Badge
               key={index}
               variant="secondary"
-              className="cursor-pointer hover:opacity-80 transition-opacity flex items-center gap-1 text-xs sm:text-sm py-1"
+              className="cursor-pointer hover:opacity-80 transition-opacity flex items-center gap-1 py-1"
               onClick={() => onFilterChange(filter.type, "all")}
             >
               {filter.value}
@@ -238,7 +238,7 @@ export function SearchFilterBar({
             variant="ghost"
             size="sm"
             onClick={onClearFilters}
-            className="h-7 px-2 text-xs sm:text-sm"
+            className="h-7 px-2"
           >
             Limpiar todo
           </Button>
@@ -246,4 +246,4 @@ export function SearchFilterBar({
       )}
     </div>
   )
-} 
+}
