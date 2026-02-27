@@ -30,12 +30,12 @@ const communityEvents: Event[] = [
     id: 3,
     title: 'Founders Roast',
     description: 'Asado casual entre fundadores.',
-    date: '2025-03-15', // este viernes
+    date: '2025-03-15',
     time: '18:30',
     location: 'Docto House, Córdoba',
     modalidad: 'Presencial',
     lumaLink: 'https://lu.ma/xwiu347o',
-    completed: false,
+    completed: true,
     capacity: 30,
   },
 ];

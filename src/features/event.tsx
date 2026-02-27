@@ -50,7 +50,7 @@ export function Events() {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
       {(showAllEvents ? communityEvents : communityEvents.slice(0, 3)).map((event, index) => (
         <EventCard key={event.id} event={event} index={index} />
       ))}
