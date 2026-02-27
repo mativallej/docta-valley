@@ -59,7 +59,7 @@ function StartupsPageContent() {
                 Inicio
               </Button>
             </Link>
-            <Link href="mailto:doctavalley@gmail.com">
+            <Link href="mailto:matiasvallejosdev@outlook.com">
               <Button size="lg">
                 <Plus className="mr-2 h-4 w-4" /> Publica tu Startup
               </Button>
@@ -88,7 +88,7 @@ function StartupsPageContent() {
 
           {/* Desktop add startup button */}
           <div className="hidden sm:block sm:w-auto">
-            <Link href="mailto:doctavalley@gmail.com">
+            <Link href="mailto:matiasvallejosdev@outlook.com">
               <Button size="lg">
                 <Plus className="mr-2 h-4 w-4" /> Publica tu Startup
               </Button>
