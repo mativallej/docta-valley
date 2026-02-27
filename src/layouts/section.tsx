@@ -23,11 +23,16 @@ export function Section({ children, custom = '', section, id }: SectionProps) {
       >
         {section && (
           <div className="flex flex-col items-center justify-center gap-3">
-            <div className="flex items-center justify-center gap-2">
-              {section.icon}
-              <h2 className="text-2xl font-bold leading-[1.1] sm:text-3xl md:text-4xl">{section.title}</h2>
+            {/* Section label separator */}
+            <div className="flex items-center gap-4 w-full mb-4">
+              <div className="flex-1 h-px bg-[var(--border)]" />
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.15em] text-[var(--primary)]">
+                {section.title}
+              </span>
+              <div className="flex-1 h-px bg-[var(--border)]" />
             </div>
-            <p className="max-w-[95%] md:max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 mb-6">{section.subtitle}</p>
+            <h2 className="font-mono text-2xl font-bold uppercase tracking-[0.03em] leading-[1.2] sm:text-3xl md:text-4xl text-[var(--fg)]">{section.title}</h2>
+            <p className="max-w-[95%] md:max-w-[85%] font-sans text-[15px] leading-relaxed text-[var(--fg-muted)] mb-6">{section.subtitle}</p>
           </div>
         )}
         {children}

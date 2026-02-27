@@ -3,27 +3,16 @@ import Providers from '@/context/providers';
 import { cn } from "@/lib/utils"
 import { Analytics } from '@vercel/analytics/react';
 import { Toaster } from 'sonner';
-import { Inter as CustomFont } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import { Metadata, Viewport } from 'next';
 import '@/styles/globals.css';
-
-const customFont = CustomFont({
-  subsets: ['latin'],
-  variable: '--font-custom',
-  weight: ['400', '500', '700'],
-  display: 'swap',
-  preload: true,
-  adjustFontFallback: true,
-});
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  themeColor: '#080A07',
 };
 
 export const metadata: Metadata = {
@@ -63,10 +52,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html 
-      lang="en" 
-      suppressHydrationWarning={true} 
-      className={cn("scroll-smooth", customFont.variable)}
+    <html
+      lang="en"
+      suppressHydrationWarning={true}
+      className={cn("scroll-smooth", GeistSans.variable, GeistMono.variable)}
     >
       <head>
         <link rel="preconnect" href="https://doctavalley.vercel.app" />
@@ -76,10 +65,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://framerusercontent.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://framerusercontent.com" />
       </head>
-      <body 
+      <body
         className={cn(
           "min-h-screen w-full overflow-x-hidden bg-background font-sans antialiased",
-          customFont.variable
+          GeistSans.variable,
+          GeistMono.variable
         )}
       >
         <Providers>
@@ -87,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
         </Providers>
-        <Analytics /> 
+        <Analytics />
         <Toaster richColors position="top-right" closeButton />
       </body>
     </html>

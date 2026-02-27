@@ -5,8 +5,8 @@ export function StartupCardCategories({ categories }: { categories: StartupCateg
   return (
     <div className="mb-2 flex flex-wrap gap-2">
       {categories.map((category) => (
-        <Badge key={category.id} variant="outline">{category.label}</Badge>
+        <Badge key={category.id} variant="accent">{category.label}</Badge>
       ))}
     </div>
   );
-} 
+}

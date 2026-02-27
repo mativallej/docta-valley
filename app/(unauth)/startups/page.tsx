@@ -10,12 +10,10 @@ import { StartupsProvider, useStartups } from "@/context/startups-context"
 import { useStartupsActions } from "@/hooks/use-startups-actions"
 import { CommunityStartup } from "@/types/startup"
 
-// Wrapper component that uses the context
 function StartupsPageContent() {
   const { state } = useStartups()
   const { setSearchTerm, setCategory, setFilter, clearFilters } = useStartupsActions()
 
-  // Extract unique locations and funding stages from startups
   const locations = Array.from(new Set(
     state.startups
       .filter((s): s is CommunityStartup & { location: string } => Boolean(s?.location))
@@ -45,16 +43,16 @@ function StartupsPageContent() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[var(--bg)]">
       <div className="max-w-7xl mx-auto px-4 py-8 md:px-6">
         {/* Title and CTA button */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8 md:mb-10">
           {/* Mobile navigation buttons */}
           <div className="w-full flex justify-between sm:hidden mb-4">
             <Link href="/">
-              <Button 
-                variant="ghost" 
-                size="lg" 
+              <Button
+                variant="ghost"
+                size="lg"
                 className="flex items-center gap-2"
               >
                 <ArrowLeft className="h-4 w-4" />
@@ -67,13 +65,13 @@ function StartupsPageContent() {
               </Button>
             </Link>
           </div>
-          
+
           {/* Desktop home button */}
           <div className="hidden sm:block sm:w-auto order-none">
             <Link href="/">
-              <Button 
-                variant="ghost" 
-                size="lg" 
+              <Button
+                variant="ghost"
+                size="lg"
                 className="flex items-center gap-2"
               >
                 <ArrowLeft className="h-4 w-4" />
@@ -81,13 +79,13 @@ function StartupsPageContent() {
               </Button>
             </Link>
           </div>
-          
+
           <div className="w-full text-center order-0 sm:order-none">
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-              Startups de Docta 🇦🇷
+            <h1 className="font-mono text-3xl md:text-4xl font-bold uppercase tracking-[0.03em] text-[var(--primary)]">
+              Startups de Docta
             </h1>
           </div>
-          
+
           {/* Desktop add startup button */}
           <div className="hidden sm:block sm:w-auto">
             <Link href="mailto:doctavalley@gmail.com">
@@ -131,7 +129,6 @@ function StartupsPageContent() {
   )
 }
 
-// Main page component that provides the context
 export default function StartupsPage() {
   return (
     <StartupsProvider>
@@ -139,4 +136,3 @@ export default function StartupsPage() {
     </StartupsProvider>
   )
 }
-

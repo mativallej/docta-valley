@@ -9,27 +9,27 @@ interface Features {
 export const features: Features[] = [
   {
     name: 'Comunidad Tech',
-    description: 'Conectamos founders y builders tech de Córdoba para crear un ecosistema vibrante.',
+    description: 'Conectamos founders y builders tech de Cordoba para crear un ecosistema vibrante.',
     icon: <Users className="h-10 w-10" />,
   },
   {
     name: 'Startups Innovadoras',
-    description: 'Impulsamos la creación y desarrollo de startups tecnológicas con impacto.',
+    description: 'Impulsamos la creacion y desarrollo de startups tecnologicas con impacto.',
     icon: <Rocket className="h-10 w-10" />,
   },
   {
     name: 'Desarrollo de Talento',
-    description: 'Fomentamos el crecimiento profesional y técnico de nuestra comunidad.',
+    description: 'Fomentamos el crecimiento profesional y tecnico de nuestra comunidad.',
     icon: <Code className="h-10 w-10" />,
   },
   {
     name: 'Alcance Global',
-    description: 'Proyectamos el talento cordobés hacia oportunidades internacionales.',
+    description: 'Proyectamos el talento cordobes hacia oportunidades internacionales.',
     icon: <Globe className="h-10 w-10" />,
   },
   {
     name: 'Cultura Emprendedora',
-    description: 'Cultivamos una mentalidad innovadora y espíritu emprendedor.',
+    description: 'Cultivamos una mentalidad innovadora y espiritu emprendedor.',
     icon: <Lightbulb className="h-10 w-10" />,
   },
   {

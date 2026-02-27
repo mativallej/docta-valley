@@ -27,8 +27,8 @@ export function StartupList() {
     <div className="space-y-8">
       {state.filteredStartups.length === 0 ? (
         <div className="text-center py-12">
-          <h3 className="text-xl font-medium mb-2">No se encontraron startups</h3>
-          <p className="text-muted-foreground">Intenta ajustar los filtros para ver más resultados.</p>
+          <h3 className="font-mono text-[16px] font-semibold uppercase tracking-[0.06em] text-[var(--fg)] mb-2">No se encontraron startups</h3>
+          <p className="font-sans text-[14px] text-[var(--fg-muted)]">Intenta ajustar los filtros para ver mas resultados.</p>
         </div>
       ) : (
         <>
@@ -46,7 +46,7 @@ export function StartupList() {
           {visibleCount < state.filteredStartups.length && (
             <div className="flex justify-center mt-8">
               <Button onClick={handleLoadMore} variant="outline">
-                Cargar más startups
+                Cargar mas startups
               </Button>
             </div>
           )}
@@ -55,4 +55,3 @@ export function StartupList() {
     </div>
   )
 }
-
