@@ -223,7 +223,14 @@ const communityStartups: CommunityStartup[] = [
       'Ayudamos a empresas B2B a conectarse con su cliente ideal, comunicando eficientemente su propuesta de valor a través de campañas de cold email, generando conexiones y oportunidades de venta.',
     status: 'launched',
     launchDate: '2024-03-01',
-    founders: [],
+    founders: [
+      {
+        id: '1',
+        name: 'Francisco Botta',
+        image_url: '/members/francisco-botta.jpeg',
+        linkedin: 'https://www.linkedin.com/in/francisco-botta/',
+      },
+    ],
     category: { id: 13, label: 'B2B Marketing', emoji: '📧' },
     tags: ['B2B', 'Marketing', 'Sales', 'Email'],
     links: {
