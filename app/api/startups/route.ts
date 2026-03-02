@@ -72,7 +72,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '3',
         name: 'Ata Sanchez',
-        image_url: '/placeholder.svg',
+        image_url: '/members/ata-sanchez.jpg',
         linkedin: 'https://www.linkedin.com/in/ataschz/',
       },
     ],
@@ -122,7 +122,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '8',
         name: 'Gaston Di Giuseppe',
-        image_url: '/placeholder.svg',
+        image_url: '/members/gasto-giuscuped.jpeg',
         linkedin: 'https://www.linkedin.com/in/gaston-dg/',
       },
     ],
@@ -147,7 +147,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '6',
         name: 'Tomas Dascola',
-        image_url: '/placeholder.svg',
+        image_url: '/members/tomas-dascola.jpeg',
         linkedin: 'https://www.linkedin.com/in/tomas-dascola-622008187/',
       },
     ],

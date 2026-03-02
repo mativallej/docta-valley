@@ -7,7 +7,7 @@ const members: Member[] = [
     name: 'Matias Vallejos',
     role: 'founder',
     bio: 'Product Engineer | tegu.ar',
-    image_url: 'https://pbs.twimg.com/profile_images/1903198685108047872/yD3dWg7d_400x400.jpg',
+    image_url: '/members/matias-vallejos.jpg',
     links: {
       twitter: 'https://twitter.com/mativallejosdev',
       linkedin: 'https://linkedin.com/in/matiasvallejos',
