@@ -118,6 +118,16 @@ const members: Member[] = [
       linkedin: "https://www.linkedin.com/in/jir125/",
       twitter: "https://x.com/jirios125",
     },
+  },
+  {
+    id: '11',
+    name: 'Lucas Segurola',
+    role: 'member',
+    bio: 'Co-Founder at Tegu | Córdoba, Argentina',
+    image_url: '/members/lucas-segurola.jpeg',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/lucassegurola/',
+    },
   }
 ];
 
