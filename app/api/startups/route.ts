@@ -2,7 +2,44 @@ import { NextResponse } from 'next/server';
 import { CommunityStartup } from '@/types/startup';
 
 const communityStartups: CommunityStartup[] = [
-  // 1. Curval
+  // 1. Tegu
+  {
+    id: '13',
+    name: 'Tegu',
+    image_url: '/logos/tegu.jpeg',
+    location: 'Córdoba, Argentina',
+    description: 'Confianza que genera trabajo. Servicios del hogar con IA 🇦🇷',
+    status: 'launched',
+    launchDate: '2026-01-01',
+    founders: [
+      {
+        id: '1',
+        name: 'Matias Vallejos',
+        image_url: '/members/matias-vallejos.jpg',
+        linkedin: 'https://www.linkedin.com/in/matias-vallejos/',
+      },
+      {
+        id: '2',
+        name: 'Lucas Segurola',
+        image_url: '/members/lucas-segurola.jpeg',
+        linkedin: 'https://www.linkedin.com/in/lucassegurola/',
+      },
+      {
+        id: '3',
+        name: 'Walter Ezequiel Obreque',
+        image_url: '/members/walter-ezequiel-obreque.jpeg',
+        linkedin: 'https://www.linkedin.com/in/walter-ezequiel-obreque-252aab181/',
+      },
+    ],
+    category: { id: 10, label: 'Marketplace', emoji: '🏪' },
+    tags: ['Marketplace', 'HomeServices', 'AI'],
+    links: {
+      website: 'https://tegu.ar',
+    },
+    teamSize: '2-10',
+    funding: 'Bootstrapped',
+  },
+  // 2. Curval
   {
     id: '1',
     name: 'Curval',
@@ -137,7 +174,7 @@ const communityStartups: CommunityStartup[] = [
   // 6. Casa Click
   {
     id: '5',
-    name: 'Casa Click',
+    name: 'Clickie',
     image_url: '/logos/clickie.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Plataforma que conecta usuarios con profesionales para soluciones del hogar.',
@@ -151,10 +188,10 @@ const communityStartups: CommunityStartup[] = [
         linkedin: 'https://www.linkedin.com/in/tomas-dascola-622008187/',
       },
     ],
-    category: { id: 9, label: 'Other', emoji: '🧩' },
-    tags: ['Marketplace', 'HomeServices', 'RealEstate'],
+    category: { id: 10, label: 'Marketplace', emoji: '🏪' },
+    tags: ['Marketplace', 'HomeServices', 'AI'],
     links: {
-      website: 'https://casaclick.ar/',
+      website: 'https://www.clickie.com.ar/',
     },
     teamSize: '2-10',
     funding: 'Bootstrapped',
@@ -256,35 +293,6 @@ const communityStartups: CommunityStartup[] = [
       linkedin: 'https://www.linkedin.com/company/botix-hq',
     },
     teamSize: '1-10',
-    funding: 'Bootstrapped',
-  },
-  // 11. Tegu
-  {
-    id: '13',
-    name: 'Tegu',
-    image_url: '/logos/tegu.jpeg',
-    location: 'Córdoba, Argentina',
-    description: 'Confianza que genera trabajo. Servicios del hogar con IA 🇦🇷',
-    status: 'development',
-    launchDate: '2026-01-01',
-    founders: [
-      {
-        id: '1',
-        name: 'Matias Vallejos',
-        image_url: '/members/matias-vallejos.jpg',
-        linkedin: 'https://www.linkedin.com/in/matias-vallejos/',
-      },
-      {
-        id: '2',
-        name: 'Lucas Segurola',
-        image_url: '/members/lucas-segurola.jpeg',
-        linkedin: 'https://www.linkedin.com/in/lucassegurola/',
-      },
-    ],
-    category: { id: 10, label: 'Marketplace', emoji: '🏪' },
-    tags: ['Marketplace', 'HomeServices', 'AI'],
-    links: {},
-    teamSize: '2-10',
     funding: 'Bootstrapped',
   },
   // 12. Fidelando
