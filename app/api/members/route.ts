@@ -71,7 +71,7 @@ const members: Member[] = [
     image_url:
       "https://media.licdn.com/dms/image/v2/D4D03AQGt1K9EOvm9dA/profile-displayphoto-shrink_400_400/B4DZWK6VTXHAAk-/0/1741792304150?e=1747267200&v=beta&t=xXbEPZsioUQD_YH-BR25wQ3GY1sx7PI69FFHw2n8yp0",
     links: {
-      linkedin: "https://linkedin.com/in/matias-sidler",
+      linkedin: "https://www.linkedin.com/in/matias-sidler-chatsell",
       github: "https://github.com/matisidler",
       twitter: "https://x.com/tias0x",
     },
