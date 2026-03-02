@@ -15,14 +15,13 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '1',
         name: 'Lucas Nasich',
-        image_url: 'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
+        image_url: '/members/lucas-nasich.jpeg',
         linkedin: 'https://www.linkedin.com/in/lucasnasich/',
       },
       {
         id: '2',
         name: 'Carla Palmieri',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQG5Yr50NOunEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690337728846?e=1747267200&v=beta&t=COrLhm1CfbN3ifp7OzhE7-6OuU-MU4NoaEN7NMkPAmY',
+        image_url: '/members/carla-palmieri.jpeg',
         linkedin: 'https://www.linkedin.com/in/carla-palmieri/',
       },
     ],
@@ -39,8 +38,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '6',
     name: 'Laburen',
-    image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQEcMsDtwofE1g/company-logo_200_200/company-logo_200_200/0/1734071686497/chatsappai_com_logo?e=1749686400&v=beta&t=e7_JtRLp-DjrBdB_mK7OHxVJiBv4aGqIWBc2CTqw73w',
+    image_url: '/logos/laburen.png',
     location: 'Córdoba, Argentina',
     description: 'SaaS que crea empleados de IA para optimizar procesos empresariales.',
     status: 'launched',
@@ -49,7 +47,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '7',
         name: 'Sebastian Rinaldi',
-        image_url: 'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
+        image_url: '/members/seba-rinaldi.jpeg',
         linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
       },
     ],
@@ -74,8 +72,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '3',
         name: 'Ata Sanchez',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQHuJ0BVkkcGrQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718214067849?e=1747267200&v=beta&t=Oo3uqp4CXqrMQSj8CkOcmhrgQ5OmvXvO32zmaKyS0F4',
+        image_url: '/members/ata-sanchez.jpg',
         linkedin: 'https://www.linkedin.com/in/ataschz/',
       },
     ],
@@ -91,8 +88,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '3',
     name: 'SyncedBits',
-    image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQHuaVdpKSCIIQ/company-logo_200_200/company-logo_200_200/0/1738106323272/syncedbit_logo?e=1749686400&v=beta&t=m9qUn19HIUJJIiBMqMHIUgsA-LpJr51QGYOzfcT0dIY',
+    image_url: '/logos/syncedbit_logo.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Marketplace modular para gestionar infraestructura IT.',
     status: 'development',
@@ -101,8 +97,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '4',
         name: 'Juan Ignacio Rios',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
+        image_url: '/members/juan-rios.jpeg',
         linkedin: 'https://www.linkedin.com/in/jir125/',
       },
     ],
@@ -118,8 +113,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '7',
     name: 'Rocbird',
-    image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQGZ97zQaSu16w/company-logo_200_200/company-logo_200_200/0/1685981452529/rocbird_logo?e=1749686400&v=beta&t=Q4eXGMeWmWCBbZpzNUhX8txjgQr2dDz_i0xWqnLsOwQ',
+    image_url: '/logos/rocbird_logo.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Software para la transformación digital de empresas.',
     status: 'launched',
@@ -128,8 +122,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '8',
         name: 'Gaston Di Giuseppe',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFrv_Ha3-vzyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722351269941?e=1747267200&v=beta&t=mMi9wCsXJgbk3zmiHboTOrk24_kP-p53_IiT7ChGizs',
+        image_url: '/members/gasto-giuscuped.jpeg',
         linkedin: 'https://www.linkedin.com/in/gaston-dg/',
       },
     ],
@@ -154,8 +147,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '6',
         name: 'Tomas Dascola',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQHy5CFwxHxKxw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730748643735?e=1747267200&v=beta&t=_SWjP8-WSlXMjRmzXZvIJEJo6GMawtkcEVY_tqO3Nlo',
+        image_url: '/members/tomas-dascola.jpeg',
         linkedin: 'https://www.linkedin.com/in/tomas-dascola-622008187/',
       },
     ],
@@ -168,37 +160,9 @@ const communityStartups: CommunityStartup[] = [
     funding: 'Bootstrapped',
   },
   {
-    id: '8',
-    name: 'Jobly',
-    image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQGFevsKAl7Nbw/company-logo_200_200/company-logo_200_200/0/1683173476396/joblyapp_logo?e=1749686400&v=beta&t=alWvFRuhLOADRAWtijvBKYYJAC4n_tMM7JG_U_MieP4',
-    location: 'Córdoba, Argentina',
-    description: 'Conectamos talento tech on demand validado con startups y Pymes',
-    status: 'launched',
-    launchDate: '2024-01-01',
-    founders: [
-      {
-        id: '1',
-        name: 'Luciano Joaquín Alfonso',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQEbYXpYftHB2Q/profile-displayphoto-shrink_400_400/B4DZU9V2QpHYAk-/0/1740490893049?e=1747267200&v=beta&t=qA0Avf2XxbquO3gMN84lWr6i0_dKvF7vvpg1CTstSgs',
-        linkedin:
-          'https://www.linkedin.com/in/ljalfonso?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      },
-    ],
-    category: { id: 10, label: 'HR Tech', emoji: '' },
-    tags: ['Jobs', 'AI', 'HR', 'SAAS'],
-    links: {
-      website: 'https://www.wearejobly.com',
-    },
-    teamSize: '1-10',
-    funding: 'Bootstrapped',
-  },
-  {
     id: '9',
     name: 'Chatsell',
-    image_url:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQF7TvocBbPdTw/company-logo_200_200/company-logo_200_200/0/1719949490822/chatsell_logo?e=1749686400&v=beta&t=QPY8KcdH1R76n0oJg1HPA28YiKl7ZKjAxj631UG-XKo',
+    image_url: '/logos/chatsell.png',
     location: 'Cordoba, Argentina',
     description: 'Automatización de ventas y atención al cliente a través de Inteligencia Artificial.',
     status: 'launched',
@@ -207,15 +171,13 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '1',
         name: 'Matias Sidler',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQGt1K9EOvm9dA/profile-displayphoto-shrink_400_400/B4DZWK6VTXHAAk-/0/1741792304150?e=1747267200&v=beta&t=xXbEPZsioUQD_YH-BR25wQ3GY1sx7PI69FFHw2n8yp0',
-        linkedin: 'https://linkedin.com/in/matias-sidler',
+        image_url: '/members/matias-sidler.jpeg',
+        linkedin: 'https://www.linkedin.com/in/matias-sidler-chatsell',
       },
       {
         id: '2',
         name: 'Ivan Hadrowa',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4E03AQHVZOGStFlQtA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709224757468?e=1747267200&v=beta&t=RsY2gV9w9I5AgfosgWaaZ1wnoiny0nhMWyn5IoWp8Ho',
+        image_url: '/members/ivan-hadrowa.jpeg',
         linkedin: 'https://www.linkedin.com/in/ivanhadrowa/',
       },
     ],
@@ -240,8 +202,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '1',
         name: 'Juan Ignacio Rios',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
+        image_url: '/members/juan-rios.jpeg',
         linkedin: 'https://www.linkedin.com/in/jir125/',
       },
     ],
@@ -256,8 +217,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '11',
     name: 'INNO Prospect',
-    image_url:
-      'https://instagram.fros2-2.fna.fbcdn.net/v/t51.2885-19/445930359_3865856690303697_5981738202110894586_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fros2-2.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2AFSKBSVAT0W2p-pb6eZFTHTe53TcF6rueqOnIbgey99ooeNN9iBm8N7P2aX13kRcLc&_nc_ohc=v5z6vrBFXmUQ7kNvgF-1VwA&_nc_gid=iUw10t6h2LSd9JJmf6vlLg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYE9nA1AVuovvCv0_UqD8qvQiwZ0l-EUO-MEuwykmZ4UNw&oe=67DE3DF9&_nc_sid=7a9f4b',
+    image_url: '/logos/inno.jpeg',
     location: 'Villa María, Córdoba, Argentina',
     description:
       'Ayudamos a empresas B2B a conectarse con su cliente ideal, comunicando eficientemente su propuesta de valor a través de campañas de cold email, generando conexiones y oportunidades de venta.',
