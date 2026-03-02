@@ -3,6 +3,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { FlyingRockets } from "@/components/flying-rockets";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
+import { Users } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -71,6 +72,15 @@ export default function Hero() {
                 Explorar Startups
               </Link>
             </Button>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="flex items-center gap-2 text-[var(--fg-muted)] font-mono text-xs uppercase tracking-wider"
+          >
+            <Users className="h-4 w-4 text-[var(--primary)]" />
+            <span>+200 personas en la comunidad de WhatsApp</span>
           </motion.div>
         </motion.div>
       </section>
