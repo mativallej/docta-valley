@@ -274,6 +274,23 @@ const communityStartups: CommunityStartup[] = [
     teamSize: '1-10',
     funding: 'Bootstrapped',
   },
+  // 12. Fidelando
+  {
+    id: '14',
+    name: 'Fidelando',
+    image_url: '/logos/fidelando.jpeg',
+    location: 'Argentina',
+    description:
+      'Fidelando es una forma de pensar tu negocio: una comunidad de clientes que vuelve, recomienda y te elige.',
+    status: 'launched',
+    launchDate: '2025-01-01',
+    founders: [],
+    category: { id: 11, label: 'Loyalty', emoji: '🤝' },
+    tags: ['Loyalty', 'CRM', 'Retention'],
+    links: {},
+    teamSize: '1-10',
+    funding: 'Bootstrapped',
+  },
 ];
 
 export async function GET() {
