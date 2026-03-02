@@ -15,14 +15,13 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '1',
         name: 'Lucas Nasich',
-        image_url: 'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
+        image_url: '/members/lucas-nasich.jpeg',
         linkedin: 'https://www.linkedin.com/in/lucasnasich/',
       },
       {
         id: '2',
         name: 'Carla Palmieri',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQG5Yr50NOunEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690337728846?e=1747267200&v=beta&t=COrLhm1CfbN3ifp7OzhE7-6OuU-MU4NoaEN7NMkPAmY',
+        image_url: '/members/carla-palmieri.jpeg',
         linkedin: 'https://www.linkedin.com/in/carla-palmieri/',
       },
     ],
@@ -39,7 +38,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '6',
     name: 'Laburen',
-    image_url: '/logos/laburen.svg',
+    image_url: '/logos/laburen.png',
     location: 'Córdoba, Argentina',
     description: 'SaaS que crea empleados de IA para optimizar procesos empresariales.',
     status: 'launched',
@@ -48,7 +47,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '7',
         name: 'Sebastian Rinaldi',
-        image_url: 'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
+        image_url: '/members/seba-rinaldi.jpeg',
         linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
       },
     ],
@@ -73,8 +72,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '3',
         name: 'Ata Sanchez',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQHuJ0BVkkcGrQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718214067849?e=1747267200&v=beta&t=Oo3uqp4CXqrMQSj8CkOcmhrgQ5OmvXvO32zmaKyS0F4',
+        image_url: '/placeholder.svg',
         linkedin: 'https://www.linkedin.com/in/ataschz/',
       },
     ],
@@ -90,7 +88,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '3',
     name: 'SyncedBits',
-    image_url: '/logos/syncedbits.svg',
+    image_url: '/logos/syncedbit_logo.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Marketplace modular para gestionar infraestructura IT.',
     status: 'development',
@@ -99,8 +97,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '4',
         name: 'Juan Ignacio Rios',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
+        image_url: '/members/juan-rios.jpeg',
         linkedin: 'https://www.linkedin.com/in/jir125/',
       },
     ],
@@ -116,7 +113,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '7',
     name: 'Rocbird',
-    image_url: '/logos/rocbird.jpg',
+    image_url: '/logos/rocbird_logo.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Software para la transformación digital de empresas.',
     status: 'launched',
@@ -125,8 +122,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '8',
         name: 'Gaston Di Giuseppe',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFrv_Ha3-vzyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722351269941?e=1747267200&v=beta&t=mMi9wCsXJgbk3zmiHboTOrk24_kP-p53_IiT7ChGizs',
+        image_url: '/placeholder.svg',
         linkedin: 'https://www.linkedin.com/in/gaston-dg/',
       },
     ],
@@ -151,8 +147,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '6',
         name: 'Tomas Dascola',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQHy5CFwxHxKxw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730748643735?e=1747267200&v=beta&t=_SWjP8-WSlXMjRmzXZvIJEJo6GMawtkcEVY_tqO3Nlo',
+        image_url: '/placeholder.svg',
         linkedin: 'https://www.linkedin.com/in/tomas-dascola-622008187/',
       },
     ],
@@ -176,15 +171,13 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '1',
         name: 'Matias Sidler',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQGt1K9EOvm9dA/profile-displayphoto-shrink_400_400/B4DZWK6VTXHAAk-/0/1741792304150?e=1747267200&v=beta&t=xXbEPZsioUQD_YH-BR25wQ3GY1sx7PI69FFHw2n8yp0',
+        image_url: '/members/matias-sidler.jpeg',
         linkedin: 'https://www.linkedin.com/in/matias-sidler-chatsell',
       },
       {
         id: '2',
         name: 'Ivan Hadrowa',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4E03AQHVZOGStFlQtA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709224757468?e=1747267200&v=beta&t=RsY2gV9w9I5AgfosgWaaZ1wnoiny0nhMWyn5IoWp8Ho',
+        image_url: '/members/ivan-hadrowa.jpeg',
         linkedin: 'https://www.linkedin.com/in/ivanhadrowa/',
       },
     ],
@@ -209,8 +202,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '1',
         name: 'Juan Ignacio Rios',
-        image_url:
-          'https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675778796326?e=1747267200&v=beta&t=zXvuADsbbGa_bpibGrmqbQNUEo1aXYMY9WPwTws8YLI',
+        image_url: '/members/juan-rios.jpeg',
         linkedin: 'https://www.linkedin.com/in/jir125/',
       },
     ],
@@ -225,7 +217,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '11',
     name: 'INNO Prospect',
-    image_url: '/logos/innoprospect.ico',
+    image_url: '/logos/inno.jpeg',
     location: 'Villa María, Córdoba, Argentina',
     description:
       'Ayudamos a empresas B2B a conectarse con su cliente ideal, comunicando eficientemente su propuesta de valor a través de campañas de cold email, generando conexiones y oportunidades de venta.',

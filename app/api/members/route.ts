@@ -20,7 +20,7 @@ const members: Member[] = [
     name: 'Lucas Nasich',
     role: 'founder',
     bio: '🚀 CEO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
-    image_url: 'https://pbs.twimg.com/profile_images/1877539774996627456/fQ-wIWfP_400x400.jpg',
+    image_url: '/members/lucas-nasich.jpeg',
     links: {
       twitter: 'https://twitter.com/lucasnasich',
       linkedin: 'https://linkedin.com/in/lucasnasich',
@@ -32,7 +32,7 @@ const members: Member[] = [
     name: 'Leandro Pisaroni',
     role: 'member',
     bio: '💰 Investor & Partner at Kalei Ventures | 🌎 Córdoba, Argentina',
-    image_url: 'https://media.licdn.com/dms/image/v2/C5603AQFwQrDHqxhU-g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1580151660843?e=1747267200&v=beta&t=vPsD8RhxabeK0nFVTkWrt2VIz0HRO5lIHqZVbf3bTUY',
+    image_url: '/members/leandro-pisaroni.jpeg',
     links: {
       twitter: 'https://twitter.com/nanopisaroni',
       linkedin: 'https://www.linkedin.com/in/leandropisaroni/',
@@ -44,7 +44,7 @@ const members: Member[] = [
     name: 'Sebastián Rinaldi',
     role: 'member',
     bio: '🤖 Founder at Laburen | AI & Data Science | 🌎 Córdoba, Argentina',
-    image_url: 'https://pbs.twimg.com/profile_images/1892247373759291392/ApU-tKxw_400x400.jpg',
+    image_url: '/members/seba-rinaldi.jpeg',
     links: {
       twitter: 'https://twitter.com/ssebita_r',
       linkedin: 'https://www.linkedin.com/in/sebastianrinaldi/',
@@ -56,8 +56,7 @@ const members: Member[] = [
     name: "Luciano Joaquín Alfonso",
     role: "member",
     bio: "CEO & Founder at Jobly | Córdoba, Argentina",
-    image_url:
-      "https://media.licdn.com/dms/image/v2/D4D03AQEbYXpYftHB2Q/profile-displayphoto-shrink_400_400/B4DZU9V2QpHYAk-/0/1740490893049?e=1747267200&v=beta&t=qA0Avf2XxbquO3gMN84lWr6i0_dKvF7vvpg1CTstSgs",
+    image_url: '/members/luciano-joaquin-alfonso.jpeg',
     links: {
       linkedin:
         "https://www.linkedin.com/in/ljalfonso?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -68,8 +67,7 @@ const members: Member[] = [
     name: "Matias Sidler",
     role: "member",
     bio: "CTO & Co-Founder at Chatsell | AI Enthusiast",
-    image_url:
-      "https://media.licdn.com/dms/image/v2/D4D03AQGt1K9EOvm9dA/profile-displayphoto-shrink_400_400/B4DZWK6VTXHAAk-/0/1741792304150?e=1747267200&v=beta&t=xXbEPZsioUQD_YH-BR25wQ3GY1sx7PI69FFHw2n8yp0",
+    image_url: '/members/matias-sidler.jpeg',
     links: {
       linkedin: "https://www.linkedin.com/in/matias-sidler-chatsell",
       github: "https://github.com/matisidler",
@@ -81,7 +79,7 @@ const members: Member[] = [
     name: 'Carla Palmieri',
     role: 'member',
     bio: '🚀 CTO & Co-Founder at Curval | 🌎 Córdoba, Argentina',
-    image_url: 'https://media.licdn.com/dms/image/v2/D4D03AQG5Yr50NOunEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690337728846?e=1747267200&v=beta&t=COrLhm1CfbN3ifp7OzhE7-6OuU-MU4NoaEN7NMkPAmY',
+    image_url: '/members/carla-palmieri.jpeg',
     links: {
       twitter: 'https://twitter.com/Carly23p',
       linkedin: 'https://linkedin.com/in/carla-palmieri',
@@ -93,8 +91,7 @@ const members: Member[] = [
     name: "Ivan Hadrowa",
     role: "member",
     bio: "CEO & Co-Founder at Chatsell | Córdoba, Argentina",
-    image_url:
-      "https://media.licdn.com/dms/image/v2/D4E03AQHVZOGStFlQtA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709224757468?e=1747267200&v=beta&t=RsY2gV9w9I5AgfosgWaaZ1wnoiny0nhMWyn5IoWp8Ho",
+    image_url: '/members/ivan-hadrowa.jpeg',
     links: {
       linkedin: "https://www.linkedin.com/in/ivanhadrowa/",
       website: "https://chatsell.net",
@@ -105,7 +102,7 @@ const members: Member[] = [
     name: 'Luciano Juarez',
     role: 'member',
     bio: '🤖 Founder at Botix | 🌎 Córdoba, Argentina',
-    image_url: 'https://pbs.twimg.com/profile_images/1617758779935694848/8QRvDkGH_400x400.jpg',
+    image_url: '/members/luciano-juarez.jpeg',
     links: {
       twitter: 'https://twitter.com/juarezlucianoa',
       linkedin: 'https://www.linkedin.com/in/juarez-luciano/'
@@ -116,8 +113,7 @@ const members: Member[] = [
     name: "Juan Rios",
     role: "member",
     bio: "Software Engineer - COO Phorus Group",
-    image_url:
-      "https://media.licdn.com/dms/image/v2/D4D03AQFN8uzhCmoTFg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1675778796326?e=1747267200&v=beta&t=qQZiSoWuhZQcc86PuyKHhYqAHl4PH9FN-X9ga5xgXUk",
+    image_url: '/members/juan-rios.jpeg',
     links: {
       linkedin: "https://www.linkedin.com/in/jir125/",
       twitter: "https://x.com/jirios125",
