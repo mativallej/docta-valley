@@ -38,7 +38,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '6',
     name: 'Laburen',
-    image_url: '/logos/laburen.png',
+    image_url: '/logos/laburen.jpeg',
     location: 'Córdoba, Argentina',
     description: 'SaaS que crea empleados de IA para optimizar procesos empresariales.',
     status: 'launched',
@@ -138,7 +138,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '5',
     name: 'Casa Click',
-    image_url: 'https://casaclick.ar/casaclickfoto.jpg',
+    image_url: '/logos/clickie.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Plataforma que conecta usuarios con profesionales para soluciones del hogar.',
     status: 'launched',
@@ -235,7 +235,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '12',
     name: 'Botix',
-    image_url: 'https://pbs.twimg.com/profile_images/1888327126383726592/35v3fd9W_400x400.jpg',
+    image_url: '/logos/botix.jpeg',
     location: 'Córdoba, Argentina',
     description:
       'Plataforma en desarrollo que utiliza RPA e Inteligencia Artificial para automatizar tareas y procesos repetitivos, optimizando recursos y mejorando la eficiencia operativa de las empresas.',
@@ -246,6 +246,7 @@ const communityStartups: CommunityStartup[] = [
     tags: ['RPA', 'AI', 'SaaS', 'Automation'],
     links: {
       website: '',
+      linkedin: 'https://www.linkedin.com/company/botix-hq',
     },
     teamSize: '1-10',
     funding: 'Bootstrapped',
