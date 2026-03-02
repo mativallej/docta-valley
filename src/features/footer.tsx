@@ -21,9 +21,9 @@ export default function Footer() {
             <h3 className="font-mono text-[12px] font-semibold uppercase tracking-[0.08em] text-[var(--primary)]">Legal</h3>
             {
                 legalItems.map((item) => (
-                    <Link key={item.href} href={item.href} className="font-sans text-[13px] text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors duration-150">
+                    <span key={item.href} className="font-sans text-[13px] text-[var(--fg-muted)] cursor-default">
                     {item.label}
-                  </Link>
+                  </span>
                 ))
             }
           </div>
@@ -44,12 +44,12 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Docta Valley. Todos los derechos reservados.
           </p>
           <div className="flex gap-4">
-            <Link href="#" className="font-sans text-[12px] text-[var(--muted-fg)] hover:text-[var(--fg)] transition-colors duration-150">
+            <span className="font-sans text-[12px] text-[var(--muted-fg)] cursor-default">
               Politica de Privacidad
-            </Link>
-            <Link href="#" className="font-sans text-[12px] text-[var(--muted-fg)] hover:text-[var(--fg)] transition-colors duration-150">
+            </span>
+            <span className="font-sans text-[12px] text-[var(--muted-fg)] cursor-default">
               Terminos de Servicio
-            </Link>
+            </span>
           </div>
         </div>
       </div>
