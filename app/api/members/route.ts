@@ -6,7 +6,7 @@ const members: Member[] = [
     id: '1',
     name: 'Matias Vallejos',
     role: 'founder',
-    bio: '🚀 Full Stack Dev at Megatone | 🌎 Córdoba, Argentina',
+    bio: 'Product Engineer | tegu.ar',
     image_url: 'https://pbs.twimg.com/profile_images/1903198685108047872/yD3dWg7d_400x400.jpg',
     links: {
       twitter: 'https://twitter.com/mativallejosdev',
