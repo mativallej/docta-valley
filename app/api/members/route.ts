@@ -134,7 +134,7 @@ const members: Member[] = [
     name: 'Walter Ezequiel Obreque',
     role: 'member',
     bio: 'Full-Stack Software Engineer | React Native, React, Express, TypeScript & .NET | tegu.ar',
-    image_url: '/members/walter-ezequiel-obreque.jpeg',
+    image_url: '/members/ezequiel-obreque.jpeg',
     links: {
       linkedin: 'https://www.linkedin.com/in/walter-ezequiel-obreque-252aab181/',
       twitter: 'https://x.com/ezequiel_obrek',
