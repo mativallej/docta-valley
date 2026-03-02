@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { FlyingRockets } from "@/components/flying-rockets";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
-import { Users } from "lucide-react";
+import { Users, MessageCircle } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -81,6 +81,21 @@ export default function Hero() {
           >
             <Users className="h-4 w-4 text-[var(--primary)]" />
             <span>+200 personas en la comunidad de WhatsApp</span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.0 }}
+            className="flex items-center gap-1.5 text-[var(--fg-muted)] font-mono text-xs uppercase tracking-wider"
+          >
+            <MessageCircle className="h-4 w-4 text-[var(--primary)]" />
+            <span>Tenes propuestas, dudas o sugerencias? Hablanos</span>
+            <Link href="https://x.com/mativallej_" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">
+              @mativallej_
+            </Link>
+            <Link href="https://x.com/lucasnasich" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">
+              @lucasnasich
+            </Link>
           </motion.div>
         </motion.div>
       </section>

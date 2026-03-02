@@ -27,7 +27,7 @@ const communityStartups: CommunityStartup[] = [
       {
         id: '3',
         name: 'Walter Ezequiel Obreque',
-        image_url: '/members/walter-ezequiel-obreque.jpeg',
+        image_url: '/members/ezequiel-obreque.jpeg',
         linkedin: 'https://www.linkedin.com/in/walter-ezequiel-obreque-252aab181/',
       },
     ],

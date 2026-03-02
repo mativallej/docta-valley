@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { WhatsAppIcon } from "@/components/icons/whatsapp"
+import { Linkedin, Twitter } from "lucide-react"
 import { navItems } from "@/data/layout"
 
 export default function Header() {
@@ -57,6 +58,12 @@ export default function Header() {
         </NavigationMenu>
         {!isAuthPage && (
           <div className="flex items-center space-x-3">
+            <Link href="https://x.com/doctavalley" target="_blank" rel="noopener noreferrer" className="text-[var(--muted-fg)] hover:text-[var(--fg)] transition-colors">
+              <Twitter className="h-4 w-4" />
+            </Link>
+            <Link href="https://www.linkedin.com/company/doctavalley" target="_blank" rel="noopener noreferrer" className="text-[var(--muted-fg)] hover:text-[var(--fg)] transition-colors">
+              <Linkedin className="h-4 w-4" />
+            </Link>
             <Button size="sm" asChild>
               <Link href="https://chat.whatsapp.com/KfBZXVDwrzuIs1HbrvvmSb?mode=gi_t" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="h-3.5 w-3.5 mr-1.5" />
