@@ -10,7 +10,7 @@ const members: Member[] = [
     image_url: '/members/matias-vallejos.jpg',
     links: {
       twitter: 'https://x.com/mativallej_',
-      linkedin: 'https://linkedin.com/in/matiasvallejos',
+      linkedin: 'https://www.linkedin.com/mativallej',
       github: 'https://github.com/matiasvallejosdev',
       website: 'https://matiasvallejos.com',
     },
