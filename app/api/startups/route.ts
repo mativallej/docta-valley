@@ -6,7 +6,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '1',
     name: 'Curval',
-    image_url: 'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
+    image_url: '/logos/curval.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Copiloto de estudio universitario con IA.',
     status: 'launched',
@@ -63,10 +63,10 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '2',
     name: 'Retrip',
-    image_url: 'https://pbs.twimg.com/profile_images/1892011204291289088/nUAfNjBN_400x400.jpg',
+    image_url: '/logos/retrip.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Agente conversacional con IA para el sector turístico.',
-    status: 'development',
+    status: 'launched',
     launchDate: '2024-01-01',
     founders: [
       {
@@ -223,7 +223,14 @@ const communityStartups: CommunityStartup[] = [
       'Ayudamos a empresas B2B a conectarse con su cliente ideal, comunicando eficientemente su propuesta de valor a través de campañas de cold email, generando conexiones y oportunidades de venta.',
     status: 'launched',
     launchDate: '2024-03-01',
-    founders: [],
+    founders: [
+      {
+        id: '1',
+        name: 'Francisco Botta',
+        image_url: '/members/francisco-botta.jpeg',
+        linkedin: 'https://www.linkedin.com/in/francisco-botta/',
+      },
+    ],
     category: { id: 13, label: 'B2B Marketing', emoji: '📧' },
     tags: ['B2B', 'Marketing', 'Sales', 'Email'],
     links: {
@@ -248,6 +255,52 @@ const communityStartups: CommunityStartup[] = [
       website: '',
       linkedin: 'https://www.linkedin.com/company/botix-hq',
     },
+    teamSize: '1-10',
+    funding: 'Bootstrapped',
+  },
+  // 11. Tegu
+  {
+    id: '13',
+    name: 'Tegu',
+    image_url: '/logos/tegu.jpeg',
+    location: 'Córdoba, Argentina',
+    description: 'Confianza que genera trabajo. Servicios del hogar con IA 🇦🇷',
+    status: 'development',
+    launchDate: '2026-01-01',
+    founders: [
+      {
+        id: '1',
+        name: 'Matias Vallejos',
+        image_url: '/members/matias-vallejos.jpg',
+        linkedin: 'https://www.linkedin.com/in/matias-vallejos/',
+      },
+      {
+        id: '2',
+        name: 'Lucas Segurola',
+        image_url: '/members/lucas-segurola.jpeg',
+        linkedin: 'https://www.linkedin.com/in/lucassegurola/',
+      },
+    ],
+    category: { id: 10, label: 'Marketplace', emoji: '🏪' },
+    tags: ['Marketplace', 'HomeServices', 'AI'],
+    links: {},
+    teamSize: '2-10',
+    funding: 'Bootstrapped',
+  },
+  // 12. Fidelando
+  {
+    id: '14',
+    name: 'Fidelando',
+    image_url: '/logos/fidelando.jpeg',
+    location: 'Argentina',
+    description:
+      'Fidelando es una forma de pensar tu negocio: una comunidad de clientes que vuelve, recomienda y te elige.',
+    status: 'launched',
+    launchDate: '2025-01-01',
+    founders: [],
+    category: { id: 11, label: 'Loyalty', emoji: '🤝' },
+    tags: ['Loyalty', 'CRM', 'Retention'],
+    links: {},
     teamSize: '1-10',
     funding: 'Bootstrapped',
   },
