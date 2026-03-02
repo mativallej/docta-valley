@@ -11,7 +11,6 @@ const members: Member[] = [
     links: {
       twitter: 'https://x.com/mativallej_',
       linkedin: 'https://www.linkedin.com/mativallej',
-      github: 'https://github.com/matiasvallejosdev',
       website: 'https://matiasvallejos.com',
     },
   },
