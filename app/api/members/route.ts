@@ -127,6 +127,7 @@ const members: Member[] = [
     image_url: '/members/lucas-segurola.jpeg',
     links: {
       linkedin: 'https://www.linkedin.com/in/lucassegurola/',
+      twitter: 'https://x.com/dev_luking',
     },
   },
   {
@@ -137,6 +138,7 @@ const members: Member[] = [
     image_url: '/members/walter-ezequiel-obreque.jpeg',
     links: {
       linkedin: 'https://www.linkedin.com/in/walter-ezequiel-obreque-252aab181/',
+      twitter: 'https://x.com/ezequiel_obrek',
     },
   }
 ];
