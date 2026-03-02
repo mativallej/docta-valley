@@ -4,7 +4,7 @@ import { features } from "@/data/data";
 
 export default function Features() {
   return (
-    <div className="mx-auto grid gap-8 sm:max-w-3xl sm:grid-cols-2 lg:max-w-5xl lg:grid-cols-3">
+    <div className="mx-auto grid w-full gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {features.map((feature, index) => (
         <motion.div
           key={index}
