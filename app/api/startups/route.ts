@@ -263,10 +263,10 @@ const communityStartups: CommunityStartup[] = [
     id: '13',
     name: 'Tegu',
     image_url: '/logos/tegu.jpeg',
-    location: 'Argentina',
+    location: 'Córdoba, Argentina',
     description: 'Confianza que genera trabajo. Servicios del hogar con IA 🇦🇷',
     status: 'development',
-    launchDate: '2025-01-01',
+    launchDate: '2026-01-01',
     founders: [
       {
         id: '1',
@@ -274,11 +274,17 @@ const communityStartups: CommunityStartup[] = [
         image_url: '/members/matias-vallejos.jpg',
         linkedin: 'https://www.linkedin.com/in/matias-vallejos/',
       },
+      {
+        id: '2',
+        name: 'Lucas Segurola',
+        image_url: '/members/lucas-segurola.jpeg',
+        linkedin: 'https://www.linkedin.com/in/lucassegurola/',
+      },
     ],
     category: { id: 10, label: 'Marketplace', emoji: '🏪' },
     tags: ['Marketplace', 'HomeServices', 'AI'],
     links: {},
-    teamSize: '1-10',
+    teamSize: '2-10',
     funding: 'Bootstrapped',
   },
   // 12. Fidelando
