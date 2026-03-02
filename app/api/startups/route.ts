@@ -286,6 +286,7 @@ const communityStartups: CommunityStartup[] = [
     links: {},
     teamSize: '2-10',
     funding: 'Bootstrapped',
+    featured: true,
   },
   // 12. Fidelando
   {

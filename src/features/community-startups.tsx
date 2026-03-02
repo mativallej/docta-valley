@@ -43,10 +43,12 @@ export function CommunityStartups() {
     setSelectedCategory(category);
   };
 
+  const sortedStartups = [...startups].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+
   const filteredStartups =
     selectedCategory === 'all'
-      ? startups.slice(0, showAll ? undefined : 6)
-      : startups
+      ? sortedStartups.slice(0, showAll ? undefined : 6)
+      : sortedStartups
           .filter(
             (startup) =>
               startup.category?.id.toString() === selectedCategory ||

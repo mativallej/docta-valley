@@ -179,6 +179,9 @@ function startupsReducer(state: StartupsState, action: StartupsAction): Startups
         }
       }
 
+      // Sort featured startups first
+      result.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+
       return {
         ...state,
         filteredStartups: result,

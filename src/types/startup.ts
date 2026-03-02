@@ -22,6 +22,7 @@ export interface CommunityStartup {
   problem?: string;
   solution?: string;
   businessModel?: string;
+  featured?: boolean;
 }
 
 export interface Founder {
