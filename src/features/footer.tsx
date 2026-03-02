@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
-import { Twitter, Linkedin, MessageCircle } from "lucide-react"
+import { Twitter, Linkedin } from "lucide-react"
 import { WhatsAppIcon } from "@/components/icons/whatsapp"
 import { navItems, resourceItems, legalItems, socialItems } from "@/data/layout"
 
@@ -49,16 +49,15 @@ export default function Footer() {
         </div>
         <Separator />
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-1.5 font-sans text-[12px] text-[var(--muted-fg)]">
-            <MessageCircle className="h-3.5 w-3.5 text-[var(--primary)]" />
-            <span>Tenes propuestas, dudas o sugerencias? Hablanos</span>
+          <p className="font-sans text-[12px] text-[var(--muted-fg)]">
+            Dudas o sugerencias?{" "}
             <Link href="https://x.com/mativallej_" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">
               @mativallej_
-            </Link>
+            </Link>{" "}
             <Link href="https://x.com/lucasnasich" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">
               @lucasnasich
             </Link>
-          </div>
+          </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <p className="font-sans text-[12px] text-[var(--muted-fg)]">
               &copy; {new Date().getFullYear()} Docta Valley. Todos los derechos reservados.
