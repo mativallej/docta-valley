@@ -128,6 +128,16 @@ const members: Member[] = [
     links: {
       linkedin: 'https://www.linkedin.com/in/lucassegurola/',
     },
+  },
+  {
+    id: '12',
+    name: 'Walter Ezequiel Obreque',
+    role: 'member',
+    bio: 'Full-Stack Software Engineer | React Native, React, Express, TypeScript & .NET | tegu.ar',
+    image_url: '/members/walter-ezequiel-obreque.jpeg',
+    links: {
+      linkedin: 'https://www.linkedin.com/in/walter-ezequiel-obreque-252aab181/',
+    },
   }
 ];
 
