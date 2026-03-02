@@ -6,7 +6,7 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '1',
     name: 'Curval',
-    image_url: 'https://pbs.twimg.com/profile_images/1836483810772299777/mAbELLGa_400x400.jpg',
+    image_url: '/logos/curval.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Copiloto de estudio universitario con IA.',
     status: 'launched',
@@ -63,10 +63,10 @@ const communityStartups: CommunityStartup[] = [
   {
     id: '2',
     name: 'Retrip',
-    image_url: 'https://pbs.twimg.com/profile_images/1892011204291289088/nUAfNjBN_400x400.jpg',
+    image_url: '/logos/retrip.jpeg',
     location: 'Córdoba, Argentina',
     description: 'Agente conversacional con IA para el sector turístico.',
-    status: 'development',
+    status: 'launched',
     launchDate: '2024-01-01',
     founders: [
       {
@@ -248,6 +248,29 @@ const communityStartups: CommunityStartup[] = [
       website: '',
       linkedin: 'https://www.linkedin.com/company/botix-hq',
     },
+    teamSize: '1-10',
+    funding: 'Bootstrapped',
+  },
+  // 11. Tegu
+  {
+    id: '13',
+    name: 'Tegu',
+    image_url: '/logos/tegu.jpeg',
+    location: 'Argentina',
+    description: 'Confianza que genera trabajo. Servicios del hogar con IA 🇦🇷',
+    status: 'development',
+    launchDate: '2025-01-01',
+    founders: [
+      {
+        id: '1',
+        name: 'Matias Vallejos',
+        image_url: '/members/matias-vallejos.jpg',
+        linkedin: 'https://www.linkedin.com/in/matias-vallejos/',
+      },
+    ],
+    category: { id: 10, label: 'Marketplace', emoji: '🏪' },
+    tags: ['Marketplace', 'HomeServices', 'AI'],
+    links: {},
     teamSize: '1-10',
     funding: 'Bootstrapped',
   },

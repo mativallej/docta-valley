@@ -59,6 +59,7 @@ export const startupCategories: StartupCategory[] = [
     { id: 7, label: 'CleanTech', emoji: '🌱' },
     { id: 8, label: 'AI/ML', emoji: '🤖' },
     { id: 9, label: 'Other', emoji: '🌟' },
+    { id: 10, label: 'Marketplace', emoji: '🏪' },
 ]
 
 export interface FilterOption {
